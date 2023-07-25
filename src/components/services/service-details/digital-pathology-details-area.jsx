@@ -84,18 +84,6 @@ const DigitalPathologyDetailsArea = () => {
             </div>
           </div>
           
-          <div className="row">
-            <div className="col-md-12">
-              <div className="services-link tp-srv-link">
-                <span>
-                  DIGITAL PATHOLOGY
-                  <Link href="/contact">
-                    OUr Project<i className="fa-solid fa-arrow-right"></i>
-                  </Link>
-                </span>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
     </>

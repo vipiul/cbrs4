@@ -20,24 +20,6 @@ const BioinformaticsDetailsArea = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section
-        className="services-area pt-120 pb-90 grey-bg"
-        style={{ backgroundImage: `url(/assets/img/shape/shape-bg-01.png)` }}
-      >
-        <div className="container">
-          <div className="row text-center">
-            <div className="col-lg-12 col-md-12 col-12">
-              <div className="tp-section">
-                <span className="tp-section__sub-title left-line right-line mb-20">
-                  CBRS
-                </span>
-                <h3 className="tp-section__title mb-70">Bioinformatics</h3>
-              </div>
-            </div>
-          </div>
           <div className="row">
             {
               ServicesPageData.bioinformatics.map((items, index) => (
@@ -53,26 +35,11 @@ const BioinformaticsDetailsArea = () => {
             }
 
           </div>
-        </div>
-      </section>
-
-      <section className="button-Link">
-        <div className="container">
-        <div className="row">
-            <div className="col-md-12">
-              <div>
-              <p className="mt-50 mb-50">
+          <div className="row">
+            <div className="col-12">
+              <p className="my-1">
                 Using our bioinformatics services, scientists can extract valuable information from their data, discover hidden patterns and generate hypotheses for further research. Our expertise in computational analysis and data interpretation increases the value of biospecimen resources and enables researchers to accelerate discoveries and develop precision medicine applications.
               </p>
-              </div>
-              <div className="services-link tp-srv-link mb-50">
-                <span>
-                  Bioinformatic :
-                  <Link href="/contact">
-                    OUr Project<i className="fa-solid fa-arrow-right"></i>
-                  </Link>
-                </span>
-              </div>
             </div>
           </div>
         </div>

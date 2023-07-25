@@ -205,32 +205,6 @@ const LaboratoryAndBiobankDetailsArea = () => {
                   For these customer-centric solutions, we prioritize effective communication, transparency and flexibility. Our goal is to equip customers with the  tools and information they need to stay informed and make informed decisions about their samples and data, ensuring a seamless and reliable experience throughout their collaboration.
                 </p>
 
-                <h4 className="tp-srv-stap__title mt-25">Research Papers</h4>
-
-                <p>
-                  Promoting breakthroughs to improve human well-being, CBRS is an international pioneer, providing a wealth of information to researchers worldwide. This invaluable resource allows scientists from many countries to learn about the origins, prevention, and treatment of diseases.
-                </p>
-
-                <p>
-                  This massive data sheds light on both standard and life-threatening diseases, from cancer and diabetes to depression and arthritis. With the valuable support of researchers worldwide, the CBRS collaboration has led to the discovery of new approaches to improve health outcomes,  evidenced by a significant number of scientific articles. In addition, we act as a catalyst for international and interdisciplinary cooperation. By providing a unique platform for scientists, researchers and geneticists, we foster innovative collaboration to revolutionize public health.
-                </p>
-
-                <p>
-                  Together, we create imaginative and disruptive ways to advance the well-being of communities around the world. After the studies are completed, researchers disseminate their findings by publishing them in scientific journals, allowing researchers and medical professionals to benefit from the information obtained. We encourage researchers to use open access when publishing their results. This ensures that participants and the public receive relevant knowledge to improve health outcomes. Explore our extensive collection of published articles by clicking the link below.
-                </p>
-
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-12">
-              <div className="services-link tp-srv-link">
-                <span>
-                  Laboratories Used For Scientific Research :
-                  <Link href="/contact">
-                    OUr Project<i className="fa-solid fa-arrow-right"></i>
-                  </Link>
-                </span>
               </div>
             </div>
           </div>

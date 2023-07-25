@@ -20,24 +20,6 @@ const ProteomicsDetailsArea = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section
-        className="services-area pt-120 pb-90 grey-bg"
-        style={{ backgroundImage: `url(/assets/img/shape/shape-bg-01.png)` }}
-      >
-        <div className="container">
-          <div className="row text-center">
-            <div className="col-lg-12 col-md-12 col-12">
-              <div className="tp-section">
-                <span className="tp-section__sub-title left-line right-line mb-20">
-                  CBRS
-                </span>
-                <h3 className="tp-section__title mb-70">Proteomics</h3>
-              </div>
-            </div>
-          </div>
           <div className="row">
             {
               ServicesPageData.proteomics.map((items, index) => (
@@ -53,33 +35,19 @@ const ProteomicsDetailsArea = () => {
             }
 
           </div>
-        </div>
-      </section>
-
-      <section className="button-Link">
-        <div className="container">
-        <div className="row">
-            <div className="col-md-12">
-              <div>
-              <p className="mt-50 mb-50">
-                These services are available on demand, allowing customers to use the specific proteomic techniques they need for their research projects. Thanks to our efficient ordering process, researchers can easily request and obtain the proteomic services they need from our biobank archive.
-              </p>
-              <p className="mt-50 mb-50">
-                Offering a wide range of proteomics services, our biobank repository aims to support researchers in their efforts to understand protein function, discover biomarkers and advance knowledge in the field of proteomics.
-              </p>
-              </div>
-              <div className="services-link tp-srv-link mb-50">
-                <span>
-                  Proteomic :
-                  <Link href="/contact">
-                    OUr Project<i className="fa-solid fa-arrow-right"></i>
-                  </Link>
-                </span>
-              </div>
+          <div className="row">
+            <div className="col-12">
+                <p className="my-1">
+                  These services are available on demand, allowing customers to use the specific proteomic techniques they need for their research projects. Thanks to our efficient ordering process, researchers can easily request and obtain the proteomic services they need from our biobank archive.
+                </p>
+                <p className="my-1">
+                  Offering a wide range of proteomics services, our biobank repository aims to support researchers in their efforts to understand protein function, discover biomarkers and advance knowledge in the field of proteomics.
+                </p>
             </div>
           </div>
         </div>
       </section>
+
     </>
   );
 };

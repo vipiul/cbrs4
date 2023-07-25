@@ -20,24 +20,6 @@ const GenomicsDetailsArea = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section
-        className="services-area pt-120 pb-90 grey-bg"
-        style={{ backgroundImage: `url(/assets/img/shape/shape-bg-01.png)` }}
-      >
-        <div className="container">
-          <div className="row text-center">
-            <div className="col-lg-12 col-md-12 col-12">
-              <div className="tp-section">
-                <span className="tp-section__sub-title left-line right-line mb-20">
-                  CBRS
-                </span>
-                <h3 className="tp-section__title mb-70">Genomics</h3>
-              </div>
-            </div>
-          </div>
           <div className="row">
             {
               ServicesPageData.genomics.map((items, index) => (
@@ -53,26 +35,11 @@ const GenomicsDetailsArea = () => {
             }
 
           </div>
-        </div>
-      </section>
-
-      <section className="button-Link">
-        <div className="container">
-        <div className="row">
-            <div className="col-md-12">
-              <div>
-              <p className="mt-50 mb-50">
+          <div className="row">
+            <div className="col-12">
+              <p className="my-1">
                 By providing easily accessible and well-preserved genetic materials to the pharmaceutical industry, biotechnology and drug research laboratories, our biobank repository facilitates discoveries, accelerates drug development and supports the development of precision medicine. Researchers can confidently access our data repositories and gain access to the critical resources needed for their innovative genomics research projects.
               </p>
-              </div>
-              <div className="services-link tp-srv-link mb-50">
-                <span>
-                  Genomics services :
-                  <Link href="/contact">
-                    OUr Project<i className="fa-solid fa-arrow-right"></i>
-                  </Link>
-                </span>
-              </div>
             </div>
           </div>
         </div>
