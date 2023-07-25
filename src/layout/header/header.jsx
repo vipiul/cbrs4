@@ -77,14 +77,14 @@ const Header = () => {
                                     </Link>
                                 </div>
                             </div>
-                            <div className="col-xxl-7 col-lg-6">
+                            <div className="col-xxl-7 col-lg-7">
                                 <div className="main-menu">
                                     <nav id="mobile-menu">
                                         <NavMenu />
                                     </nav>
                                 </div>
                             </div>
-                            <div className="col-xxl-4 col-lg-4 d-flex align-items-center justify-content-end">
+                            <div className="col-xxl-4 col-lg-3 d-flex align-items-center justify-content-end">
                                 <div className="tp-bt-btn-banner">
                                     <a className="tp-bt-btn" href="tel:91 83838 64051">
                                         <svg

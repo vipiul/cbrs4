@@ -52,7 +52,7 @@ const {
 const About = () => {
   return (
     <>
-      <section id="tp-about-scroll" className="about-area pb-70">
+      <section id="tp-about-scroll" className="about-area pb-70 mt-100 mb-100">
         <div className="container">
           <div className="row">
             <div className="col-xl-6 col-lg-12">

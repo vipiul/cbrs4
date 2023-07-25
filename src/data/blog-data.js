@@ -1,7 +1,7 @@
 const blog_data = [
   {
     id: 1,
-    img: "/assets/img/blog/blog-thumb-01.jpg",
+    img: "/assets/img/blog/research-image-01.png",
     blog_date: (
       <>
         26<span>Dec</span>
@@ -22,7 +22,7 @@ const blog_data = [
   },
   {
     id: 2,
-    img: "/assets/img/blog/blog-thumb-02.jpg",
+    img: "/assets/img/blog/research-image-01.png",
     blog_date: (
       <>
         26<span>Dec</span>
@@ -43,7 +43,7 @@ const blog_data = [
   },
   {
     id: 3,
-    img: "/assets/img/blog/blog-thumb-03.jpg",
+    img: "/assets/img/blog/research-image-01.png",
     blog_date: (
       <>
         26<span>Dec</span>
@@ -65,7 +65,7 @@ const blog_data = [
 
   {
     id: 4,
-    img: "/assets/img/blog/blog-thumb-04.jpg",
+    img: "/assets/img/blog/research-image-01.png",
     blog_date: (
       <>
         26<span>Dec</span>

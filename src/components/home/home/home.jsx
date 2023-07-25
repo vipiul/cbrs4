@@ -1,4 +1,4 @@
-  import Brands from "@/common/brands";
+import Brands from "@/common/brands";
 import React from "react";
 import About from "./about";
 import Appointment from "./appointment";

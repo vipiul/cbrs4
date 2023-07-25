@@ -82,20 +82,20 @@ const Blog = () => {
                       <a href="#">
                         <img src={item.img} alt="blog-item" />
                       </a>
-                      <div className="tp-blog__date text-center">
+                      {/* <div className="tp-blog__date text-center">
                         <h4>{item.blog_date}</h4>
-                      </div>
+                      </div> */}
                     </div>
                     <div className="tp-blog__content">
-                      <span className="tp-blog__category mb-30">
+                      {/* <span className="tp-blog__category mb-30">
                         <Link href="#">{item.blog_category}</Link>
-                      </span>
+                      </span> */}
                       <h5 className="tp-blog__title mb-20">
                         <Link href="#">{item.blog_title}</Link>
                       </h5>
                       <p>{item.blog_des}</p>
                       <div className="tp-blog__btn">
-                        <Link href="#">Read moRe</Link>
+                        <Link href="assets/pdf/fake.pdf" download>Download Here !</Link>
                       </div>
                     </div>
                   </div>

@@ -37,6 +37,7 @@
         }
         @media #{$xxl,$xl} {
           margin: 0 15px;
+          // font-size: 10px !important;
         }
         @media #{$xl} {
           font-size: 12px;
