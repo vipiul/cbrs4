@@ -47,7 +47,7 @@ const choose = [
     ),
     des: (
       <>
-        Our support team is always on call to handle our client's requests, 24/7
+        Our support team is always on call to handle our client&apos;s requests, 24/7
       </>
     ),
   },

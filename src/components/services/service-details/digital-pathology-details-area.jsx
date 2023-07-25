@@ -46,7 +46,7 @@ const DigitalPathologyDetailsArea = () => {
                 </p>
 
                 <p className="mb-40">
-                  <b>Histopathology services:</b> Our biobank's histopathology services offer a comprehensive range of support to researchers, ensuring they have access to essential techniques and expertise in their studies. Here's how our histopathology services can assist researchers:
+                  <b>Histopathology services:</b> Our biobank&apos;s histopathology services offer a comprehensive range of support to researchers, ensuring they have access to essential techniques and expertise in their studies. Here&apos;s how our histopathology services can assist researchers:
                 </p>
 
                 <p>

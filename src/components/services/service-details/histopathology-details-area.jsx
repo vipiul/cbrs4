@@ -15,7 +15,7 @@ const LaboratoryAndBiobankDetailsArea = () => {
                   Histopathology
                 </h4>
                 <p className="mb-20">
-                  Our biobank&apos;s histopathology services offer a comprehensive range of support to researchers, ensuring they have access to essential techniques and expertise in their studies. Here's how our histopathology services can assist researchers
+                  Our biobank&apos;s histopathology services offer a comprehensive range of support to researchers, ensuring they have access to essential techniques and expertise in their studies. Here&apos;s how our histopathology services can assist researchers
                 </p>
               </div>
             </div>
