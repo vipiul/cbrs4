@@ -240,6 +240,13 @@ input[type="color"] {
   font-size: var(--tp-fz-body);
   opacity: 1;
 }
+img {
+  width: 100%;
+}
+a img {
+  width: auto;
+  max-width: 100%;
+}
 
 /*---------------------------------
     common classes css start 

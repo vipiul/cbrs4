@@ -9,10 +9,7 @@ const setting = {
   // Optional parameters
   slidesPerView: 3,
   spaceBetween: 30,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: true,
-  },
+  autoplay: false,
   breakpoints: {
     1200: {
       slidesPerView: 3,

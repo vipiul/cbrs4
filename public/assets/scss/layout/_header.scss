@@ -37,7 +37,6 @@
         }
         @media #{$xxl,$xl} {
           margin: 0 15px;
-          // font-size: 10px !important;
         }
         @media #{$xl} {
           font-size: 12px;
@@ -110,7 +109,7 @@
 }
 .header-logo-box {
   flex: 0 0 auto;
-  width: 345px;
+  width: 245px;
   text-align: center;
   & img {
     width: 220px;
@@ -118,7 +117,10 @@
 }
 .header-menu-box {
   width: 100%;
-  border-left: 1px solid var(--tp-border-primary);
+  // border-left: 1px solid var(--tp-border-primary);
+}
+.tp-bt-btn-banner {
+  margin-right: -10px;
 }
 .header-menu-top {
   border-bottom: 1px solid var(--tp-border-primary);

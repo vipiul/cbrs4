@@ -1,15 +1,15 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { Navigation } from "swiper";
+import SwiperCore, { Autoplay } from 'swiper/core';
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper";
 
-
+SwiperCore.use([Autoplay]);
 // slider setting 
 const setting = {
   // Optional parameters
   slidesPerView: 5,
   spaceBetween: 30,
-  freeMode: true,
   autoplay: {
     delay: 2500,
     disableOnInteraction: true,
@@ -29,15 +29,15 @@ const setting = {
     },
     576: {
       slidesPerView: 2,
+      spaceBetween: 10,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+      },
     },
     0: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
-  },
-  // Navigation arrows
-  navigation: {
-    nextEl: ".team-n",
-    prevEl: ".team-p",
   },
 };
 
@@ -75,7 +75,7 @@ const Brands = ({ style_2 = false, border_style = false }) => {
             <Swiper
               {...setting}
               loop={isLoop}
-              modules={Navigation}
+              modules={[Navigation]}
               className="swiper-container brand-active"
             >
               {brands_img.map((item, i) => (
