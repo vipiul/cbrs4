@@ -37,7 +37,7 @@ const menu_data = [
     id: 3,
     mega_menu: false,
     has_dropdown: true,
-    title: "Laboratory and Biobank",
+    title: "Laboratory and Biobank Services",
     link: "laboratory-and-biobank",
     active: "",
     sub_menus: [

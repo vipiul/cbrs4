@@ -58,28 +58,28 @@ const tab_content = [
     title: "Promote collaboration and hasten scientific advancements.",
     des_1: (
       <>
-        1.	Collection and Preservation: To systematically gather, handle, and store high-quality biospecimens and related data using established procedures in order to assure their long-term integrity and preservation.
+        1.	<b>Collection and Preservation</b>: To systematically gather, handle, and store high-quality biospecimens and related data using established procedures in order to assure their long-term integrity and preservation.
         <br /><br />
-        2.	Ethical and Regulatory Compliance: To adhere rigorously to ethical standards and legal obligations to safeguard donors&apos; rights, privacy, and confidentiality as well as to guarantee informed consent and good governance in all operations.
+        2.	<b>Ethical and Regulatory Compliance</b>: To adhere rigorously to ethical standards and legal obligations to safeguard donors&apos; rights, privacy, and confidentiality as well as to guarantee informed consent and good governance in all operations.
         <br /><br />
-        3.	Accessibility: Promote collaboration and hasten scientific advancements by making biospecimens and related data easily available to authorized researchers.
+        3.	<b>Accessibility</b>: Promote collaboration and hasten scientific advancements by making biospecimens and related data easily available to authorized researchers.
         <br /> <br />
-        4.	Diversity and Representation: To guarantee that various groups are represented in the biobank in order to alleviate health inequalities, advance equitable representation, and improve the generalizability of research findings.
+        4.	<b>Diversity and Representation</b>: To guarantee that various groups are represented in the biobank in order to alleviate health inequalities, advance equitable representation, and improve the generalizability of research findings.
       </>
     ),
     des_2: (
       <>
-        5.	Quality Assurance: To create strong quality control procedures, such as thorough sample characterization, validation, and documentation, in order to guarantee the consistency and dependability of biospecimens and the data they are connected with.
+        5.	<b>Quality Assurance</b>: To create strong quality control procedures, such as thorough sample characterization, validation, and documentation, in order to guarantee the consistency and dependability of biospecimens and the data they are connected with.
         <br /> <br />
-        6.	Collaboration and Partnerships: Actively collaborate with academic institutions, industry stakeholders, and other organizations to expand research opportunities, exchange best practices, and draw on a pool of collective knowledge.
+        6.	<b>Collaboration and Partnerships</b>: Actively collaborate with academic institutions, industry stakeholders, and other organizations to expand research opportunities, exchange best practices, and draw on a pool of collective knowledge.
         <br /> <br />
-        7.	Innovation and Technological Advancement: To continuously investigate and use cutting-edge technologies, such as genomics, proteomics, and digital pathology, to increase the value and usability of the resources available from the biobank for cutting-edge research.
+        7.	<b>Innovation and Technological Advancement</b>: To continuously investigate and use cutting-edge technologies, such as genomics, proteomics, and digital pathology, to increase the value and usability of the resources available from the biobank for cutting-edge research.
         <br /> <br />
-        8.	Education and Outreach: To take part in educational projects, neighborhood outreach programs, and public awareness campaigns to encourage awareness of bio banking, research participation, and the possible effects on healthcare outcomes.
+        8.	<b>Education and Outreach</b>: To take part in educational projects, neighborhood outreach programs, and public awareness campaigns to encourage awareness of biobanking, research participation, and the possible effects on healthcare outcomes.
         <br /> <br />
-        9.	Long-Term Sustainability: To create a viable business model, obtain sufficient funding, and create long-term financial viability plans that will ensure the biobank&apos;s continuous existence and expansion.
+        9.	<b>Long-Term Sustainability</b>: To create a viable business model, obtain sufficient funding, and create long-term financial viability plans that will ensure the biobank&apos;s continuous existence and expansion.
         <br /> <br />
-        10.	Influence on Healthcare: To work toward having a real influence on healthcare by making it easier for research findings to be applied in clinical settings, guiding therapy selection, and advancing the field of customized medicine.
+        10.	<b>Influence on Healthcare</b>: To work toward having a real influence on healthcare by making it easier for research findings to be applied in clinical settings, guiding therapy selection, and advancing the field of customized medicine.
       </>
     ),
     images: [

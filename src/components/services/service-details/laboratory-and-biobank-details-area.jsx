@@ -37,10 +37,10 @@ const LaboratoryAndBiobankDetailsArea = () => {
                   Our Repository
                 </h4>
                 <p className="mb-20">
-                Our company is one of the biggest in the world and is well-known for its biorepository services. We have the knowledge and experience to handle and maintain your priceless bio samples because we have an extensive collection of 500,000 samples under our careful administration. Over the course of two decades, our committed staff has perfected the art of bio banking, bioprocessing, and analytics, assuring the utmost care and accuracy in every facet of our operations.
+                Our company is one of the biggest in the world and is well-known for its biorepository services. We have the knowledge and experience to handle and maintain your priceless BioSamples because we have an extensive collection of 500,000 samples under our careful administration. Over the course of two decades, our committed staff has perfected the art of biobanking, bioprocessing, and analytics, assuring the utmost care and accuracy in every facet of our operations.
                 </p>
                 <p className="mb-40">
-                The Repository of CBRS seeks to help researchers locate bio specimen and data repositories by developing a searchable online directory of repository information. Additionally, our Repository works to increase the awareness of research and bio banking initiatives supported by individual repositories among key international stakeholders like research organizations, governments, consortia, funding authorities, and the corporate sector.
+                The Repository of CBRS seeks to help researchers locate bio specimen and data repositories by developing a searchable online directory of repository information. Additionally, our Repository works to increase the awareness of research and biobanking initiatives supported by individual repositories among key international stakeholders like research organizations, governments, consortia, funding authorities, and the corporate sector.
                 </p>
                 <div className="row">
                   <div className="col-md-12">
