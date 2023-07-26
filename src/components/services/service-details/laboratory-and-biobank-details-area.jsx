@@ -128,7 +128,6 @@ const LaboratoryAndBiobankDetailsArea = () => {
                   <div className="text-center">
                     <img src="/assets/img/services/storage.png" alt={"storage Image"} />
                   </div>
-                  <figcaption className="text-left pl-45">Prepare a chart as rephrasing the same.</figcaption>
                 </figure>
               </div>
             </div>

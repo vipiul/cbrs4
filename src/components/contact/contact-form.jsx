@@ -95,7 +95,7 @@ const ContactForm = () => {
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.1711886626704!2d77.32376527469212!3d28.59464078580181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4fbf6aaaaab%3A0xef8d9792ebe501f8!2sc%2C%2025%2C%20C%20Block%2C%20Sector%208%2C%20Noida%2C%20Uttar%20Pradesh%20110096!5e0!3m2!1sen!2sin!4v1690276671762!5m2!1sen!2sin"
                         width="600"
                         height="450"
-                        // style="border:0;"
+                        style={{border: 0}}
                         allowFullScreen=""
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"

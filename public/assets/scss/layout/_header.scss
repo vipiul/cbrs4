@@ -46,9 +46,12 @@
         & a {
           position: relative;
           &::after {
-            content: "+";
-            transform: translateY();
-            right: 0;
+            content: '\f078';
+   font-family: FontAwesome;
+   font-weight: normal;
+   font-style: normal;
+   margin:0px 0px 0px 10px;
+   text-decoration:none;
           }
         }
       }

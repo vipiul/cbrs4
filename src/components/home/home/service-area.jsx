@@ -48,7 +48,7 @@ const slider_content = [
         btn_color: "pink-hexa",
         icon: "flaticon-blood-test",
         title: "Histopathology",
-        des: "Our biobank&apos;s histopathology services offer a comprehensive range of support to researchers, ensuring they have access to essential.",
+        des: `Our biobank's histopathology services offer a comprehensive range of support to researchers, ensuring they have access to essential.`,
     },
     {
         id: 3,
