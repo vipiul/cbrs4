@@ -10,7 +10,7 @@ const footer_content = {
       cls: "footer-col-2",
       links: [
         { name: "Connect to enquire", link: "/contact" },
-        { name: "Search Biospecimens Services", link: "/service" },
+        { name: "Search Biospecimens And Services", link: "/service" },
         { name: "Connect to order", link: "/contact" },
         { name: "Track your order", link: "/" },
       ],
