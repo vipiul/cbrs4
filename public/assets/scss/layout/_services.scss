@@ -587,10 +587,11 @@ div.tp-srv-link {
 .weatheText, .weatherone {
   padding: 15px 3px;
   margin: 0;
-  text-align: center;
   border: 1px solid rgb(135 177 49);
   position: relative;
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
 }
 .weatherone::after, .weatheText::after {
   content: "";

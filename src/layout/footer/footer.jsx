@@ -9,9 +9,9 @@ const footer_content = {
       title: "Explore",
       cls: "footer-col-2",
       links: [
-        { name: "Connect to enquire", link: "/contact-us" },
-        { name: "Search Biospecimens n Services", link: "/about" },
-        { name: "Connect to order", link: "/" },
+        { name: "Connect to enquire", link: "/contact" },
+        { name: "Search Biospecimens n Services", link: "/service" },
+        { name: "Connect to order", link: "/contact" },
         { name: "Track your order", link: "/" },
       ],
     },
@@ -24,7 +24,7 @@ const footer_content = {
         { name: "Suppliers", link: "/" },
         { name: "Connect to collaborate", link: "/service" },
         { name: "Be a team member", link: "/" },
-        { name: "Connect to enquire", link: "/research" },
+        { name: "Connect to enquire", link: "/contact" },
 
       ],
     },
@@ -33,12 +33,12 @@ const footer_content = {
       title: "Learn",
       cls: "footer-col-3",
       links: [
-        { name: "About Us", link: "/contact-us" },
+        { name: "About Us", link: "/about" },
         { name: "Ethical committee", link: "/about" },
-        { name: "Research Papers", link: "/service" },
-        { name: "Careers", link: "/services-2" },
+        { name: "Research Papers", link: "/research" },
+        { name: "Careers", link: "/contact" },
         { name: "Privacy Policies", link: "/research" },
-        { name: "Contact no", link: "/research" },
+        { name: "Contact no", link: "/contact" },
 
       ],
     },
