@@ -137,32 +137,32 @@ const LaboratoryAndBiobankDetailsArea = () => {
               <div className="tp-srv-stap mb-40">
                 <h4 className="tp-srv-stap__title mb-25">We provide perfect temperatures of storage environments as</h4>
                 <div className="row">
-                  <div className="col-3 col-md-2">
+                  <div className="col-6 col-md-2 mb-4">
                     <div className="weatherone">
                       <p className="p-0 m-0">20°C</p>
                     </div>
                   </div>
-                  <div className="col-3 col-md-2">
+                  <div className="col-6 col-md-2 mb-4">
                     <div className="weatherone">
                       <p className="p-0 m-0">4°C</p>
                     </div>
                   </div>
-                  <div className="col-3 col-md-2">
+                  <div className="col-6 col-md-2 mb-4">
                     <div className="weatherone">
                       <p className="p-0 m-0">-20°C</p>
                     </div>
                   </div>
-                  <div className="col-3 col-md-2">
+                  <div className="col-6 col-md-2 mb-4">
                     <div className="weatherone">
                       <p className="p-0 m-0">-80°C</p>
                     </div>
                   </div>
-                  <div className="col-3 col-md-2">
+                  <div className="col-6 col-md-2 mb-4">
                     <div className="weatheText">
                       <p className="p-0 m-0">Liquid phase storage</p>
                     </div>
                   </div>
-                  <div className="col-3 col-md-2">
+                  <div className="col-6 col-md-2 mb-4">
                     <div className="weatheText">
                       <p className="p-0 m-0">Vapour phase storage</p>
                     </div>
