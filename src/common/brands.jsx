@@ -71,7 +71,7 @@ const Brands = ({ style_2 = false, border_style = false }) => {
       >
         <div className="container">
           <div className={`${border_style ? "brand-border pt-60 pb-60" : ""}`}>
-            <h3 className="text-center mb-40">Our Valued Co-Operation Partners</h3>
+            <h3 className="text-center mb-40">Our Valued Partners</h3>
             <Swiper
               {...setting}
               loop={isLoop}

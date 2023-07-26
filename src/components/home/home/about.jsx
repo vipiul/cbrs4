@@ -6,7 +6,7 @@ import React from "react";
 // content
 const content = {
   left_img: "assets/img/about/about-bg-01.png",
-  experience_count: 12,
+  experience_count: 5,
   experience_count_text: (
     <>
       Years of <br />
