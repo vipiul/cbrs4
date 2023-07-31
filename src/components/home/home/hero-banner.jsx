@@ -6,7 +6,7 @@ import VideoPopup from "@/modals/video-popup";
 
 // content
 const content = {
-  sub_title: "Welcoome to CBRS",
+  sub_title: "Welcome to CBRS",
   title: (
     <>
       Charting the Course of Medical Advancement: The Biobank of Possibilities<br />

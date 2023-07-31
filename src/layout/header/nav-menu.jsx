@@ -17,11 +17,28 @@ const NavMenu = ({num=false}) => {
               </Link>
              {menu.has_dropdown && (
                 <ul className="sub-menu">
-                  {menu.sub_menus.map((sub_m, i) => (
-                    <li key={i}>
-                      <Link href={sub_m.link}>{sub_m.title}</Link>
-                    </li>
-                  ))}
+                  {
+                  
+                    menu.mega_menu ? (
+                      menu.sub_menus.map((sub_m, i) => (
+                        <li key={i} className="mega-menu">
+                          <div className="mega-title-menu">
+                            <Link href={sub_m.link}>{sub_m.title}</Link>
+                          </div>
+                          <ul className="mega-menu-main">
+                            {
+                              sub_m.services.map((mene_mega, i) => (
+                                <div key={i} className="list-mega-menu">
+                                  <Link href={mene_mega.link}>{mene_mega.title}</Link>
+                                </div>  
+                              ))
+                            }
+                          </ul>
+                        </li>
+                      ))
+                    ) : ''
+                  
+                  }
                 </ul>
               )}
             </li>

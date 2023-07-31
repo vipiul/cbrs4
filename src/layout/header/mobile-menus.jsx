@@ -29,8 +29,22 @@ const MobileMenus = () => {
                     }}
                   >
                     {menu.sub_menus.map((sub, i) => (
-                      <li key={i}>
-                        <Link href={sub.link}>{sub.title}</Link>
+                      // <li key={i}>
+                      //   <Link href={sub.link}>{sub.title}</Link>
+                      // </li>
+                      <li key={i} className="mega-menu">
+                        <div className="mega-title-menu">
+                          <Link href={sub.link}>{sub.title}</Link>
+                        </div>
+                        <ul className="mega-menu-main">
+                          {
+                            sub.services.map((mene_mega, i) => (
+                              <div key={i} className="list-mega-menu">
+                                <Link href={mene_mega.link}>{mene_mega.title}</Link>
+                              </div>  
+                            ))
+                          }
+                        </ul>
                       </li>
                     ))}
                   </ul>

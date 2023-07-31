@@ -918,3 +918,57 @@
     }
   }
 }
+
+
+// add new css code
+.mega-title-menu {
+  color: #fff;
+  position: relative;
+} 
+.mega-title-menu a {
+  display: block;
+  width: 100%;
+}
+.mega-title-menu a::after {
+  content: "\f078";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0px 0px 0px 10px;
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+}
+.list-mega-menu a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  text-transform: capitalize;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.list-mega-menu a::after {
+  content: " " !important;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0px 0px 0px 10px;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12px;
+}
+ul.mega-menu-main {
+  margin: 15px 0;
+} 
+
+// .main-menu ul.sub-menu > li.mega-menu a::after {
+//   content: "\f078" !important;
+//   font-family: FontAwesome !important;
+//   font-weight: normal !important;
+//   font-style: normal !important;
+//   margin: 0px 0px 0px 10px !important;
+//   text-decoration: none !important;
+// }

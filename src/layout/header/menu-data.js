@@ -35,18 +35,35 @@ const menu_data = [
   },
   {
     id: 3,
-    mega_menu: false,
+    mega_menu: true,
     has_dropdown: true,
     title: "Laboratory and Biobank Services",
     link: "laboratory-and-biobank",
     active: "",
     sub_menus: [
-        { link: "/digital-pathology", title: "Digital Pathology" },
-        { link: "/histopathology", title: "Histopathology" },
-        { link: "/genomics", title: "Genomics" },
-        { link: "/proteomics", title: "Proteomics" },
-        { link: "/bioinformatics", title: "Bioinformatics" },
-        { link: "/generation-sequencing-ngs", title: "Generation Sequencing (NGS)" },
+        { 
+          link: "/#",
+          title: "Biospecimens",
+          services: [
+            { title: "Biofluids", link: "/bio-fluids" },
+            { title: "Tissues", link: "/tissue" },
+            { title: "Stem And Immune Cells", link: "/stem-and-immune-cells" },
+            { title: "Customised Sets", link: "/customized-set" },
+          ]
+        },
+        { 
+          link: "/#",
+          title: "Services",
+          services: [
+            { link: "/digital-pathology", title: "Digital Pathology" },
+            { link: "/histopathology", title: "Histopathology" },
+            { link: "/genomics", title: "Genomics" },
+            { link: "/proteomics", title: "Proteomics" },
+            { link: "/bioinformatics", title: "Bioinformatics" },
+            { link: "/generation-sequencing-ngs", title: "Generation Sequencing (NGS)" },
+            { link: "/storage", title: "Storage" },
+          ]
+        },
     ],
   },
   {
