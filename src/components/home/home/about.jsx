@@ -73,7 +73,7 @@ const About = () => {
             </div>
             <div className="col-xl-6 col-lg-12">
               <div
-                className="tp-about__content pt-125 ml-60 mb-50 wow fadeInRight"
+                className="tp-about__content ml-60 mb-50 wow fadeInRight"
                 data-wow-delay=".4s"
               >
                 <div className="tp-section">

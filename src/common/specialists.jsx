@@ -16,7 +16,7 @@ const choose = [
     ),
     des: (
       <>
-        We deliver quality services to our valuable clients 
+        We deliver quality services to our valuable customers 
       </>
     ),
   },
@@ -32,7 +32,7 @@ const choose = [
     ),
     des: (
       <>
-        Our Team of experts process the work in a very fast manner
+        Our team of experts processes the work very quickly
       </>
     ),
   },
@@ -47,7 +47,7 @@ const choose = [
     ),
     des: (
       <>
-        Our support team is always on call to handle our client&apos;s requests, 24/7
+        Our support team is always on call to handle our customers&apos; requests, 24/7
       </>
     ),
   },
@@ -62,7 +62,7 @@ const choose = [
     ),
     des: (
       <>
-        We have a team of experienced researchers
+        We have a team of experienced researchers for CBRS
       </>
     ),
   },

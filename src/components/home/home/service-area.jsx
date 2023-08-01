@@ -96,11 +96,11 @@ const ServiceArea = () => {
   return (
     <>
       <section
-        className="services-area pt-95 pb-90 grey-bg mt-60 fix"
+        className="services-area pt-65 pb-90 grey-bg mt-60 fix"
         style={{ backgroundImage: `url(/assets/img/shape/shape-bg-01.png)` }}
       >
         <div className="container">
-          <div className="row mb-125">
+          <div className="row mb-95">
             <div className="col-lg-12">
               <div className="search-form">
                 <form action="#">
