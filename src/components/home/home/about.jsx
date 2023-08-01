@@ -52,9 +52,9 @@ const {
 const About = () => {
   return (
     <>
-      <section id="tp-about-scroll" className="about-area pb-70 mt-100 mb-100">
+      <section id="tp-about-scroll" className="about-area pb-70 mt-0 mb-100">
         <div className="container">
-          <div className="row">
+          <div className="row align-items-center">
             <div className="col-xl-6 col-lg-12">
               <div
                 className="about__thumb mb-60 wow fadeInLeft"
@@ -73,7 +73,7 @@ const About = () => {
             </div>
             <div className="col-xl-6 col-lg-12">
               <div
-                className="tp-about__content ml-60 mb-50 wow fadeInRight"
+                className="tp-about__content mt-40 ml-60 mb-50 wow fadeInRight"
                 data-wow-delay=".4s"
               >
                 <div className="tp-section">

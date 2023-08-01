@@ -72,7 +72,7 @@ const choose = [
 const Specialists = () => {
   return (
     <>
-      <section className="choose-area theme-bg pt-120 pb-130">
+      <section className="choose-area theme-bg pt-95 pb-50">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
