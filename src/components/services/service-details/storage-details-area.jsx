@@ -168,7 +168,7 @@ const Storage02DetailsArea = () => {
                     </div>
                   </div>
                 </div>
-                <h4 className="tp-srv-stap__title mt-50">Rephrase the below chart</h4>
+                
                 <div className="mt-30">
                   <img src="/assets/img/services/rephrase.png" alt={'laboratory image'} width={'100%'} />
                 </div>
