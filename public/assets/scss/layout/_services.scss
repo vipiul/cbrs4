@@ -49,6 +49,7 @@
   background-color: var(--tp-common-white);
   padding: 70px 55px 70px 50px;
   border-radius: 5px;
+  min-height: 520px;
   @media #{$xs} {
     padding: 50px 25px 50px 25px;
   }

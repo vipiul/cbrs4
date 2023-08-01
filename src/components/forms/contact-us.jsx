@@ -16,7 +16,7 @@ const ContactUs = () => {
                 <input
                   name="email"
                   type="email"
-                  placeholder="Enter your mail"
+                  placeholder="Enter Your Email"
                 />
               </div>
             </div>
@@ -49,7 +49,7 @@ const ContactUs = () => {
             <div className="col-lg-12">
               <div className="contactform__input mb-30-btn">
                 <button type="submit" className="tp-btn">
-                  Send Massage
+                  SEND MESSAGE
                 </button>
               </div>
               <p className="ajax-response"></p>

@@ -1,10 +1,12 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 // internal
 import menu_data from "./menu-data";
 
 const MobileMenus = () => {
   const [navTitle, setNavTitle] = useState("");
+  const [open, setOpen] = useState({});
+
   //openMobileMenu
   const openMobileMenu = (menu) => {
     if (navTitle === menu) {
@@ -13,6 +15,8 @@ const MobileMenus = () => {
       setNavTitle(menu);
     }
   };
+
+  
   return (
     <>
       <nav className="mean-nav">
@@ -29,19 +33,16 @@ const MobileMenus = () => {
                     }}
                   >
                     {menu.sub_menus.map((sub, i) => (
-                      // <li key={i}>
-                      //   <Link href={sub.link}>{sub.title}</Link>
-                      // </li>
                       <li key={i} className="mega-menu">
                         <div className="mega-title-menu">
-                          <Link href={sub.link}>{sub.title}</Link>
+                          <Link className={`${open.id == sub.id ? 'rotateIcon': ''}`} href={sub.link} onClick={()=>setOpen({IconClass: 'rotateIcon', id: sub.id})}>{sub.title}</Link>
                         </div>
                         <ul className="mega-menu-main">
                           {
                             sub.services.map((mene_mega, i) => (
-                              <div key={i} className="list-mega-menu">
+                              open.id == sub.id ? <div key={i} className="list-mega-menu">
                                 <Link href={mene_mega.link}>{mene_mega.title}</Link>
-                              </div>  
+                              </div> : ''
                             ))
                           }
                         </ul>

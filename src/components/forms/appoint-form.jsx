@@ -11,7 +11,7 @@ const AppointForm = () => {
         </div>
         <div className="col-lg-6">
           <div className="visitor-form__input">
-            <input type="email" placeholder="Your mail" />
+            <input type="email" placeholder="Your Email" />
           </div>
         </div>
         <div className="col-lg-6">
@@ -26,7 +26,7 @@ const AppointForm = () => {
         </div>
         <div className="col-lg-12">
           <div className="visitor-form__input">
-            <textarea placeholder="Type your massage" name="message"></textarea>
+            <textarea placeholder="Type your message" name="message"></textarea>
           </div>
         </div>
         <div className="col-lg-4 col-md-4 col-12">

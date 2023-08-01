@@ -38,11 +38,11 @@ const menu_data = [
     mega_menu: true,
     has_dropdown: true,
     title: "Laboratory and Biobank Services",
-    link: "laboratory-and-biobank",
+    link: "#",
     active: "",
     sub_menus: [
-        { 
-          link: "/#",
+        { id: 1,
+          link: "#",
           title: "Biospecimens",
           services: [
             { title: "Biofluids", link: "/bio-fluids" },
@@ -52,7 +52,8 @@ const menu_data = [
           ]
         },
         { 
-          link: "/#",
+          id: 2,
+          link: "#",
           title: "Services",
           services: [
             { link: "/digital-pathology", title: "Digital Pathology" },

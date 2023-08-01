@@ -21,14 +21,14 @@ const DirectContactUs = () => {
                 <span>Direct Contact with us</span>
                 <form onSubmit={e => e.preventDefault()}>
                   <input type="text" placeholder="Enter your Name" />
-                  <input type="text" placeholder="Enter your Mail" />
+                  <input type="text" placeholder="Enter Your Email" />
                   <textarea
                     name="massage"
-                    placeholder="Type your massage"
+                    placeholder="Type your message"
                   ></textarea>
                 </form>
                 <div className="tp-support-form__btn">
-                  <button className="tp-btn">Send Massage</button>
+                  <button className="tp-btn">SEND MESSAGE</button>
                 </div>
               </div>
             </div>
