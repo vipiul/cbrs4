@@ -49,7 +49,7 @@ const Storage02DetailsArea = () => {
                       data-wow-delay=".4s"
                     >
                       <img
-                        src="/assets/img/services/our1.png"
+                        src="/assets/img/services/our.png"
                         alt={"services-thumb"}
                       />
                     </div>
@@ -170,7 +170,7 @@ const Storage02DetailsArea = () => {
                 </div>
                 <h4 className="tp-srv-stap__title mt-50">Rephrase the below chart</h4>
                 <div className="mt-30">
-                  <img src="/assets/img/services/repharse.png" alt={'laboratory image'} width={'100%'} />
+                  <img src="/assets/img/services/rephrase.png" alt={'laboratory image'} width={'100%'} />
                 </div>
               </div>
             </div>
