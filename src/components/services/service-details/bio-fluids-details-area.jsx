@@ -24,7 +24,7 @@ const BiofluidsDetailsArea = () => {
                 </p>
 
                 <p>
-                  <b>2.Serum and Plasma</b> 
+                  <b>2.Serum and Plasma </b> 
                     Serum and Plasma Samples we provide access to human serum and plasma samples to support all types of research. We find the right serum and plasma samples for your research, CBRS provides access to one of the largest and most diverse inventories of human serum and plasma samples the life science industry has to offer. Leverage our global network of hundreds of sample suppliers to study a wide variety of patient profiles. We can help you obtain residual clinical samples and serum and plasma samples tested for specific infectious diseases or chemical agents. In addition, our suppliers can prospectively collect samples from patients with specific diseases or medical histories.
                     The range includes serum and double- and single-spun plasma in a variety of buffers from healthy and sick patients.
                 </p>

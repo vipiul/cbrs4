@@ -14,7 +14,7 @@ const content = {
   ),
   des: (
     <>
-      We possess extensive expertise in the procurement and distribution of biosamples.
+      We process extensive expertise in the procurement and distribution of biosamples.
       Our collection of human tissue and biofluids is diverse and comprehensive, offering a wide range of formats to suit all research and development requirements.
     </>
   ),

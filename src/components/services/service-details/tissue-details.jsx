@@ -11,7 +11,7 @@ const TissueDetails = () => {
   return (
     <>
       <HeaderTwo />
-      <Banner pageTitle={'Tissue'} pageImage={'/assets/img/banner/tissue.jpg'} />
+      <Banner pageTitle={'Tissue'} pageImage={'/assets/img/banner/bio-fluids.jpg'} />
       <TissueDetailsArea />
       <DirectContactUs />
       <Footer />
