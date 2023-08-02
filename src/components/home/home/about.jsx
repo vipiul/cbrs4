@@ -16,10 +16,10 @@ const content = {
   title: "About Us",
   section_title: "Clinical Bio-Samples and Research Services (CBRS)",
   section_sub_title:
-    "Clinical Bio-samples and Research Services (CBRS) is situated in Noida, India.",
+    "Clinical Biosamples and Research Services (CBRS) LLP is a CRO, based in Noida, India.",
   section_des: (
     <>
-      The first standalone biobank in India, CBRS Biobank was established in 2019 and has made important contributions to the advancement of science and medicine. One of the biggest biobanks in the nation, we work independently to gather, preserve, and provide high-quality biospecimens and related data to support a variety of research initiatives.
+      The first standalone biobank in India, CBRS Biobank was established in 2019 and has made important contributions to the advancement of science and medical science since then. We are one of the biggest biobanks in the nation, and we work independently to gather, preserve, and provide high-quality biospecimens and related data to support a variety of research initiatives. The acquisition of all the biospecimens is revolutionized by our exclusive procurement team, which not only speeds up the sample gathering process but also makes sure all the ethical procedures are strictly followed during the entire process.
     </>
   ),
   about_info_list: [
@@ -62,12 +62,12 @@ const About = () => {
               >
                 <div className="about__img">
                   <img src={left_img} alt="about-bg-img" />
-                  <div className="about__exprience">
+                  {/* <div className="about__exprience">
                     <h3 className="counter">
                       <Count add_style={true} number={experience_count} />
                     </h3>
                     <i>{experience_count_text}</i>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

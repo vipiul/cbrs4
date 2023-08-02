@@ -69,7 +69,7 @@ const FooterFour = ({ style_2 = false }) => {
                     </div>
                     <div className="tp-footer-widget__sub-sec">
                       <span className="tp-footer-widget__sub-title mb-10">
-                        Opening Hours
+                        Working Hours
                       </span>
                       <div className="tp-footer-widget__list">
                         <ul>

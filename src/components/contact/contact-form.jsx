@@ -75,7 +75,7 @@ const ContactForm = () => {
                     <img src="/assets/img/icon/contact-03.svg" alt="" />
                   </div>
                   <div className="tpcontact__address">
-                    <h4 className="tpcontact__title mb-15">Opening Hours</h4>
+                    <h4 className="tpcontact__title mb-15">Working Hours</h4>
                     <span>{open}</span>
                   </div>
                 </div>
