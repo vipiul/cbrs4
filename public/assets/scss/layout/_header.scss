@@ -1008,3 +1008,14 @@ ul.mega-menu-main:hover {
 a.rotateIcon {
   color: #10d0a1 !important;
 }
+@media (min-width: 1199px) { 
+  .custome-widthOne {
+      width: 13.33% !important;
+  }
+  .custome-widthTwo {
+    width: calc(66.66% - 5%) !important;
+  }
+  .main-menu {
+    margin: 0 !important;
+  }
+}

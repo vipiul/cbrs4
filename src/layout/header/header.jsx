@@ -70,21 +70,21 @@ const Header = () => {
                 >
                     <div className="container-fluid">
                         <div className="row align-items-center">
-                            <div className="col-xxl-1 col-lg-2">
+                            <div className="col-xxl-1 col-lg-1 custome-widthOne">
                                 <div className="logo">
                                     <Link href="/">
                                         <img src="/assets/img/logo/logo.png" alt="logo" />
                                     </Link>
                                 </div>
                             </div>
-                            <div className="col-xxl-7 col-lg-7">
+                            <div className="col-xxl-8 col-lg-8 custome-widthTwo">
                                 <div className="main-menu">
                                     <nav id="mobile-menu">
                                         <NavMenu />
                                     </nav>
                                 </div>
                             </div>
-                            <div className="col-xxl-4 col-lg-3 d-flex align-items-center justify-content-end">
+                            <div className="col-xxl-3 col-lg-3 custome-widthThre d-flex align-items-center justify-content-end">
                                 <div className="tp-bt-btn-banner">
                                     <a className="tp-bt-btn" href="tel:91 83838 64051">
                                         <svg
