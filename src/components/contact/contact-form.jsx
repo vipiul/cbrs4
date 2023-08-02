@@ -15,7 +15,7 @@ const contact_info = {
   open: (
     <>
       Monday - Saturday <br />
-      07:00 AM - 05:00 PM
+      10:00 AM - 06:00 PM
     </>
   ),
 };

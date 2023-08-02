@@ -10,7 +10,7 @@ const AboutArea = () => {
           <div className="row">
             <div className="col-12 col-lg-6">
               <div className="image-about">
-                <img src="assets/img/about/about-bg-07.jpg" style={{borderRadius: 10}} width={'100%'} alt="about-us" />
+                <img src="assets/img/about/about-bg-03.png" style={{borderRadius: 10}} width={'100%'} alt="about-us" />
               </div>
             </div>
             <div className="col-xl-6 col-lg-6 col-12">

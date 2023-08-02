@@ -45,41 +45,6 @@ const DigitalPathologyDetailsArea = () => {
                   Researchers can efficiently organize and analyze vast amounts of pathological data, enabling the identification of new biomarkers, the evaluation of treatment responses, and the discovery of potential therapeutic targets. Our custom digital pathology solutions aim to optimize the research process, improve reproducibility, and advance discoveries in the medical world. Combining the expertise of our team with cutting-edge technology, we are committed to supporting researchers in their efforts to improve patient outcomes, advance medical knowledge and shape the future of healthcare.
                 </p>
 
-                <p className="mb-40">
-                  <b>Histopathology services:</b> Our biobank&apos;s histopathology services offer a comprehensive range of support to researchers, ensuring they have access to essential techniques and expertise in their studies. Here&apos;s how our histopathology services can assist researchers:
-                </p>
-
-                <p>
-                  <b>Tissue Processing:</b> Our skilled team specializes in the proper processing of tissue specimens, ensuring optimal preservation and preparation for downstream analyses.
-                </p>
-
-                <p>
-                  <b>Paraffin-Embedded Blocks:</b> We excel in creating paraffin-embedded blocks, a widely used technique for long-term storage of tissue samples, allowing for future sectioning and analysis.
-                </p>
-                
-                <p>
-                  <b>Microtome Sectioning:</b> Our histopathology experts utilize microtomes to achieve thin and precise sections of tissue samples, enabling detailed examination and analysis.
-                </p>
-
-                <p>
-                  <b>Cryotome Sectioning:</b> With cryotome sectioning, we provide researchers with frozen tissue sections suitable for various applications, such as molecular studies or frozen tissue bank creation.
-                </p>
-
-                <p>
-                  <b>Haematoxylin/Eosin Staining:</b> Our services include haematoxylin/eosin staining, a standard method that imparts color to different cellular components, aiding in the visualization and evaluation of tissue structures.
-                </p>
-
-                <p>
-                  <b>Immunohistochemical Staining:</b> We offer immune histochemical  staining techniques, enabling researchers to detect specific antigens and study protein expression patterns within tissue samples.
-                </p>
-
-                <p>
-                  <b>Microscopy and Image Analysis:</b> Our histopathology services include advanced microscopy capabilities coupled with image analysis tools. This combination allows for detailed examination, quantification, and interpretation of tissue features and markers.
-                </p>
-
-                <p>
-                  By leveraging our comprehensive histopathology services, researchers gain valuable insights into tissue structures, cellular components, and molecular markers. These services play a crucial role in advancing research across various fields, including cancer biology, disease pathology, and therapeutic development. With our expertise and state-of-the-art technologies, we aim to empower researchers to unravel the complexities of diseases and drive meaningful scientific discoveries.
-                </p>
               </div>
             </div>
           </div>

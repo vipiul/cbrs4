@@ -136,38 +136,6 @@ const Storage02DetailsArea = () => {
             <div className="col-lg-12">
               <div className="tp-srv-stap mb-40">
                 <h4 className="tp-srv-stap__title mb-25">We provide perfect temperatures of storage environments as</h4>
-                <div className="row">
-                  <div className="col-6 col-md-2 mb-4">
-                    <div className="weatherone">
-                      <p className="p-0 m-0">20°C</p>
-                    </div>
-                  </div>
-                  <div className="col-6 col-md-2 mb-4">
-                    <div className="weatherone">
-                      <p className="p-0 m-0">4°C</p>
-                    </div>
-                  </div>
-                  <div className="col-6 col-md-2 mb-4">
-                    <div className="weatherone">
-                      <p className="p-0 m-0">-20°C</p>
-                    </div>
-                  </div>
-                  <div className="col-6 col-md-2 mb-4">
-                    <div className="weatherone">
-                      <p className="p-0 m-0">-80°C</p>
-                    </div>
-                  </div>
-                  <div className="col-6 col-md-2 mb-4">
-                    <div className="weatheText">
-                      <p className="p-0 m-0">Liquid phase storage</p>
-                    </div>
-                  </div>
-                  <div className="col-6 col-md-2 mb-4">
-                    <div className="weatheText">
-                      <p className="p-0 m-0">Vapour phase storage</p>
-                    </div>
-                  </div>
-                </div>
                 
                 <div className="mt-30">
                   <img src="/assets/img/services/rephrase.png" alt={'laboratory image'} width={'100%'} />
