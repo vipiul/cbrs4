@@ -71,7 +71,7 @@ const menu_data = [
     id: 4,
     mega_menu: false,
     has_dropdown: false,
-    title: "Research Paper",
+    title: "Research Papers",
     link: "/research",
     active: "",
   },

@@ -10,7 +10,7 @@ const AboutArea = () => {
           <div className="row">
             <div className="col-12 col-lg-6">
               <div className="image-about">
-                <img src="assets/img/about/about-bg-02.png" alt="about-us" />
+                <img src="assets/img/about/about-bg-07.jpg" style={{borderRadius: 10}} width={'100%'} alt="about-us" />
               </div>
             </div>
             <div className="col-xl-6 col-lg-6 col-12">
@@ -20,7 +20,7 @@ const AboutArea = () => {
               >
                 <div className="tp-section">
                   <p>
-                  Contract research organization (CRO) Clinical BioSamples and Research Services (CBRS) is situated in Noida, India. The first standalone biobank in India, CBRS Biobank was established in 2019 and has made important contributions to the advancement of science and medicine. One of the biggest biobanks in the nation, we work independently to gather, preserve, and provide high-quality biospecimens and related data to support a variety of research initiatives. The acquisition of biospecimens is revolutionized by our ground-breaking CBRS, which also speeds up medical advancements. By rethinking the conventional method, we make it possible for researchers to access the billions of specimens that are readily available, streamlining and advancing the search for scientific discoveries.
+                  Clinical Biosamples and Research Services LLP, is a Contract research organization (CRO), based in Noida, India. The first standalone biobank in India, CBRS Biobank was established in 2019 and has made important contributions to the advancement of science and medicine since then. One of the biggest biobanks in the nation, we work independently to gather, preserve, and provide high-quality biospecimens and related data to support a variety of research initiatives. The acquisition of biospecimens is revolutionized by our ground-breaking CBRS, which also speeds up medical advancements. By rethinking the conventional method, we make it possible for researchers to access the billions of specimens that are readily available, streamlining and advancing the search for scientific discoveries.
                   </p>
                   <p>
                   The CBRS Biobank, which houses extensive genetic and health data gathered from around the nation, is a comprehensive biomedical database and an excellent research resource. This worldwide accessible database, which is always being updated with new data, is an essential tool for authorized researchers looking into common and deadly diseases. The CBRS Biobank has significantly advanced modern medicine and treatment and enabled a number of scientific discoveries that improve human health and wellbeing. We are pleased to have contributed to numerous important research articles published worldwide. In the &apos;Research Papers&apos; section, a few research articles are also shared.
