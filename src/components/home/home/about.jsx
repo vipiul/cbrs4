@@ -97,9 +97,8 @@ const About = () => {
                 </div>
                 <div className="tp-about__btn">
                   <Link className="tp-btn" href="/about">
-                                      About us
+                                      About us 
                   </Link>
-                  
                 </div>
               </div>
             </div>

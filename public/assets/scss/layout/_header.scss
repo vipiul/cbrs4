@@ -1019,3 +1019,21 @@ a.rotateIcon {
     margin: 0 !important;
   }
 }
+
+@media only screen and (min-width: 1240px) and (max-width: 1250px) {
+  .banner__shape {
+    position: absolute;
+    top: 0;
+    right: 130px;
+    width: 324px !important;
+  }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 2160px) {
+  .main-menu ul > li > a {
+    margin: 0px 15px !important;
+  }
+  .banner__shape {
+    width: 424px !important;
+  }
+}
