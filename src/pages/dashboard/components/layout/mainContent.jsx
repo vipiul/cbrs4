@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const MainContent = () => {
@@ -27,7 +28,7 @@ const MainContent = () => {
                 <li className="nav-item navbar-dropdown dropdown-user dropdown">
                 <a className="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                     <div className="avatar avatar-online">
-                    <img src="/assets/dashboard/assets/img/avatars/1.png" alt className="w-px-40 h-auto rounded-circle" />
+                    <img src="/assets/dashboard/assets/img/avatars/1.png" alt='' className="w-px-40 h-auto rounded-circle" />
                     </div>
                 </a>
                 <ul className="dropdown-menu dropdown-menu-end">
@@ -36,7 +37,7 @@ const MainContent = () => {
                         <div className="d-flex">
                         <div className="flex-shrink-0 me-3">
                             <div className="avatar avatar-online">
-                            <img src="/assets/dashboard/assets/img/avatars/1.png" alt className="w-px-40 h-auto rounded-circle" />
+                            <img src="/assets/dashboard/assets/img/avatars/1.png" alt="" className="w-px-40 h-auto rounded-circle" />
                             </div>
                         </div>
                         <div className="flex-grow-1">
@@ -74,10 +75,10 @@ const MainContent = () => {
                     <div className="dropdown-divider" />
                     </li>
                     <li>
-                    <a className="dropdown-item" href="/">
+                    <Link className="dropdown-item" href="/">
                         <i className="bx bx-power-off me-2" />
                         <span className="align-middle">Log Out</span>
-                    </a>
+                    </Link>
                     </li>
                 </ul>
                 </li>

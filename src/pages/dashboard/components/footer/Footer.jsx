@@ -12,7 +12,7 @@ const Footer = () => {
                                 <a
                                     href="https://www.creative-tim.com/"
                                     className="font-weight-bold"
-                                    target="_blank"
+                                    rel="noreferrer"
                                 >
                                     Creative Tim
                                 </a>
