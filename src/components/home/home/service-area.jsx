@@ -38,8 +38,8 @@ const slider_content = [
         color: "",
         link: "digital-pathology",
         icon: "flaticon-hemoglobin-test-meter",
-        title: "Digital Pathology ",
-        des: "The imaging study conducted by CBRS Biobank represents an unprecedented endeavour to capture detailed images of the body&apos;s internal structures.",
+        title: "Digital Pathology",
+        des: "In digital pathology, pathology information, including slides and data, is acquired, managed, shared and interpreted digitally.",
     },
     {
         id: 2,
@@ -48,7 +48,7 @@ const slider_content = [
         btn_color: "pink-hexa",
         icon: "flaticon-blood-test",
         title: "Histopathology",
-        des: `Our biobank's histopathology services offer a comprehensive range of support to researchers, ensuring they have access to essential.`,
+        des: `Surgical and diagnostic Histopathologists as well as investigators of human disease who use histopathological methods should find this journal of practical value.`,
     },
     {
         id: 3,
@@ -57,7 +57,7 @@ const slider_content = [
         btn_color: "green-hexa",
         icon: "flaticon-biochemistry",
         title: "Genomics",
-        des: "Our biobank repository of genomics offers a comprehensive range of services catering to various categories,",
+        des: "The study of genomics is the study of whole genomes of organisms and incorporates elements from genetics. Genomics uses recombinant DNA, DNA sequencing methods, and bioinformatics methods to sequence, assemble, and analyze genomes.",
     },
     {
         id: 4,
@@ -66,7 +66,7 @@ const slider_content = [
         btn_color: "sky-hexa",
         icon: "flaticon-dna-1",
         title: "Proteomics",
-        des: "Our biobank repository of proteomics offers a diverse collection of services catered to different categories, providing researchers with valuable.",
+        des: "Proteomic experiments generally collect data on three properties of proteins in a sample: location, abundance/turnover and post-translational modifications.",
     },
     {
       id: 5,
@@ -75,7 +75,7 @@ const slider_content = [
       btn_color: "sky-hexa",
       icon: "flaticon-dna-1",
       title: "Bioinformatics",
-      des: "CBRS offers a comprehensive suite of bioinformatics services that are instrumental in extracting meaningful insights from complex biological data.",
+      des: "In biomedicine, bioinformatics combines biological data with information storage, distribution, and analysis techniques.",
   },
   {
     id: 6,
@@ -84,7 +84,7 @@ const slider_content = [
     btn_color: "sky-hexa",
     icon: "flaticon-dna-1",
     title: "Generation Sequencing (NGS)",
-    des: "Our services include targeted exploration of pathogenic genetic variants using short read",
+    des: "The next-generation sequencing (NGS) technology allows for ultra-high throughput, scalability, and speed. The technology can be used to determine the sequence of nucleotides within entire genomes or regions of DNA or RNA.",
 },
 ];
 
