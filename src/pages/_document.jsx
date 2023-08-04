@@ -14,8 +14,8 @@ export default function Document() {
           <link rel="stylesheet" href="/assets/dashboard/assets/vendor/fonts/boxicons.css" />
 
           {/* <!-- Core CSS --> */}
-          <link rel="stylesheet" href="/assets/dashboard/assets/vendor/css/core.css" class="template-customizer-core-css" />
-          <link rel="stylesheet" href="/assets/dashboard/assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+          <link rel="stylesheet" href="/assets/dashboard/assets/vendor/css/core.css" />
+          <link rel="stylesheet" href="/assets/dashboard/assets/vendor/css/theme-default.css" />
           <link rel="stylesheet" href="/assets/dashboard/assets/css/demo.css" />
 
           {/* <!-- Vendors CSS --> */}

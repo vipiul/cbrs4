@@ -132,11 +132,6 @@
     & p {
       font-size: 15px;
       margin-bottom: 45px;
-      -webkit-box-orient: vertical;
-      display: -webkit-box;
-      overflow: hidden;
-      -webkit-line-clamp: 3;
-      max-height: 10.2rem;
       & br {
         @media #{$xl} {
           display: none;

@@ -75,7 +75,7 @@ const MainContent = () => {
                     <div className="dropdown-divider" />
                     </li>
                     <li>
-                    <Link className="dropdown-item" href="/">
+                    <Link className="dropdown-item" href="/login">
                         <i className="bx bx-power-off me-2" />
                         <span className="align-middle">Log Out</span>
                     </Link>

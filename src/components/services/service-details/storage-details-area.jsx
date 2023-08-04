@@ -136,7 +136,10 @@ const Storage02DetailsArea = () => {
             <div className="col-lg-12">
               <div className="tp-srv-stap mb-40">
                 <h4 className="tp-srv-stap__title mb-25">We provide perfect temperatures of storage environments as</h4>
-                
+                <p>There are several aspects to consider when storing samples, such as sample traceability, laboratory equipment, and storage temperature. We discuss the different storage temperatures, short- and long-term storage of samples, which lab equipment is useful at which temperatures, and which vessel sizes to consider.</p>
+                <h4 className="tp-srv-stap__title mb-25">VARIOUS STORAGE TEMPERATURES</h4>
+                <p>Based on how long the sample needs to be stored and what kind of sample you are keeping, it is essential to know at which temperature the sample will best be preserved. Samples can be stored at ambient temperature (+20°C), in the refrigerator (+4°C), in the freezer (-20°C), in the ultra-low freezer (-80°C), or in cryo tanks (-190°C and lower). Most long-term storage happens in the ultra-low freezer or cryo tank. The other options are used for short-term storage. Exceptions can be made when, for example, tissue is preserved in a fixative solution like paraffin wax.</p>
+                <p>Depending on the sample, it can be stored at ambient temperature (+20°C), in the refrigerator (+4°C), in the freezer (-20°C), in the ultra-low freezer (-80°C), or in cryo tanks (-190°C and below).</p>
                 <div className="mt-30">
                   <img src="/assets/img/services/rephrase.png" alt={'laboratory image'} width={'100%'} />
                 </div>

@@ -48,7 +48,7 @@ const slider_content = [
         btn_color: "pink-hexa",
         icon: "flaticon-blood-test",
         title: "Histopathology",
-        des: `Surgical and diagnostic Histopathologists as well as investigators of human disease who use histopathological methods should find this journal of practical value.`,
+        des: `Surgical and diagnostic Histopathologists as well as investigators of human disease who use histopathological.`,
     },
     {
         id: 3,
@@ -57,7 +57,7 @@ const slider_content = [
         btn_color: "green-hexa",
         icon: "flaticon-biochemistry",
         title: "Genomics",
-        des: "The study of genomics is the study of whole genomes of organisms and incorporates elements from genetics. Genomics uses recombinant DNA, DNA sequencing methods, and bioinformatics methods to sequence, assemble, and analyze genomes.",
+        des: "The study of genomics is the study of whole genomes of organisms and incorporates elements from genetics. Genomics uses recombinant DNA, DNA sequencing methods.",
     },
     {
         id: 4,
@@ -84,7 +84,7 @@ const slider_content = [
     btn_color: "sky-hexa",
     icon: "flaticon-dna-1",
     title: "Generation Sequencing (NGS)",
-    des: "The next-generation sequencing (NGS) technology allows for ultra-high throughput, scalability, and speed. The technology can be used to determine the sequence of nucleotides within entire genomes or regions of DNA or RNA.",
+    des: "The next-generation sequencing (NGS) technology allows for ultra-high throughput, scalability, and speed.",
 },
 ];
 
