@@ -20,7 +20,6 @@ const Register = () => {
         axios.post('https://sndigitech.in/cbrs/api/register', {
             data: fd,
             headers: {
-                "Accept": "application/json, text/plain, /",
                 "Content-Type": "multipart/form-data",
                 "Access-Control-Allow-Origin": "*",
             }
