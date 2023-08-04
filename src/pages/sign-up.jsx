@@ -10,6 +10,7 @@ const Register = () => {
     const [password, setPassword] = useState('');
     const [store, setStore] = useState({})
 
+    // resgit api
     const registerAPi = async () => {
         const fd = new FormData();
         fd.append('name', name);
