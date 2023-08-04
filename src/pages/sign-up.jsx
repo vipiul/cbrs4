@@ -11,12 +11,13 @@ const Register = () => {
     const [store, setStore] = useState({})
 
     const registerAPi = async () => {
+        const fd = new FormData();
+        fd.append('name', name);
+        fd.append('email', email);
+        fd.append('password', password);
+
         axios.post('https://sndigitech.in/cbrs/api/register', {
-            data: {
-                name: name,
-                email: email,
-                password: password,
-            },
+            data: fd,
             headers: {
                 "Accept": "application/json, text/plain, /",
                 "Content-Type": "multipart/form-data",
