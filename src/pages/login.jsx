@@ -1,53 +1,60 @@
 import Link from 'next/link'
-import React, { useState } from 'react';
+import React from 'react';
 import { useRouter } from 'next/navigation';
-import axios from 'axios';
+import axios from "axios";
+import { useFormik } from "formik";
+import * as Yup from 'yup';
+
+// initialvalue of the input feild
+const initialValues = {
+    email: "",
+    password: ""
+}
+
+const SignupSchema = Yup.object().shape({
+    email: Yup.string().email('Invalid email').required('Please enter your email'),
+    password: Yup.string().min(6).required("Please enter your password")
+});
+
 
 const Login = () => {
     const { push } = useRouter();
-    const [email, setEmail] = useState('');
-    const [password, setPasword] = useState('');
 
-    // axios.post("https://sndigitech.in/cbrs/api/login", )
+    // I am calling api form the server
+    const ResigerApi = async (value) => {
+        var formData = new FormData();
+        formData.append('email', value.email);
+        formData.append('password', value.password);
 
-    // submit form function
-    const handlersubmit = async(e) => {
-        e.preventDefault();
+        axios({
+            method: "post",
+            url: "https://sndigitech.in/cbrs/api/login",
+            data: formData,
+            headers: {
+                'Content-Type': `multipart/form-data;`,
+            }
+        }).then((response) => {
+            console.log(response);
+        }).catch((response) => {
+            console.log(response);
+        })
 
-        try {
-            let data = {
-              method: "POST",
-              url: "https://sndigitech.in/cbrs/api/login",
-              data: {email: "alam", password: 1234567},
-              headers: {
-                'Accept': 'multipart/form-data',
-                'Access-Control-Allow-Origin' : '*',
-                'mode': 'no-cors',
-                'Content-Type': 'multipart/form-data',
-              },
-            };
-            axios(data)
-              .then(res => {
-                // if (res.status == 200 || res.status == 201) {
-                //   console.log(res.data);
-                // }
-                console.log(res);
-              })
-              .catch(err => {
-                console.log(err);
-              });
-          } catch (error) {
-            console.log();
-          }
     }
 
-    // user data get
-    const InputhandlerEmail = (event) => {
-        setEmail(event.target.value)
-    }
-    const InputhandlerPassword = (event) => {
-        setPasword(event.target.value)
-    }
+    // handle form submit 
+    const { values, errors, touched, handleBlur, handleChange, handleSubmit } = useFormik({
+        initialValues: initialValues,
+        validationSchema: SignupSchema,
+        onSubmit: ((value, action) => {
+            if(value) {
+                alert("Login Successfully.")
+                ResigerApi(value)
+            }else {
+                console.log("Login Faild !")
+            }
+            action.resetForm();
+        })
+    })
 
     return (
         <div>
@@ -58,19 +65,31 @@ const Login = () => {
                             <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                                 Sign in to your account
                             </h1>
-                            <form className="space-y-4 md:space-y-6" onSubmit={handlersubmit} method='POST'>
+                            <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit} method='POST'>
                                 <div>
                                     <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
-                                    <input type="email" onChange={InputhandlerEmail} name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required />
+                                    <input type="email" 
+                                        name='email'
+                                        value={values.email}
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                    id="email" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" />
+                                    {errors.email && touched.email ? <p className='text-danger'>{errors.email}</p> : null}
                                 </div>
                                 <div>
                                     <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-                                    <input type="password" onChange={InputhandlerPassword} name="password" id="password" placeholder="••••••••" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+                                    <input type="password" 
+                                    name='password'
+                                    value={values.password}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                    id="password" placeholder="••••••••" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                                    {errors.password && touched.password ? <p className='text-danger'>{errors.password}</p> : null}
                                 </div>
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-start">
                                         <div className="flex items-center h-5">
-                                            <input id="remember" aria-describedby="remember" type="checkbox" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800" required />
+                                            <input id="remember" aria-describedby="remember" type="checkbox" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800" />
                                         </div>
                                         <div className="ml-3 text-sm">
                                             <label htmlFor="remember" className="text-gray-500 dark:text-gray-300">Remember me</label>

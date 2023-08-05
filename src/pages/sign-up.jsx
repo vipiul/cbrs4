@@ -52,10 +52,10 @@ const Register = () => {
         validationSchema: SignupSchema,
         onSubmit: ((value, action) => {
             if(value) {
-                alert("Login Successfully.")
+                alert("Register Successfully.")
                 ResigerApi(value)
             }else {
-                console.log("Login Faild !")
+                console.log("Register Faild !")
             }
             action.resetForm();
         })
