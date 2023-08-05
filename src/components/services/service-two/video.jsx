@@ -21,7 +21,7 @@ const Video = () => {
       <VideoPopup
         isVideoOpen={isVideoOpen}
         setIsVideoOpen={setIsVideoOpen}
-        videoId={"d8w5SICzzxc"}
+        videoId={"UxPkK8gW0hs"}
       />
       {/* video modal end */}
     </>
