@@ -15,7 +15,7 @@ const DashboardContent = () => {
         }
     })
     return (
-        <div className="layout-wrapper layout-content-navbar  ">
+        <div className="layout-wrapper layout-content-navbar " style={{backgroundColor: '#efefef'}}>
             <div className="layout-container">
                 <Sidebar />
                 <MainContent />

@@ -1,4 +1,5 @@
 import React from 'react';
+import SidebarMenu from '../sildebarMenu/SidebarMenu';
 
 const Sidebar = () => {
     return (
@@ -48,15 +49,7 @@ const Sidebar = () => {
                     </a>
                 </div>
                 <div className="menu-inner-shadow" />
-                <ul className="menu-inner py-1">
-                    {/* Dashboard */}
-                    <li className="menu-item active">
-                        <a href="index.html" className="menu-link">
-                            <i className="menu-icon tf-icons bx bx-home-circle" />
-                            <div data-i18n="Analytics">Dashboard</div>
-                        </a>
-                    </li>
-                </ul>
+                <SidebarMenu />
             </aside>
             {/* / Menu */}
 

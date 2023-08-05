@@ -21,6 +21,7 @@ const SignupSchema = Yup.object().shape({
 });
 
 const Register = () => {
+    const { push } = useRouter();
 
     // I am calling api form the server
     const ResigerApi = async (value) => {
@@ -51,7 +52,8 @@ const Register = () => {
         onSubmit: ((value, action) => {
             if(value) {
                 alert("Register Successfully.")
-                ResigerApi(value)
+                ResigerApi(value);
+                push("/login")
             }else {
                 console.log("Register Faild !")
             }
