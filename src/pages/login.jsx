@@ -21,7 +21,7 @@ const Login = () => {
     const { push } = useRouter();
 
     // I am calling api form the server
-    const ResigerApi = async (value) => {
+    const register = async (value) => {
         var formData = new FormData();
         formData.append('email', value.email);
         formData.append('password', value.password);
@@ -48,7 +48,7 @@ const Login = () => {
         onSubmit: ((value, action) => {
             if(value) {
                 alert("Login Successfully.")
-                ResigerApi(value)
+                register(value)
             }else {
                 console.log("Login Faild !")
             }
