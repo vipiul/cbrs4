@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Navbar from '../navbar/Navbar';
 import axios from "axios";
 
-const feedbackContent = () => {
+const FeedbackContent = () => {
 
     const [feedbackdata, setFeedbackdata] = useState([])
 
@@ -103,4 +103,4 @@ const feedbackContent = () => {
     )
 }
 
-export default feedbackContent
+export default FeedbackContent
