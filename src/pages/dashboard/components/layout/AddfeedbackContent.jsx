@@ -10,7 +10,7 @@ import * as Yup from 'yup';
 
 
 
-const feedbackContent = () => {
+const FeedbackContent = () => {
 
     const [file, setFile] = useState(null);
     const [name, setName] = useState('');
@@ -31,7 +31,7 @@ const feedbackContent = () => {
     }
 
     // I am calling api form the server
-    const addFeedback = async () => {
+    const addfeedback = async () => {
         // I am getting form th localstorage
         let token = localStorage.getItem('token');
 
@@ -59,7 +59,7 @@ const feedbackContent = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        addFeedback();
+        addfeedback();
         setFile(null);
         setName('');
         setTitle('');
@@ -133,4 +133,4 @@ const feedbackContent = () => {
     )
 }
 
-export default feedbackContent
+export default FeedbackContent
