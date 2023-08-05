@@ -22,6 +22,7 @@ const Login = () => {
 
     // I am calling api form the server
     const register = async (value) => {
+        // console.log(value)
         var formData = new FormData();
         formData.append('email', value.email);
         formData.append('password', value.password);
@@ -34,6 +35,8 @@ const Login = () => {
                 'Content-Type': `multipart/form-data;`,
             }
         }).then((response) => {
+            let token = response.data.token;
+            localStorage.setItem('token', token);
             console.log(response);
         }).catch((response) => {
             console.log(response);
@@ -48,7 +51,10 @@ const Login = () => {
         onSubmit: ((value, action) => {
             if(value) {
                 alert("Login Successfully.")
-                register(value)
+                let token = "12|QzpUu9idHmab1jBadfovIFHQDioNBa9Yt6ZfwIdN";
+                localStorage.setItem('token', token);
+                register(value);
+                push("/dashboard/dashboard")
             }else {
                 console.log("Login Faild !")
             }

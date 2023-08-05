@@ -17,9 +17,15 @@
     }
     @media #{$xxl} {
         padding: 20px 30px;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
     @media #{$xl} {
         padding: 20px 15px;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
     @media #{$md} {
         box-shadow: rgba(100, 100, 111, 0.1) 1px 5px 20px 1px;
@@ -109,3 +115,4 @@
         z-index: -1;
     }
 }
+

@@ -21,8 +21,6 @@ const SignupSchema = Yup.object().shape({
 });
 
 const Register = () => {
-    const { push } = useRouter();
-
 
     // I am calling api form the server
     const ResigerApi = async (value) => {

@@ -1,12 +1,19 @@
-import React from 'react'
-import Header from './components/header/Header'
-import Footer from './components/footer/Footer'
+import React, { useEffect } from 'react'
 import Sidebar from './components/sidebar/Sidebar';
 import MainContent from './components/layout/mainContent';
+import { useRouter } from 'next/navigation';
 
 // style file
 
 const DashboardContent = () => {
+    const { push } = useRouter();
+
+    useEffect(()=>{
+        const tokenAuth = localStorage.getItem('token');
+        if(!tokenAuth){
+            push('/login')
+        }
+    })
     return (
         <div className="layout-wrapper layout-content-navbar  ">
             <div className="layout-container">

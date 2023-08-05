@@ -1,7 +1,21 @@
 import Link from 'next/link'
 import React from 'react'
+import { useRouter } from 'next/navigation';
 
 const MainContent = () => {
+
+    // natigate page
+    const { push } = useRouter();
+
+    const Logout = () => {
+        const getToken = localStorage.getItem('token');
+        if(getToken) {
+            localStorage.removeItem('token');
+            alert("Log Out Success.");
+            push("/login")
+        }
+    }
+
   return (
     <>
         <div className="layout-page">
@@ -75,10 +89,10 @@ const MainContent = () => {
                     <div className="dropdown-divider" />
                     </li>
                     <li>
-                    <Link className="dropdown-item" href="/login">
+                    <button className="dropdown-item" onClick={Logout} >
                         <i className="bx bx-power-off me-2" />
                         <span className="align-middle">Log Out</span>
-                    </Link>
+                    </button>
                     </li>
                 </ul>
                 </li>

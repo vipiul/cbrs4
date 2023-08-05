@@ -85,7 +85,7 @@ const Header = () => {
                                 </div>
                             </div>
                             <div className="col-xxl-3 col-lg-3 custome-widthThre d-flex align-items-center justify-content-end">
-                                <div className="tp-bt-btn-banner">
+                                <div className="tp-bt-btn-banner newbutton">
                                     <a className="tp-bt-btn" href="tel:91 83838 64051">
                                         <svg
                                             width="14"
