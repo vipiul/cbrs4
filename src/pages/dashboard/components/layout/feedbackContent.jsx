@@ -8,6 +8,7 @@ const FeedbackContent = () => {
 
     const fetchFeedback = async () => {
         let token = localStorage.getItem('token');
+
         axios({
             method: "get",
             url: "https://sndigitech.in/cbrs/api/feedbacks",
@@ -24,6 +25,23 @@ const FeedbackContent = () => {
     useEffect(() => {
         fetchFeedback();
     }, [])
+
+    const handleDeleteFeedback = async (id) => {
+        let token = localStorage.getItem('token');
+
+        axios({
+            method: "delete",
+            url: `https://sndigitech.in/cbrs/api/feedback/${id}`,
+            headers: {
+                'Authorization': `Bearer ${token}`,
+            }
+        }).then((response) => {
+            console.log(response);
+            fetchFeedback()
+        }).catch((response) => {
+            console.log(response);
+        })
+    }
 
     return (
         <div className="layout-page">
@@ -83,10 +101,10 @@ const FeedbackContent = () => {
                                                     {items.name}
                                                 </td>
                                                 <td className="px-6 py-4">
-                                                    <a href="#" className="px-4 py-1 text-sm text-blue-600 bg-blue-200 rounded-full">Edit</a>
+                                                    <a href={`/dashboard/edit-feedback/${items.id}`} className="px-4 py-1 text-sm text-blue-600 bg-blue-200 rounded-full">Edit</a>
                                                 </td>
                                                 <td className="px-6 py-4">
-                                                    <a href="#" className="px-4 py-1 text-sm text-red-400 bg-red-200 rounded-full">Delete</a>
+                                                    <button className="px-4 py-1 text-sm text-red-400 bg-red-200 rounded-full" onClick={() => handleDeleteFeedback(items.id)}>Delete</button>
                                                 </td>
                                             </tr>
                                         ))

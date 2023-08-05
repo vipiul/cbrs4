@@ -1,14 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../navbar/Navbar';
-import Link from 'next/link'
-import { useRouter } from 'next/navigation';
 import axios from "axios";
-import { useFormik } from "formik";
-import * as Yup from 'yup';
-
-
-
-
+import { useRouter } from 'next/router';
 
 const FeedbackContent = () => {
 
@@ -64,12 +57,7 @@ const FeedbackContent = () => {
         setName('');
         setTitle('');
         setDescription('');
-    }
-   
-
-    ;
-
-    
+    } 
 
     return (
         <div className="layout-page">
