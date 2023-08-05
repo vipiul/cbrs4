@@ -27,7 +27,7 @@ const FeedbackContent = () => {
         setTitle(e.target.value)
     }
     const handleFileChange = (e) => {
-        setFile(e.target.files[0].name);
+        setFile(e.target.files[0]);
     }
 
     // I am calling api form the server
