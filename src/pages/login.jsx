@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React from 'react';
+import React, { use, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import axios from "axios";
 import { useFormik } from "formik";
@@ -19,6 +19,7 @@ const SignupSchema = Yup.object().shape({
 
 const Login = () => {
     const { push } = useRouter();
+    const [logindata, setLogindata] = useState({})
 
     // I am calling api form the server
     const register = async (value) => {
@@ -35,16 +36,10 @@ const Login = () => {
                 'Content-Type': `multipart/form-data;`,
             }
         }).then((response) => {
-            if(response.data.status == false) {
-                alert(response.data.message)
-            }else{
-                let token = response.data.token;
-                localStorage.setItem('token', token);
-                console.log(response);
-            }
+            setLogindata(response.data)
             
         }).catch((response) => {
-            console.log(response.data.message);
+            console.log(response);
         })
 
     }
@@ -54,16 +49,17 @@ const Login = () => {
         initialValues: initialValues,
         validationSchema: SignupSchema,
         onSubmit: ((value, action) => {
-            if(value) {
-                let token = "12|QzpUu9idHmab1jBadfovIFHQDioNBa9Yt6ZfwIdN";
-                localStorage.setItem('token', token);
-                register(value);
-                push("/dashboard/dashboard")
-                alert("Login Successfully.")
+            register(value);
+            if(logindata.email !== value.email) {
+                alert("Your email invalid")
+            }else if (logindata.password !== value.password) {
+                alert("Your password invalid")
             }else {
-                console.log("Login Faild !")
+                localStorage.setItem('token', token);
+                alert("Login Successfully.");
+                push("/dashboard/dashboard");
+                action.resetForm();
             }
-            action.resetForm();
         })
     })
 

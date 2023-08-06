@@ -6,8 +6,6 @@ const FeedbackContent = () => {
 
     const [feedbackdata, setFeedbackdata] = useState([])
 
-    console.log(feedbackdata)
-
     const fetchFeedback = async () => {
         const token01 = localStorage.getItem('token');
 
