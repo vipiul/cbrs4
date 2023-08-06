@@ -19,11 +19,12 @@ const SignupSchema = Yup.object().shape({
 
 const Login = () => {
     const { push } = useRouter();
-    const [logindata, setLogindata] = useState({})
+    // const [logindata, setLogindata] = useState([])
+
+    // console.log(logindata.status)
 
     // I am calling api form the server
     const register = async (value) => {
-        // console.log(value)
         var formData = new FormData();
         formData.append('email', value.email);
         formData.append('password', value.password);
@@ -36,7 +37,14 @@ const Login = () => {
                 'Content-Type': `multipart/form-data;`,
             }
         }).then((response) => {
-            setLogindata(response.data)
+            if(response.data.status === false){
+                alert(response.data.message)
+            }else {
+                let token = response.data.token;
+                localStorage.setItem('token', token);
+                alert(response.data.message)
+                push("/dashboard/dashboard")
+            }
             
         }).catch((response) => {
             console.log(response);
@@ -50,16 +58,7 @@ const Login = () => {
         validationSchema: SignupSchema,
         onSubmit: ((value, action) => {
             register(value);
-            if(logindata.email !== value.email) {
-                alert("Your email invalid")
-            }else if (logindata.password !== value.password) {
-                alert("Your password invalid")
-            }else {
-                localStorage.setItem('token', token);
-                alert("Login Successfully.");
-                push("/dashboard/dashboard");
-                action.resetForm();
-            }
+            action.resetForm();
         })
     })
 

@@ -15,8 +15,8 @@ const FeedbackContent = () => {
             headers: {
                 'Authorization': `Bearer ${token01}`,
             }
-        }).then((response) => {
-            setFeedbackdata(response.data.feedbacks);
+        }).then(({data : {feedbacks}}) => {
+            setFeedbackdata(feedbacks);
         }).catch((response) => {
             console.log(response);
         })

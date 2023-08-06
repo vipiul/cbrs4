@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Navbar from '../navbar/Navbar';
 import axios from "axios";
 import { useRouter } from 'next/router';
+import { data } from 'autoprefixer';
 
 const EditFeedbackContent = () => {
 
