@@ -48,6 +48,12 @@ const EditFeedbackContent = () => {
         setFile(e.target.files[0]);
     }
 
+    useEffect(() => {
+        if (id) {
+            fetchFeedback()
+        }
+    }, [id])
+
     // I am calling api form the server
     const addfeedback = async () => {
         // I am getting form th localstorage
@@ -83,12 +89,6 @@ const EditFeedbackContent = () => {
         setDescription('');
         addfeedback();
     }
-
-    useEffect(() => {
-        if (id) {
-            fetchFeedback()
-        }
-    }, [id])
 
     return (
         <div className="layout-page">
