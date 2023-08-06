@@ -35,6 +35,12 @@ const EditFeedbackContent = () => {
         })
     }
 
+    useEffect(() => {
+        if (id) {
+            fetchFeedback()
+        }
+    }, [id])
+
     const handleNameChange = (e) => {
         setName(e.target.value)
     }
@@ -48,15 +54,9 @@ const EditFeedbackContent = () => {
         setFile(e.target.files[0]);
     }
 
-    useEffect(() => {
-        if (id) {
-            fetchFeedback()
-        }
-    }, [id])
-
     const handleSubmit = async (e) => {
         e.preventDefault();
-        
+
         // I am getting form th localstorage
         let token = localStorage.getItem('token');
 

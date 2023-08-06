@@ -56,7 +56,7 @@ const EditResearchPaperContent = () => {
     }
 
     // I am calling api form the server
-    const addfeedback = async () => {
+    const researchpaper = async () => {
         // I am getting form th localstorage
         let token = localStorage.getItem('token');
 
@@ -84,7 +84,7 @@ const EditResearchPaperContent = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        addfeedback();
+        researchpaper();
         setFile(null);
         setName('');
         setTitle('');
