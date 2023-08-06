@@ -49,12 +49,12 @@ const Login = () => {
         initialValues: initialValues,
         validationSchema: SignupSchema,
         onSubmit: ((value, action) => {
+            register(value);
             if(logindata.email !== value.email) {
                 alert("Your email invalid")
             }else if (logindata.password !== value.password) {
                 alert("Your password invalid")
             }else {
-                register(value);
                 localStorage.setItem('token', token);
                 alert("Login Successfully.");
                 push("/dashboard/dashboard");
