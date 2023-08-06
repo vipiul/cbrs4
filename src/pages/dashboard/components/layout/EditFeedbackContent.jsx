@@ -67,7 +67,7 @@ const EditFeedbackContent = () => {
         formData.append('thumbnail', file);
 
         axios({
-            method: "patch",
+            method: "post",
             url: `https://sndigitech.in/cbrs/api/feedback/${id}`,
             data: formData,
             headers: {
