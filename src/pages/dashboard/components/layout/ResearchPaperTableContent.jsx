@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../navbar/Navbar';
 import axios from "axios";
+import Link from 'next/link';
 
-const FeedbackContent = () => {
+const ResearchPaperTableContent = () => {
 
     const [feedbackdata, setFeedbackdata] = useState([])
 
@@ -15,7 +16,7 @@ const FeedbackContent = () => {
             headers: {
                 'Authorization': `Bearer ${token01}`,
             }
-        }).then(({data : {feedbacks}}) => {
+        }).then(({ data: { feedbacks } }) => {
             setFeedbackdata(feedbacks);
         }).catch((response) => {
             console.log(response);
@@ -48,6 +49,20 @@ const FeedbackContent = () => {
             <Navbar />
             <div className="w-full flex justify-center mx-auto" style={{ marginTop: '100px' }}>
                 <div className="flex flex-col">
+                    <div className='row' style={{marginBottom: '20px'}}>
+                        <div className='col-6'>
+                            <div className='research-paper'>
+                                <h3 className='text-gray-500'>Research Paper</h3>
+                            </div>
+                        </div>
+                        <div className='col-6'>
+                            <div className='research-paper text-right'>
+                                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                                    <Link href="/dashboard/add-research-paper">Add Research Paper</Link>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                     <div className="w-full">
                         <div className="border-b border-gray-200 shadow">
                             <table className="divide-y divide-gray-300 ">
@@ -121,4 +136,4 @@ const FeedbackContent = () => {
     )
 }
 
-export default FeedbackContent
+export default ResearchPaperTableContent;

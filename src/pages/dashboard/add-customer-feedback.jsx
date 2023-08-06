@@ -1,12 +1,12 @@
 import React from 'react';
 import Sidebar from './components/sidebar/Sidebar';
-import CustomerFeedbackContent from './components/layout/CustomerFeedbackContent';
-const Customerfeedback = () => {
+import AddCustomerFeedbackContent from './components/layout/AddCustomerFeedbackContent';
+const AddCustomerFeedback = () => {
     return (
         <div className="layout-wrapper layout-content-navbar  ">
             <div className="layout-container">
                 <Sidebar />
-                <CustomerFeedbackContent />
+                <AddCustomerFeedbackContent />
             </div>
             {/* Overlay */}
             <div className="layout-overlay layout-menu-toggle" />
@@ -14,4 +14,4 @@ const Customerfeedback = () => {
     )
 }
 
-export default Customerfeedback
+export default AddCustomerFeedback
