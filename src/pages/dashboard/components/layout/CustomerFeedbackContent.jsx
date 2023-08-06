@@ -116,7 +116,7 @@ const CustomerFeedbackContent = () => {
                                                     {items.name}
                                                 </td>
                                                 <td className="px-6 py-4">
-                                                    <a href={`/dashboard/edit-feedback/${items.id}`} className="px-4 py-1 text-sm text-blue-600 bg-blue-200 rounded-full">Edit</a>
+                                                    <Link href={`/dashboard/edit-feedback/${items.id}`} className="px-4 py-1 text-sm text-blue-600 bg-blue-200 rounded-full">Edit</Link>
                                                 </td>
                                                 <td className="px-6 py-4">
                                                     <button className="px-4 py-1 text-sm text-red-400 bg-red-200 rounded-full" onClick={() => handleDeleteFeedback(items.id)}>Delete</button>

@@ -18,12 +18,12 @@ const EditFeedbackContent = () => {
     const [imgUrl, setImgUrl] = useState('');
 
     const fetchFeedback = async () => {
-        let token = localStorage.getItem('token');
+        let token01 = localStorage.getItem('token');
         axios({
             method: "get",
             url: `https://sndigitech.in/cbrs/api/feedback/${id}`,
             headers: {
-                'Authorization': `Bearer ${token}`,
+                'Authorization': `Bearer ${token01}`,
             }
         }).then(({ data: { post } }) => {
             setName(post.name)
@@ -58,7 +58,7 @@ const EditFeedbackContent = () => {
     // I am calling api form the server
     const addfeedback = async () => {
         // I am getting form th localstorage
-        let token = localStorage.getItem('token');
+        let token02 = localStorage.getItem('token');
 
         var formData = new FormData();
         formData.append('name', name);
@@ -72,7 +72,7 @@ const EditFeedbackContent = () => {
             data: formData,
             headers: {
                 'Content-Type': `multipart/form-data;`,
-                'Authorization': `Bearer ${token}`,
+                'Authorization': `Bearer ${token02  }`,
             }
         }).then((response) => {
             console.log(response);
