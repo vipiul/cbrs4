@@ -54,8 +54,9 @@ const EditFeedbackContent = () => {
         }
     }, [id])
 
-    // I am calling api form the server
-    const addfeedback = async () => {
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        
         // I am getting form th localstorage
         let token = localStorage.getItem('token');
 
@@ -78,16 +79,6 @@ const EditFeedbackContent = () => {
         }).catch((response) => {
             console.log(response);
         })
-
-    }
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setFile(null);
-        setName('');
-        setTitle('');
-        setDescription('');
-        addfeedback();
     }
 
     return (
