@@ -6,14 +6,16 @@ const FeedbackContent = () => {
 
     const [feedbackdata, setFeedbackdata] = useState([])
 
+    console.log(feedbackdata)
+
     const fetchFeedback = async () => {
-        let token = localStorage.getItem('token');
+        const token01 = localStorage.getItem('token');
 
         axios({
             method: "get",
             url: "https://sndigitech.in/cbrs/api/feedbacks",
             headers: {
-                'Authorization': `Bearer ${token}`,
+                'Authorization': `Bearer ${token01}`,
             }
         }).then((response) => {
             setFeedbackdata(response.data.feedbacks);
@@ -27,13 +29,13 @@ const FeedbackContent = () => {
     }, [])
 
     const handleDeleteFeedback = async (id) => {
-        let token = localStorage.getItem('token');
+        const token02 = localStorage.getItem('token');
 
         axios({
             method: "delete",
             url: `https://sndigitech.in/cbrs/api/feedback/${id}`,
             headers: {
-                'Authorization': `Bearer ${token}`,
+                'Authorization': `Bearer ${token02}`,
             }
         }).then((response) => {
             console.log(response);

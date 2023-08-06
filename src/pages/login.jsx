@@ -35,11 +35,16 @@ const Login = () => {
                 'Content-Type': `multipart/form-data;`,
             }
         }).then((response) => {
-            let token = response.data.token;
-            localStorage.setItem('token', token);
-            console.log(response);
+            if(response.data.status == false) {
+                alert(response.data.message)
+            }else{
+                let token = response.data.token;
+                localStorage.setItem('token', token);
+                console.log(response);
+            }
+            
         }).catch((response) => {
-            console.log(response);
+            console.log(response.data.message);
         })
 
     }
@@ -50,11 +55,11 @@ const Login = () => {
         validationSchema: SignupSchema,
         onSubmit: ((value, action) => {
             if(value) {
-                alert("Login Successfully.")
                 let token = "12|QzpUu9idHmab1jBadfovIFHQDioNBa9Yt6ZfwIdN";
                 localStorage.setItem('token', token);
                 register(value);
                 push("/dashboard/dashboard")
+                alert("Login Successfully.")
             }else {
                 console.log("Login Faild !")
             }
