@@ -46,12 +46,12 @@ const FeedbackContent = () => {
             }
         }).then(({data : {status}}) => {
             if(status === false) {
-                alert(message)
+                alert(status.message)
             }else {
-                alert(message);
+                alert(status.message);
                 push("/customer-feedback")
             }
-            console.log(response);
+            console.log(status);
         }).catch((response) => {
             console.log(response);
         })
