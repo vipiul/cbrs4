@@ -9,7 +9,6 @@ const EditFeedbackContent = () => {
     // get url id
     const routerId = useRouter();
     const { id } = routerId.query;
-    console.log(id)
 
     const [file, setFile] = useState(null);
     const [name, setName] = useState('');
@@ -18,12 +17,12 @@ const EditFeedbackContent = () => {
     const [imgUrl, setImgUrl] = useState('');
 
     const fetchFeedback = async () => {
-        let token01 = localStorage.getItem('token');
+        let token = localStorage.getItem('token');
         axios({
             method: "get",
             url: `https://sndigitech.in/cbrs/api/feedback/${id}`,
             headers: {
-                'Authorization': `Bearer ${token01}`,
+                'Authorization': `Bearer ${token}`,
             }
         }).then(({ data: { post } }) => {
             setName(post.name)
@@ -35,12 +34,6 @@ const EditFeedbackContent = () => {
             console.log(response);
         })
     }
-
-    useEffect(() => {
-        if (id) {
-            fetchFeedback()
-        }
-    }, [id])
 
     const handleNameChange = (e) => {
         setName(e.target.value)
@@ -58,7 +51,7 @@ const EditFeedbackContent = () => {
     // I am calling api form the server
     const addfeedback = async () => {
         // I am getting form th localstorage
-        let token02 = localStorage.getItem('token');
+        let token = localStorage.getItem('token');
 
         var formData = new FormData();
         formData.append('name', name);
@@ -72,7 +65,7 @@ const EditFeedbackContent = () => {
             data: formData,
             headers: {
                 'Content-Type': `multipart/form-data;`,
-                'Authorization': `Bearer ${token02  }`,
+                'Authorization': `Bearer ${token}`,
             }
         }).then((response) => {
             console.log(response);
@@ -84,12 +77,18 @@ const EditFeedbackContent = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        addfeedback();
         setFile(null);
         setName('');
         setTitle('');
         setDescription('');
+        addfeedback();
     }
+
+    useEffect(() => {
+        if (id) {
+            fetchFeedback()
+        }
+    }, [id])
 
     return (
         <div className="layout-page">
