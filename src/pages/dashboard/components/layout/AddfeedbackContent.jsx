@@ -46,10 +46,10 @@ const FeedbackContent = () => {
             }
         }).then(({data : {status}}) => {
             if(status === false) {
-                alert(status.message)
+                alert("Feed add successfully.")
             }else {
-                alert(status.message);
-                push("/customer-feedback")
+                alert("Feed add successfully.");
+                push("/dashboard/customer-feedback")
             }
             console.log(status);
         }).catch((response) => {
