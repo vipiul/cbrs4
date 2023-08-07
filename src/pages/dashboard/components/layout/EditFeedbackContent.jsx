@@ -29,7 +29,6 @@ const EditFeedbackContent = () => {
         }).then(({ data: { post } }) => {
             setName(post.name)
             setTitle(post.title)
-            setFile(post.thumbnail)
             setImgUrl(post.thumbnail)
             setDescription(post.description)
             console.log("post", post)
@@ -66,10 +65,11 @@ const EditFeedbackContent = () => {
         formData.append('name', name);
         formData.append('title', title);
         formData.append('description', description);
-        
+        console.log(file, '666666666666666');
         if(file) {
             formData.append('thumbnail', file);
         }
+
         axios({
             method: "post",
             url: `https://sndigitech.in/cbrs/api/feedback/${id}`,
