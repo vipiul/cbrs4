@@ -58,8 +58,6 @@ const EditFeedbackContent = () => {
         e.preventDefault();
 
         // I am getting form th localstorage
-        let token = localStorage.getItem('token');
-
         var formData = new FormData();
         formData.append('name', name);
         formData.append('title', title);
@@ -72,7 +70,6 @@ const EditFeedbackContent = () => {
             data: formData,
             headers: {
                 'Content-Type': `multipart/form-data;`,
-                'Authorization': `Bearer ${token}`,
             }
         }).then((response) => {
             console.log(response);

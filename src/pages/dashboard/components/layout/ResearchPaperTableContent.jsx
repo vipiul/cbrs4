@@ -12,12 +12,12 @@ const ResearchPaperTableContent = () => {
 
         axios({
             method: "get",
-            url: "https://sndigitech.in/cbrs/api/feedbacks",
+            url: "https://sndigitech.in/cbrs/api/researchs",
             headers: {
                 'Authorization': `Bearer ${token01}`,
             }
-        }).then(({ data: { feedbacks } }) => {
-            setFeedbackdata(feedbacks);
+        }).then(({ data: { researchs } }) => {
+            setFeedbackdata(researchs);
         }).catch((response) => {
             console.log(response);
         })

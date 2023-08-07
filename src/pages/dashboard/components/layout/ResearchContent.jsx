@@ -8,13 +8,9 @@ const FeedbackContent = () => {
     const { push } = useRouter();
 
     const [file, setFile] = useState(null);
-    const [name, setName] = useState('');
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
 
-    const handleNameChange = (e) => {
-        setName(e.target.value)
-    }
     const handleDescriptionChange = (e) => {
         setDescription(e.target.value)
     }
@@ -31,14 +27,13 @@ const FeedbackContent = () => {
         let token = localStorage.getItem('token');
 
         var formData = new FormData();
-        formData.append('name', name);
         formData.append('title', title);
         formData.append('description', description);
         formData.append('thumbnail', file);
 
         axios({
             method: "post",
-            url: "https://sndigitech.in/cbrs/api/feedback",
+            url: "https://sndigitech.in/cbrs/api/research",
             data: formData,
             headers: {
                 'Content-Type': `multipart/form-data;`,
@@ -46,10 +41,10 @@ const FeedbackContent = () => {
             }
         }).then(({data : {status}}) => {
             if(status === false) {
-                alert("Feed add successfully.")
+                alert("Research feild data is not set in the table.")
             }else {
-                alert("Feed add successfully.");
-                push("/dashboard/customer-feedback")
+                alert("Resaerch add successfully.");
+                push("/dashboard/research-paper")
             }
             console.log(status);
         }).catch((response) => {
@@ -61,7 +56,6 @@ const FeedbackContent = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         addfeedback();
-        setName('');
         setTitle('');
         setDescription('');
         setFile(null);
@@ -79,16 +73,6 @@ const FeedbackContent = () => {
                                 Add Research
                             </h1>
                             <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit} method='POST'>
-                                <div>
-                                    <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter Name</label>
-                                    <input type="text" 
-                                        name='name'
-                                        value={name}
-                                        onChange={handleNameChange}
-                                        id="name" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
-                                        placeholder="Your name" 
-                                    />
-                                </div>
                                 <div>
                                     <label htmlFor="title" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter Title</label>
                                     <input type="text" 
@@ -111,9 +95,9 @@ const FeedbackContent = () => {
                                     />
                                 </div>
                                 <div>
-                                    <label htmlFor="file" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter Description</label>
+                                    <label htmlFor="file" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Only Pdf formate allow.</label>
                                     <input 
-                                        type="file" accept="image/*" 
+                                        type="file" accept="application/pdf"
                                         onChange={handleFileChange}
                                         className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" />
                                 </div>
