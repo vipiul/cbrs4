@@ -29,6 +29,7 @@ const EditFeedbackContent = () => {
         }).then(({ data: { post } }) => {
             setName(post.name)
             setTitle(post.title)
+            setFile(post.thumbnail)
             setImgUrl(post.thumbnail)
             setDescription(post.description)
             console.log("post", post)
