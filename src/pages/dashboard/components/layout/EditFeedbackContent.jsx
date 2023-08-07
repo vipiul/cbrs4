@@ -16,7 +16,7 @@ const EditFeedbackContent = () => {
     const [description, setDescription] = useState('');
     const [imgUrl, setImgUrl] = useState('');
 
-    const fetchFeedback = async () => {
+    const editFeedback = async () => {
         let token = localStorage.getItem('token');
         axios({
             method: "get",
@@ -35,12 +35,6 @@ const EditFeedbackContent = () => {
         })
     }
 
-    useEffect(() => {
-        if (id) {
-            fetchFeedback()
-        }
-    }, [id])
-
     const handleNameChange = (e) => {
         setName(e.target.value)
     }
@@ -53,6 +47,12 @@ const EditFeedbackContent = () => {
     const handleFileChange = (e) => {
         setFile(e.target.files[0]);
     }
+
+    useEffect(() => {
+        if (id) {
+            editFeedback()
+        }
+    }, [id])
 
     const handleSubmit = async (e) => {
         e.preventDefault();

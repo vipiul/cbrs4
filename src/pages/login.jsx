@@ -21,7 +21,7 @@ const Login = () => {
     const { push } = useRouter();
     // const [logindata, setLogindata] = useState([])
 
-    console.log(logindata.status)
+    // console.log(logindata.status)
 
     // I am calling api form the server
     const register = async (value) => {
