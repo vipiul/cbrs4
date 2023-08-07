@@ -17,7 +17,7 @@ const EditResearchPaperContent = () => {
     const [description, setDescription] = useState('');
     const [imgUrl, setImgUrl] = useState('');
 
-    const researchFeedback = async () => {
+    const fetchFeedback = async () => {
         let token = localStorage.getItem('token');
         axios({
             method: "get",
@@ -38,7 +38,7 @@ const EditResearchPaperContent = () => {
 
     useEffect(() => {
         if (id) {
-            researchFeedback()
+            fetchFeedback()
         }
     }, [id])
 
@@ -67,7 +67,7 @@ const EditResearchPaperContent = () => {
         formData.append('thumbnail', file);
 
         axios({
-            method: "post",
+            method: "patch",
             url: `https://sndigitech.in/cbrs/api/feedback/${id}`,
             data: formData,
             headers: {

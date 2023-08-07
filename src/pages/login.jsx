@@ -37,7 +37,6 @@ const Login = () => {
                 'Content-Type': `multipart/form-data;`,
             }
         }).then((response) => {
-            console.log(response)
             if(response.data.status === false){
                 alert(response.data.message)
             }else {
@@ -58,8 +57,6 @@ const Login = () => {
         initialValues: initialValues,
         validationSchema: SignupSchema,
         onSubmit: ((value, action) => {
-            let token = "56|oWJLuu4VxcFhruYFHCEdsV9FusUDRFN7wg1dkGUC";
-            localStorage.setItem('token', token);
             register(value);
             action.resetForm();
         })
