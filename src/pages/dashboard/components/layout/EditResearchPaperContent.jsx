@@ -14,6 +14,7 @@ const EditResearchPaperContent = () => {
     const [file, setFile] = useState(null);
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
+    console.log(description + "description log")
 
     const fetchFeedback = async () => {
         let token = localStorage.getItem('token');
@@ -25,9 +26,7 @@ const EditResearchPaperContent = () => {
             }
         }).then(({ data: { research } }) => {
             setTitle(research.title)
-            setImgUrl(research.thumbnail)
             setDescription(research.description)
-            console.log("post", research)
         }).catch((response) => {
             console.log(response);
         })
@@ -67,7 +66,13 @@ const EditResearchPaperContent = () => {
                 'Content-Type': `multipart/form-data;`,
                 'Authorization': `Bearer ${token}`,
             }
-        }).then((response) => {
+        }).then(({data : {status, message}}) => {
+            if(status) {
+                alert(message);
+                push("/dashboard/research-paper")
+            }else {
+                alert(message)
+            }
             console.log(response);
         }).catch((response) => {
             console.log(response);
@@ -121,7 +126,7 @@ const EditResearchPaperContent = () => {
                                         <input
                                             type="file" accept="application/pdf"
                                             onChange={handleFileChange}
-                                            className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" />
+                                            className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="image" />
                                     </div>
                                     <div>
                                         <div className="text-sm text-gray-900 flex-shrink-0 w-10 h-10">
