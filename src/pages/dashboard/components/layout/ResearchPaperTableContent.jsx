@@ -32,7 +32,7 @@ const ResearchPaperTableContent = () => {
 
         axios({
             method: "delete",
-            url: `https://sndigitech.in/cbrs/api/feedback/${id}`,
+            url: `https://sndigitech.in/cbrs/api/research/${id}`,
             headers: {
                 'Authorization': `Bearer ${token02}`,
             }
@@ -101,7 +101,7 @@ const ResearchPaperTableContent = () => {
 
                                                 <td className="px-6 py-4">
                                                     <div className="text-sm text-gray-900 flex-shrink-0 w-10 h-10">
-                                                        <img className="w-10 h-10 rounded-full" src={items.thumbnail} alt="" />
+                                                        <img className="w-10 h-10 rounded-full" src="/assets/img/blog/research-image-01.png" alt="" />
                                                     </div>
                                                 </td>
                                                 <td className="px-6 py-4">
@@ -116,7 +116,7 @@ const ResearchPaperTableContent = () => {
                                                     {items.name}
                                                 </td>
                                                 <td className="px-6 py-4">
-                                                    <a href={`/dashboard/edit-feedback/${items.id}`} className="px-4 py-1 text-sm text-blue-600 bg-blue-200 rounded-full">Edit</a>
+                                                    <a href={`/dashboard/edit-research-paper/${items.id}`} className="px-4 py-1 text-sm text-blue-600 bg-blue-200 rounded-full">Edit</a>
                                                 </td>
                                                 <td className="px-6 py-4">
                                                     <button className="px-4 py-1 text-sm text-red-400 bg-red-200 rounded-full" onClick={() => handleDeleteFeedback(items.id)}>Delete</button>

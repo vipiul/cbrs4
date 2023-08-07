@@ -12,25 +12,22 @@ const EditResearchPaperContent = () => {
     console.log(id)
 
     const [file, setFile] = useState(null);
-    const [name, setName] = useState('');
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
-    const [imgUrl, setImgUrl] = useState('');
 
     const fetchFeedback = async () => {
         let token = localStorage.getItem('token');
         axios({
             method: "get",
-            url: `https://sndigitech.in/cbrs/api/feedback/${id}`,
+            url: `https://sndigitech.in/cbrs/api/research/${id}`,
             headers: {
                 'Authorization': `Bearer ${token}`,
             }
-        }).then(({ data: { post } }) => {
-            setName(post.name)
-            setTitle(post.title)
-            setImgUrl(post.thumbnail)
-            setDescription(post.description)
-            console.log("post", post)
+        }).then(({ data: { research } }) => {
+            setTitle(research.title)
+            setImgUrl(research.thumbnail)
+            setDescription(research.description)
+            console.log("post", research)
         }).catch((response) => {
             console.log(response);
         })
@@ -42,9 +39,6 @@ const EditResearchPaperContent = () => {
         }
     }, [id])
 
-    const handleNameChange = (e) => {
-        setName(e.target.value)
-    }
     const handleDescriptionChange = (e) => {
         setDescription(e.target.value)
     }
@@ -61,14 +55,13 @@ const EditResearchPaperContent = () => {
         let token = localStorage.getItem('token');
 
         var formData = new FormData();
-        formData.append('name', name);
         formData.append('title', title);
         formData.append('description', description);
         formData.append('thumbnail', file);
 
         axios({
-            method: "patch",
-            url: `https://sndigitech.in/cbrs/api/feedback/${id}`,
+            method: "post",
+            url: `https://sndigitech.in/cbrs/api/research/${id}`,
             data: formData,
             headers: {
                 'Content-Type': `multipart/form-data;`,
@@ -86,7 +79,6 @@ const EditResearchPaperContent = () => {
         e.preventDefault();
         researchpaper();
         setFile(null);
-        setName('');
         setTitle('');
         setDescription('');
     }
@@ -103,16 +95,6 @@ const EditResearchPaperContent = () => {
                                     Edit Research Paper
                                 </h1>
                                 <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit} method='POST'>
-                                    <div>
-                                        <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter Name</label>
-                                        <input type="text"
-                                            name='name'
-                                            value={name}
-                                            onChange={handleNameChange}
-                                            id="name" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                            placeholder="Your name"
-                                        />
-                                    </div>
                                     <div>
                                         <label htmlFor="title" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter Title</label>
                                         <input type="text"
@@ -135,15 +117,15 @@ const EditResearchPaperContent = () => {
                                         />
                                     </div>
                                     <div>
-                                        <label htmlFor="file" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter Description</label>
+                                        <label htmlFor="file" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Only Pdf formate allow.</label>
                                         <input
-                                            type="file" accept="image/*"
+                                            type="file" accept="application/pdf"
                                             onChange={handleFileChange}
                                             className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" />
                                     </div>
                                     <div>
                                         <div className="text-sm text-gray-900 flex-shrink-0 w-10 h-10">
-                                            <img className="w-10 h-10 rounded-full" src={imgUrl} alt="" />
+                                            <img className="w-10 h-10 rounded-full" src="/assets/img/blog/research-image-01.png" alt="" />
                                         </div>
                                     </div>
                                     <button type="submit" className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign in</button>
