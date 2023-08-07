@@ -11,12 +11,10 @@ const EditResearchPaperContent = () => {
     // get url id
     const routerId = useRouter();
     const { id } = routerId.query;
-    console.log(id)
 
     const [file, setFile] = useState(null);
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
-    console.log(description + "description log")
 
     const fetchFeedback = async () => {
         let token = localStorage.getItem('token');

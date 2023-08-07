@@ -57,6 +57,7 @@ const EditFeedbackContent = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        let token = localStorage.getItem('token');
         // I am getting form th localstorage
         var formData = new FormData();
         formData.append('name', name);
@@ -69,9 +70,16 @@ const EditFeedbackContent = () => {
             url: `https://sndigitech.in/cbrs/api/feedback/${id}`,
             data: formData,
             headers: {
-                'Content-Type': `multipart/form-data;`,
+                'Content-Type': `multipart/form-data`,
+                'Authorization': `Bearer ${token}`,
             }
-        }).then((response) => {
+        }).then(({data : {status, message}}) => {
+            if(status) {
+                alert(message);
+                push("/dashboard/customer-feedback")
+            }else {
+                alert("Please enter all feild is requird. update time !")
+            }
             console.log(response);
         }).catch((response) => {
             console.log(response);
