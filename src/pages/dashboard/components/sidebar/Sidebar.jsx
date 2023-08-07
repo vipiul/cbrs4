@@ -1,5 +1,6 @@
 import React from 'react';
 import SidebarMenu from '../sildebarMenu/SidebarMenu';
+import Link from 'next/link';
 
 const Sidebar = () => {
     return (
@@ -7,7 +8,7 @@ const Sidebar = () => {
             {/* Menu */}
             <aside id="layout-menu" className="layout-menu menu-vertical menu bg-menu-theme">
                 <div className="app-brand demo ">
-                    <a href="index.html" className="app-brand-link">
+                    <Link href="/dashboard/dashboard" className="app-brand-link">
                         <span className="app-brand-logo demo">
                             <svg width={25} viewBox="0 0 25 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                                 <defs>
@@ -43,7 +44,7 @@ const Sidebar = () => {
                             </svg>
                         </span>
                         <span className="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span>
-                    </a>
+                    </Link>
                     <a href="javascript:void(0);" className="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
                         <i className="bx bx-chevron-left bx-sm align-middle" />
                     </a>
