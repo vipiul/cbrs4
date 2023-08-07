@@ -105,7 +105,7 @@ const CustomerFeedbackContent = () => {
                                                     </div>
                                                 </td>
                                                 <td className="px-6 py-4">
-                                                    <div className="text-sm text-gray-500">
+                                                    <div className="text-sm text-gray-500 description-limit">
                                                         {items.description}
                                                     </div>
                                                 </td>
