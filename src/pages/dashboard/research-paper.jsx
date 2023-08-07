@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Sidebar from './components/sidebar/Sidebar';
 import ResearchPaperContent from './components/layout/ResearchPaperTableContent';
 import { useRouter } from 'next/navigation';

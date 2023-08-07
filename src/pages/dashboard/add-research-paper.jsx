@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Sidebar from './components/sidebar/Sidebar';
 import ResearchContent from './components/layout/ResearchContent';
 import { useRouter } from 'next/navigation';
