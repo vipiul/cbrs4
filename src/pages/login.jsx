@@ -57,6 +57,7 @@ const Login = () => {
         initialValues: initialValues,
         validationSchema: SignupSchema,
         onSubmit: ((value, action) => {
+            localStorage.setItem('token', token);
             register(value);
             action.resetForm();
         })
