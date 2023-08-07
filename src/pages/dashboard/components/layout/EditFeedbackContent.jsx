@@ -65,7 +65,6 @@ const EditFeedbackContent = () => {
         formData.append('name', name);
         formData.append('title', title);
         formData.append('description', description);
-        console.log(file, '666666666666666');
         if(file) {
             formData.append('thumbnail', file);
         }

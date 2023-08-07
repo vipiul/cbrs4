@@ -56,7 +56,9 @@ const EditResearchPaperContent = () => {
         var formData = new FormData();
         formData.append('title', title);
         formData.append('description', description);
-        formData.append('thumbnail', file);
+        if(file) {
+            formData.append('thumbnail', file);
+        }
 
         axios({
             method: "post",
@@ -73,7 +75,6 @@ const EditResearchPaperContent = () => {
             }else {
                 alert("Please enter all feild is requird. update time !")
             }
-            console.log(response);
         }).catch((response) => {
             console.log(response);
         })
