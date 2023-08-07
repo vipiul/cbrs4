@@ -5,6 +5,8 @@ import { useRouter } from 'next/router';
 import { data } from 'autoprefixer';
 
 const EditResearchPaperContent = () => {
+    // page redirect route;
+    const { push } = useRouter()
 
     // get url id
     const routerId = useRouter();
@@ -71,7 +73,7 @@ const EditResearchPaperContent = () => {
                 alert(message);
                 push("/dashboard/research-paper")
             }else {
-                alert(message)
+                alert("Please enter all feild is requird. update time !")
             }
             console.log(response);
         }).catch((response) => {
