@@ -21,7 +21,7 @@ const Login = () => {
     const { push } = useRouter();
     // const [logindata, setLogindata] = useState([])
 
-    // console.log(logindata.status)
+    console.log(logindata.status)
 
     // I am calling api form the server
     const register = async (value) => {
@@ -37,14 +37,15 @@ const Login = () => {
                 'Content-Type': `multipart/form-data;`,
             }
         }).then((response) => {
-            if(response.data.status === false){
-                alert(response.data.message)
-            }else {
-                let token = "56|oWJLuu4VxcFhruYFHCEdsV9FusUDRFN7wg1dkGUC"
-                localStorage.setItem('token', token);
-                alert(response.data.message)
-                push("/dashboard/dashboard")
-            }
+            console.log(response)
+            // if(response.data.status === false){
+            //     alert(response.data.message)
+            // }else {
+            //     let token = response.data.token;
+            //     localStorage.setItem('token', token);
+            //     alert(response.data.message)
+            //     push("/dashboard/dashboard")
+            // }
             
         }).catch((response) => {
             console.log(response);
@@ -57,7 +58,8 @@ const Login = () => {
         initialValues: initialValues,
         validationSchema: SignupSchema,
         onSubmit: ((value, action) => {
-            let token = response.data.token;
+           
+            let token = "56|oWJLuu4VxcFhruYFHCEdsV9FusUDRFN7wg1dkGUC"
             localStorage.setItem('token', token);
             register(value);
             action.resetForm();
