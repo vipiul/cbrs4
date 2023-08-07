@@ -6,6 +6,8 @@ import { data } from 'autoprefixer';
 
 const EditFeedbackContent = () => {
 
+    const { push } = useRouter()
+
     // get url id
     const routerId = useRouter();
     const { id } = routerId.query;
