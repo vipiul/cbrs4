@@ -38,14 +38,14 @@ const Login = () => {
             }
         }).then((response) => {
             console.log(response)
-            // if(response.data.status === false){
-            //     alert(response.data.message)
-            // }else {
-            //     let token = response.data.token;
-            //     localStorage.setItem('token', token);
-            //     alert(response.data.message)
-            //     push("/dashboard/dashboard")
-            // }
+            if(response.data.status === false){
+                alert(response.data.message)
+            }else {
+                let token = response.data.token;
+                localStorage.setItem('token', token);
+                alert(response.data.message)
+                push("/dashboard/dashboard")
+            }
             
         }).catch((response) => {
             console.log(response);
@@ -58,8 +58,7 @@ const Login = () => {
         initialValues: initialValues,
         validationSchema: SignupSchema,
         onSubmit: ((value, action) => {
-           
-            let token = "56|oWJLuu4VxcFhruYFHCEdsV9FusUDRFN7wg1dkGUC"
+            let token = "56|oWJLuu4VxcFhruYFHCEdsV9FusUDRFN7wg1dkGUC";
             localStorage.setItem('token', token);
             register(value);
             action.resetForm();
