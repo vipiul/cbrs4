@@ -16,8 +16,8 @@ const ResearchPaperTableContent = () => {
             headers: {
                 'Authorization': `Bearer ${token01}`,
             }
-        }).then(({ data: { researchs } }) => {
-            setFeedbackdata(researchs);
+        }).then(({ data: { research } }) => {
+            setFeedbackdata(research);
         }).catch((response) => {
             console.log(response);
         })
