@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
+import axios from "axios";
 
 
 // slider setting 
@@ -38,9 +39,30 @@ const setting = {
   },
 };
 const Blog = () => {
+
+  // i am calling api show list data on the feedback page
+const [blogdata, setBlogdata] = useState([])
+
+const fetchFeedback = async () => {
+    const token01 = localStorage.getItem('token');
+
+    axios({
+        method: "get",
+        url: "https://sndigitech.in/cbrs/api/researchs",
+        headers: {
+            'Authorization': `Bearer ${token01}`,
+        }
+    }).then(({data : {research}}) => {
+      setBlogdata(research);
+    }).catch((response) => {
+        console.log(response);
+    })
+}
+
   const [isLoop, setIsLoop] = useState(false);
   useEffect(() => {
     setIsLoop(true);
+    fetchFeedback()
   }, []);
 
   return (
@@ -74,13 +96,13 @@ const Blog = () => {
             className="swiper-container tp-blog-active wow fadeInUp"
             data-wow-delay=".3s"
           >
-            {blog_data.map((item) => (
+            {blogdata.map((item) => (
               <SwiperSlide key={item.id}>
                 <div className="swiper-slide">
                   <div className="tp-blog mb-30">
                     <div className="tp-blog__thumb p-relative fix">
                       <a href="#">
-                        <img src={item.img} alt="blog-item" />
+                        <img src="/assets/img/blog/research-image-01.png" alt="blog-item" />
                       </a>
                       {/* <div className="tp-blog__date text-center">
                         <h4>{item.blog_date}</h4>
@@ -91,11 +113,11 @@ const Blog = () => {
                         <Link href="#">{item.blog_category}</Link>
                       </span> */}
                       <h5 className="tp-blog__title mb-20">
-                        <Link href="#">{item.blog_title}</Link>
+                        <Link href="#">{item.title}</Link>
                       </h5>
-                      <p>{item.blog_des}</p>
+                      <p>{item.description}</p>
                       <div className="tp-blog__btn">
-                        <Link href="assets/pdf/fake.pdf" download>Download Here !</Link>
+                        <Link href={item.thumbnail} download>Download Here !</Link>
                       </div>
                     </div>
                   </div>

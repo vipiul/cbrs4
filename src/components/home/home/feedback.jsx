@@ -2,6 +2,7 @@ import feedback from "@/data/feedback";
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
+import axios from "axios";
 
 
 // slider setting 
@@ -34,10 +35,35 @@ const setting = {
   },
 };
 
+
+
+
 const Feedback = () => {
   const [isLoop, setIsLoop] = useState(false);
+
+// i am calling api show list data on the feedback page
+const [feedbackdata, setFeedbackdata] = useState([])
+
+const fetchFeedback = async () => {
+    const token01 = localStorage.getItem('token');
+
+    axios({
+        method: "get",
+        url: "https://sndigitech.in/cbrs/api/feedbacks",
+        headers: {
+            'Authorization': `Bearer ${token01}`,
+        }
+    }).then(({data : {feedbacks}}) => {
+        setFeedbackdata(feedbacks);
+    }).catch((response) => {
+        console.log(response);
+    })
+}
+
+
   useEffect(() => {
     setIsLoop(true);
+    fetchFeedback();
   }, []);
   return (
     <>
@@ -65,14 +91,14 @@ const Feedback = () => {
             loop={isLoop}
             className="swiper-container tp-test-active pt-40"
           >
-            {feedback.map((item) => (
+            {feedbackdata.map((item) => (
               <SwiperSlide key={item.id}>
                 <div className="tp-testi p-relative mb-70">
                   <div className="tp-testi__avata">
-                    <img src={item.img} alt="testimonial-avata" />
+                    <img src={item.thumbnail} alt="testimonial-avata" />
                   </div>
                   <div className="tp-testi__content text-center">
-                    <p>{item.des}</p>
+                    <p>{item.description}</p>
                     <h5 className="tp-testi__avata-title">{item.name}</h5>
                     <span className="tp-testi__ava-position">{item.title}</span>
                   </div>

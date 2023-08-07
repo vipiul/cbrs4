@@ -105,11 +105,11 @@ const ResearchPaperTableContent = () => {
                                                     </div>
                                                 </td>
                                                 <td className="px-6 py-4">
-                                                    <div className="text-sm text-gray-500">
+                                                    <div className="text-sm text-gray-500 research-paper description-limit">
                                                         {items.description}
                                                     </div>
                                                 </td>
-                                                <td className="px-6 py-4 text-sm text-gray-500">
+                                                <td className="px-6 py-4 text-sm text-gray-500 research-paper description-limit">
                                                     {items.title}
                                                 </td>
                                                 <td className="px-6 py-4 text-sm text-gray-500">

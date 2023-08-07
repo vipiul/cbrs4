@@ -43,7 +43,7 @@ const FeedbackContent = () => {
             if(status === false) {
                 alert("Research feild data is not set in the table.")
             }else {
-                alert("Resaerch add successfully.");
+                alert("Research add successfully.");
                 push("/dashboard/research-paper")
             }
             console.log(status);
