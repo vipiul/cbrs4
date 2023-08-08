@@ -76,14 +76,14 @@ const HeaderTwo = () => {
             
             <div className="header-menu-bottom">
               <div className="row">
-                <div className="col-lg-8">
+                <div className="col-lg-9">
                   <div className="main-menu main-menu-second">
                     <nav id="mobile-menu">
                       <NavMenu />
                     </nav>
                   </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-3">
                  
                    
                                       <div className="header-top-mob">

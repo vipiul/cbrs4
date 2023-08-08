@@ -170,6 +170,8 @@
         top: 0;
         right: 130px;
         width: 724px;
+        transform: rotate(90deg);
+        top: 15%;
 
         @media #{$xxxl,$xxl} {
             width: 550px;
@@ -178,12 +180,12 @@
 
         @media #{$xl} {
             max-width: 400px;
-            right: 30px;
+            right: 142px;
         }
 
         @media #{$lg} {
             width: 420px;
-            right: 30px;
+            right: 142px;
         }
 
         @media #{$xs,$md} {
@@ -359,5 +361,14 @@
         @media #{$lg} {
             box-shadow: rgba(100, 100, 111, 0.1) .5px .5px 5px .5px;
         }
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    .col-xxl-2.col-lg-2.custome-widthThre.d-flex.align-items-center.justify-content-end {
+        position: absolute;
+        right: 0;
+        width: 300px;
+        top: 16rem;
     }
 }

@@ -34,10 +34,10 @@ const MobileMenus = () => {
                   >
                     {menu.sub_menus.map((sub, i) => (
                       <li key={i} className="mega-menu">
-                        <div className="mega-title-menu">
+                        <div className="mega-title-menu removeIcon">
                           <Link className={`${open.id == sub.id ? 'rotateIcon': ''}`} href={sub.link} onClick={()=>setOpen({IconClass: 'rotateIcon', id: sub.id})}>{sub.title}</Link>
                         </div>
-                        <ul className="mega-menu-main">
+                        {/* <ul className="mega-menu-main">
                           {
                             sub.services.map((mene_mega, i) => (
                               open.id == sub.id ? <div key={i} className="list-mega-menu">
@@ -45,7 +45,7 @@ const MobileMenus = () => {
                               </div> : ''
                             ))
                           }
-                        </ul>
+                        </ul> */}
                       </li>
                     ))}
                   </ul>

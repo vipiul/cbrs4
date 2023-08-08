@@ -112,7 +112,7 @@
 }
 .header-logo-box {
   flex: 0 0 auto;
-  width: 245px;
+  width: 170px;
   text-align: center;
   & img {
     width: 220px;
@@ -1003,19 +1003,27 @@ ul.mega-menu-main:hover {
   opacity: 0;
   // transition: all 0.5s ease-in;
 }
+.mega-title-menu.removeIcon a:after {
+  display: none;
+}
 .rotateIcon::after {
   transform: rotate(180deg);
 }
 a.rotateIcon {
   color: #10d0a1 !important;
 }
+.header-top-mob svg {
+  display: inline-block;
+}
+.header-top-mob {
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  width: 202px;
+  font-size: 12px;
+}
 @media (min-width: 1199px) { 
-  .custome-widthOne {
-      width: 13.33% !important;
-  }
-  .custome-widthTwo {
-    width: calc(66.66% - 5%) !important;
-  }
   .main-menu {
     margin: 0 !important;
   }

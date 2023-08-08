@@ -29,6 +29,10 @@ const BiofluidsDetailsArea = () => {
                     The range includes serum and double- and single-spun plasma in a variety of buffers from healthy and sick patients.
                 </p>
 
+                <div className="image-Contetn mb-30">
+                  <img src="/assets/img/banner/bio-fluids-02.jpg" style={{width: '100%'}} alt="bio banner" />
+                </div>
+
                 <p>
                   <b>3.Coat Samples</b> Obtain human buffy coat samples for research from sick and healthy patients.
                     Easy, streamlined procurement of depot and prospectively collected buffy coats

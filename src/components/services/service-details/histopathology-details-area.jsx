@@ -33,6 +33,12 @@ const LaboratoryAndBiobankDetailsArea = () => {
                 </div>
               ))
             }
+
+            <div className="col-12">
+              <div className="imagecontent mb-30">
+                <img src="/assets/img/banner/histopathology-04.jpg" alt="histopathology-02" style={{width: '100%'}} />
+              </div>
+            </div>
             
           </div>
           <div className="row">

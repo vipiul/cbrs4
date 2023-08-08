@@ -22,10 +22,10 @@ const NavMenu = ({num=false}) => {
                     menu.mega_menu ? (
                       menu.sub_menus.map((sub_m, i) => (
                         <li key={i} className="mega-menu">
-                          <div className="mega-title-menu">
+                          <div className="mega-title-menu removeIcon">
                             <Link href={sub_m.link}>{sub_m.title}</Link>
                           </div>
-                          <ul className="mega-menu-main">
+                          {/* <ul className="mega-menu-main">
                             {
                               sub_m.services.map((mene_mega, i) => (
                                 <div key={i} className="list-mega-menu">
@@ -33,7 +33,7 @@ const NavMenu = ({num=false}) => {
                                 </div>  
                               ))
                             }
-                          </ul>
+                          </ul> */}
                         </li>
                       ))
                     ) : ''
