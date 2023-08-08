@@ -44,7 +44,6 @@ const menu_data = [
         { link: "/proteomics", title: "Proteomics" },
         { link: "/bioinformatics", title: "Bioinformatics" },
         { link: "/generation-sequencing-ngs", title: "Generation Sequencing (NGS)" },
-        { link: "/storage", title: "Storage" },
         // { 
         //   id: 2,
         //   link: "#",
@@ -65,18 +64,19 @@ const menu_data = [
     id: 5,
     mega_menu: false,
     has_dropdown: false,
-    title: "Research Papers",
-    link: "/research",
+    title: "Storage",
+    link: "/storage",
     active: "",
   },
   {
     id: 6,
     mega_menu: false,
     has_dropdown: false,
-    title: "Storage",
-    link: "/storage",
+    title: "Research Papers",
+    link: "/research",
     active: "",
   },
+
  /* {
     id: 5,
     mega_menu: false,

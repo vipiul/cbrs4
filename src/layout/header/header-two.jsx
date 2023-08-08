@@ -76,39 +76,13 @@ const HeaderTwo = () => {
             
             <div className="header-menu-bottom">
               <div className="row">
-                <div className="col-lg-9">
+                <div className="col-lg-12">
                   <div className="main-menu main-menu-second">
                     <nav id="mobile-menu">
                       <NavMenu />
                     </nav>
                   </div>
                 </div>
-                <div className="col-lg-3">
-                 
-                   
-                                      <div className="header-top-mob">
-                                          <svg
-                                              width="14"
-                                              height="19"
-                                              viewBox="0 0 14 19"
-                                              fill="none"
-                                              xmlns="http://www.w3.org/2000/svg"
-                                          >
-                                              <circle cx="2" cy="2" r="2" fill="#2D79AA" />
-                                              <circle cx="7" cy="2" r="2" fill="#2D79AA" />
-                                              <circle cx="12" cy="2" r="2" fill="#2D79AA" />
-                                              <circle cx="12" cy="7" r="2" fill="#2D79AA" />
-                                              <circle cx="12" cy="12" r="2" fill="#2D79AA" />
-                                              <circle cx="7" cy="7" r="2" fill="#2D79AA" />
-                                              <circle cx="7" cy="12" r="2" fill="#2D79AA" />
-                                              <circle cx="7" cy="17" r="2" fill="#2D79AA" />
-                                              <circle cx="2" cy="7" r="2" fill="#2D79AA" />
-                                              <circle cx="2" cy="12" r="2" fill="#2D79AA" />
-                                          </svg>
-                                          <span>Help Desk :</span>
-                                          <a href="tel:91 83838 64051"> 91 83838 64051</a>
-                                      </div>
-                  </div>
                 </div>
               </div>
             </div>

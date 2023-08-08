@@ -37,7 +37,7 @@ const ContactForm = () => {
               >
                 <div className="tpcontact__item text-center">
                   <div className="tpcontact__icon mb-20">
-                    <img src="/assets/img/icon/contact-01.svg" alt="" />
+                    <img src="/assets/img/icon/contact-01.svg" alt="" style={{margin: "auto"}} />
                   </div>
                   <div className="tpcontact__address">
                     <h4 className="tpcontact__title mb-15">Address line</h4>
@@ -53,7 +53,7 @@ const ContactForm = () => {
               >
                 <div className="tpcontact__item text-center">
                   <div className="tpcontact__icon mb-20">
-                    <img src="/assets/img/icon/contact-02.svg" alt="" />
+                    <img src="/assets/img/icon/contact-02.svg" alt="" style={{margin: "auto"}} />
                   </div>
                   <div className="tpcontact__address">
                     <h4 className="tpcontact__title mb-15">Contact Details</h4>
@@ -72,7 +72,7 @@ const ContactForm = () => {
               >
                 <div className="tpcontact__item text-center">
                   <div className="tpcontact__icon mb-20">
-                    <img src="/assets/img/icon/contact-03.svg" alt="" />
+                    <img src="/assets/img/icon/contact-03.svg" alt="" style={{margin: "auto"}} />
                   </div>
                   <div className="tpcontact__address">
                     <h4 className="tpcontact__title mb-15">Working Hours</h4>

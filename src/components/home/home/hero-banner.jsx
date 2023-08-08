@@ -56,7 +56,7 @@ const HeroBanner = () => {
         <div className="container">
           <div className="row">
             <div className="col-xl-8">
-              <div className="banner__content pt-145 mb-135">
+              <div className="banner__content bannerContent pt-100 mb-135">
                 <span className="banner__sub-title mb-20">{sub_title}</span>
                 <h2 className="banner__title mb-30">{title}</h2>
                 <p>{des}</p>

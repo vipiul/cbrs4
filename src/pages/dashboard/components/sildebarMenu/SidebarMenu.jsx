@@ -1,11 +1,10 @@
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React from 'react'
+import { useRouter } from "next/router";
 
 const SidebarMenu = () => {
 
-    const [active, setActive] = useState(0)
-
-    console.log(active)
+    const router = useRouter();
 
     const sidebarmenu = [
         {
@@ -35,7 +34,7 @@ const SidebarMenu = () => {
             {/* Dashboard */}
             {
                 sidebarmenu.map((items, index) => (
-                    <li className={`menu-item ${items.id === active ? "active" : null}`} key={index} onClick={()=>setActive(index)}>
+                    <li className={`menu-item ${router.pathname == items.link ? "active" : ""}`} key={index}>
                         <Link href={items.link} className="menu-link">
                             <i className={`menu-icon ${items.icon} bx bx-home-circle`} />
                             <div data-i18n="Analytics">{items.title}</div>

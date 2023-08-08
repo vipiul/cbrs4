@@ -84,7 +84,7 @@ const Header = () => {
                                     </nav>
                                 </div>
                             </div>
-                            <div className="col-xxl-2 col-lg-2 custome-widthThre d-flex align-items-center justify-content-end">
+                            {/* <div className="col-xxl-2 col-lg-2 custome-widthThre d-flex align-items-center justify-content-end">
                                 <div className="tp-bt-btn-banner newbutton">
                                     <a className="tp-bt-btn" href="tel:91 83838 64051">
                                         <svg
@@ -108,7 +108,7 @@ const Header = () => {
                                         <span>Help Desk :</span>+91 83838 64051
                                     </a>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
