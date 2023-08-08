@@ -117,7 +117,7 @@ const fetchFeedback = async () => {
                       </h5>
                       <p>{item.description}</p>
                       <div className="tp-blog__btn">
-                        <Link href={item.thumbnail} download>Download Here !</Link>
+                        <Link href={item.thumbnail} target="_black" download>Download Here !</Link>
                       </div>
                     </div>
                   </div>
