@@ -9,7 +9,7 @@ const ResearchArea = () => {
 const [research, setResearch] = useState([])
 
 const fetchFeedback = async () => {
-    const token01 = localStorage.getItem('token');
+    const token01 = localStorage.getItem('CONTENT');
 
     axios({
         method: "get",

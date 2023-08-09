@@ -19,9 +19,6 @@ const SignupSchema = Yup.object().shape({
 
 const Login = () => {
     const { push } = useRouter();
-    // const [logindata, setLogindata] = useState([])
-
-    // console.log(logindata.status)
 
     // I am calling api form the server
     const register = async (value) => {
@@ -42,6 +39,7 @@ const Login = () => {
             }else {
                 let token = response.data.token;
                 localStorage.setItem('token', token);
+                localStorage.setItem('CONTENT', token);
                 alert(response.data.message)
                 push("/dashboard/dashboard")
             }

@@ -45,13 +45,14 @@ const Feedback = () => {
 const [feedbackdata, setFeedbackdata] = useState([])
 
 const fetchFeedback = async () => {
-    const token01 = localStorage.getItem('token');
+    const token01 = localStorage.getItem('CONTENT');
 
     axios({
         method: "get",
         url: "https://sndigitech.in/cbrs/api/feedbacks",
         headers: {
             'Authorization': `Bearer ${token01}`,
+            'Content-Type': `multipart/form-data;`,
         }
     }).then(({data : {feedbacks}}) => {
         setFeedbackdata(feedbacks);
