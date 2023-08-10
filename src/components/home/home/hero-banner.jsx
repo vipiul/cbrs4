@@ -115,7 +115,7 @@ const HeroBanner = () => {
       <VideoPopup
         isVideoOpen={isVideoOpen}
         setIsVideoOpen={setIsVideoOpen}
-        videoId={"UnPpHR1ijyY"}
+        videoId={"uZ9B_HB9u2s"}
       />
       {/* video modal end */}
     </>
