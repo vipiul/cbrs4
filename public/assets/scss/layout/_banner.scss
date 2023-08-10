@@ -170,7 +170,6 @@
         top: 0;
         right: 130px;
         width: 724px;
-        transform: rotate(90deg);
         top: 15%;
 
         @media #{$xxxl,$xxl} {
@@ -215,11 +214,11 @@
     &__video-btn {
         position: absolute;
         bottom: 55px;
-        right: 55px;
+        left: 55px;
 
         @media #{$xl} {
             bottom: 0;
-            right: 35px;
+            left: 35px;
         }
 
         @media #{$lg} {
@@ -371,4 +370,12 @@
         width: 300px;
         top: 16rem;
     }
+}
+
+
+.banner__shape12.d-none.d-lg-block {
+    position: absolute;
+    top: 14rem;
+    max-width: 620px;
+    right: 0;
 }

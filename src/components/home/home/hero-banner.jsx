@@ -99,8 +99,8 @@ const HeroBanner = () => {
             </a>
           </div>
         </div>
-        <div className="banner__shape d-none d-lg-block">
-          <img src="/assets/img/banner/banner-01.png" alt="banner-img" />
+        <div className="banner__shape12 d-none d-lg-block">
+          <img src="/assets/img/banner/banner-03.png" alt="banner-img" />
           <div className="banner__video-btn">
             <button
               onClick={() => setIsVideoOpen(true)}
