@@ -40,7 +40,7 @@ const ResearchArea = () => {
               </p>
 
               <p>
-                Our biobank is a hub for comprehensive research materials, housing an impressive array of scholarly articles, peer-reviewed studies, and academic publications. From the molecular intricacies of cancer to innovative treatment modalities, our collection covers the entire spectrum of cancer research. Whether you're delving into genetics, immunotherapy, precision medicine, or any other facet of oncology, you'll find a treasure trove of invaluable resources at your fingertips.
+                Our biobank is a hub for comprehensive research materials, housing an impressive array of scholarly articles, peer-reviewed studies, and academic publications. From the molecular intricacies of cancer to innovative treatment modalities, our collection covers the entire spectrum of cancer research. Whether you&apos;re delving into genetics, immunotherapy, precision medicine, or any other facet of oncology, you&apos;ll find a treasure trove of invaluable resources at your fingertips.
               </p>
 
               <p className="mb-50">
