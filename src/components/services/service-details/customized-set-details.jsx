@@ -6,6 +6,7 @@ import Banner from "./banner";
 import CustomizedSetDetailsArea from "./customized-set-details-area";
 import ServiceArea from "../service/service-area";
 import Specialists from "@/common/specialists";
+import Cta_Area from "@/components/home/home/cta-area";
 
 const CustomizedSetDetails = () => {
   return (
@@ -13,6 +14,7 @@ const CustomizedSetDetails = () => {
       <HeaderTwo />
       <Banner pageTitle={'Customized Set'} pageImage={'/assets/img/banner/customized-set.jpg'} />
       <CustomizedSetDetailsArea />
+      <Cta_Area serviceTitle="Customized Set" />
       <DirectContactUs />
       <Footer />
     </>

@@ -15,7 +15,7 @@ const About = () => {
       <Banner />
       <AboutArea />
       <Specialists />
-      <NavTab />
+      {/* <NavTab /> */}
       {/* <Team /> */}
       <FooterFour />
     </>

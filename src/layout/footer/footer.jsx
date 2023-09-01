@@ -11,18 +11,24 @@ const footer_content = {
       links: [
         { name: "Search Services", link: "/storage" },
         { name: "Search Biospecimens", link: "/bio-fluids" },
+        { name: "Biospecimens", link: "#" },
+        { name: "Service", link: "#" },
+        { name: "Research papers", link: "/research" },
+        { name: "Digital Pathology", link: "/digital-pathology" },
+        { name: "TMA", link: "#" },
       ],
     },
     {
       id: 2,
-      title: "Collaborations",
+      title: "Enquiry",
       cls: "footer-col-3",
       links: [
-        // { name: "Collaborations", link: "/" },
-        // { name: "Suppliers", link: "/" },
         { name: "Connect to collaborate", link: "/contact" },
-        // { name: "Be a team member", link: "/" },
         { name: "Connect to enquire", link: "/contact" },
+        { name: "Collaboration query (Make a separate form)", link: "/contact" },
+        { name: "Enquiry on inventory", link: "/contact" },
+        { name: "Connect to experts", link: "/contact" },
+        { name: "Customization of services", link: "#" },
 
       ],
     },
@@ -32,7 +38,8 @@ const footer_content = {
       cls: "footer-col-3",
       links: [
         { name: "About Us", link: "/about" },
-        { name: "Research Papers", link: "/research" },
+        { name: "Contact us", link: "/contact" },
+        { name: "Email us", link: "#" },
 
       ],
     },
@@ -123,10 +130,10 @@ const Footer = () => {
                 <div className="footer-widget__copyright-info info-direction">
                   <ul className="d-flex align-items-center">
                     <li>
-                      <a href="#">Terms and conditions</a>
+                      <Link href="/terms-conditions">Terms and conditions</Link>
                     </li>
                     <li>
-                      <a href="#">Privacy policy</a>
+                      <Link href="/privacy-policy">Privacy policy</Link>
                     </li>
 
                   </ul>

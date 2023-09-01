@@ -6,7 +6,12 @@ const AppointForm = () => {
       <div className="row">
         <div className="col-lg-6">
           <div className="visitor-form__input">
-            <input type="text" placeholder="Your name" />
+            <input type="text" placeholder="Name" />
+          </div>
+        </div>
+        <div className="col-lg-6">
+          <div className="visitor-form__input">
+            <input type="text" placeholder="Surname" />
           </div>
         </div>
         <div className="col-lg-6">
@@ -16,25 +21,42 @@ const AppointForm = () => {
         </div>
         <div className="col-lg-6">
           <div className="visitor-form__input">
-            <input type="text" placeholder="Medical Research" />
+            <input type="text" placeholder="Company Name" />
           </div>
         </div>
         <div className="col-lg-6">
           <div className="visitor-form__input">
-            <input type="text" placeholder="mm / dd / yyyy" />
+            <input type="text" placeholder="Country : (Scroll down with names of all the countries)" />
           </div>
         </div>
-        <div className="col-lg-12">
+        <div className="col-lg-6">
+          <div className="visitor-form__input">
+            <input type="number" placeholder="Contact Number" />
+          </div>
+        </div>
+        <div className="col-lg-6">
+          <div className="visitor-form__input">
+            <input type="text" placeholder="Desgination" />
+          </div>
+        </div>
+
+        <div className="col-lg-6">
+          <div className="visitor-form__input">
+            <input type="text" placeholder="Purpose to connect" />
+          </div>
+        </div>
+     
+        {/* <div className="col-lg-12">
           <div className="visitor-form__input">
             <textarea placeholder="Type your message" name="message"></textarea>
           </div>
-        </div>
+        </div> */}
         <div className="col-lg-4 col-md-4 col-12">
           <div className="visit-btn mt-20">
-            <button className="tp-btn">Book Now</button>
+            <button className="tp-btn">Submit</button>
           </div>
         </div>
-        <div className="col-lg-8 col-md-8 col-12">
+        {/* <div className="col-lg-8 col-md-8 col-12">
           <div className="visit-serial mt-45">
             <span>
               24/7 Emergency Service :
@@ -44,7 +66,7 @@ const AppointForm = () => {
               </a>
             </span>
           </div>
-        </div>
+        </div> */}
       </div>
     </form>
   );

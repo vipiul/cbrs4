@@ -6,6 +6,7 @@ import Banner from "./banner";
 import DigitalPathologyDetailsArea from "./digital-pathology-details-area";
 import ServiceArea from "../service/service-area";
 import Specialists from "@/common/specialists";
+import Cta_Area from "@/components/home/home/cta-area";
 
 const DigitalPathologyDetails = () => {
   return (
@@ -13,6 +14,7 @@ const DigitalPathologyDetails = () => {
       <HeaderTwo />
       <Banner pageTitle={'Digital Pathology'} pageImage={'/assets/img/banner/digital-pathology.jpg'} />
       <DigitalPathologyDetailsArea />
+      <Cta_Area serviceTitle={"Digital Pathology"} />
       <DirectContactUs />
       <Footer />
     </>

@@ -20,7 +20,7 @@ const menu_data = [
     mega_menu: true,
     has_dropdown: true,
     title: "Biospecimens",
-    link: "#",
+    link: "/biospecimens",
     active: "",
     sub_menus: [
         {id: 1, title: "Biofluids", link: "/bio-fluids" },
@@ -44,6 +44,7 @@ const menu_data = [
         { link: "/proteomics", title: "Proteomics" },
         { link: "/bioinformatics", title: "Bioinformatics" },
         { link: "/generation-sequencing-ngs", title: "Generation Sequencing (NGS)" },
+        { link: "/tissue-microarrays", title: "Tissue Microarrays" },
         // { 
         //   id: 2,
         //   link: "#",

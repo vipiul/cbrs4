@@ -24,7 +24,7 @@ const HomeOne = () => {
       <Appointment />
       <Feedback />
       <Brands />
-      <Cta_Area />
+      {/* <Cta_Area /> */}
       <Blog />
     </>
   );

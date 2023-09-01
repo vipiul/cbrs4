@@ -34,7 +34,7 @@ const BiofluidsDetailsArea = () => {
                 </div>
 
                 <p>
-                  <b>3.Coat Samples</b> Obtain human buffy coat samples for research from sick and healthy patients.
+                  <b>3.Buffy Coat Samples</b> Obtain human buffy Buffy Coat Samples for research from sick and healthy patients.
                     Easy, streamlined procurement of depot and prospectively collected buffy coats
                     Through CBRS researchers have access to a global network of providers and patients for stored and prospectively collected buffy coats, with and without matched sets. Our extensive provider network provides access to a large inventory of criterion-specific buffy coats from both sick and healthy patients.
                     Our network also enables large-scale, prospective collections of high-quality matched sample sets including buffy coats. Each matched specimen set is supplied with the patient&apos;s baseline clinical data and de-identified pathology information.

@@ -62,7 +62,7 @@ const choose = [
     ),
     des: (
       <>
-        We have a team of experienced researchers for CBRS
+            We are assisted with teams of expert who have several years of experience.
       </>
     ),
   },

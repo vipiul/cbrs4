@@ -6,6 +6,7 @@ import Banner from "./banner";
 import GenerationSequencingNgsDetailsArea from "./generation-sequencing-ngs-details-area";
 import ServiceArea from "../service/service-area";
 import Specialists from "@/common/specialists";
+import Cta_Area from "@/components/home/home/cta-area";
 
 const GenerationSequencingNgsDetails = () => {
   return (
@@ -13,6 +14,7 @@ const GenerationSequencingNgsDetails = () => {
       <HeaderTwo />
       <Banner pageTitle={'Generation Sequencing (NGS)'} pageImage={'/assets/img/banner/generation-sequencing-ngs.jpg'} />
       <GenerationSequencingNgsDetailsArea />
+      <Cta_Area serviceTitle={'Generation Sequencing (NGS)'} />
       <DirectContactUs />
       <Footer />
     </>

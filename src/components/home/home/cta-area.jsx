@@ -1,6 +1,6 @@
 import React from "react";
 
-const Cta_Area = () => {
+const Cta_Area = ({serviceTitle}) => {
   return (
     <>
       <section className="cta-area">
@@ -15,7 +15,7 @@ const Cta_Area = () => {
               >
                 <div className="cta-content ml-90">
                   <h2 className="cta-title mb-35">
-                    Looking for a best <br /> Biobank Service
+                    Looking for a best <br /> {serviceTitle} Service
                   </h2>
                   <a href="tel:91 83838 64051" className="tp-cta-btn">
                     <svg

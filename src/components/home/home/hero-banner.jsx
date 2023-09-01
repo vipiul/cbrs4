@@ -6,16 +6,20 @@ import VideoPopup from "@/modals/video-popup";
 
 // content
 const content = {
-  sub_title: "Welcome to CBRS",
-  title: (
-    <>
-      Charting the Course of Medical Advancement: The Biobank of Possibilities<br />
-    </>
-  ),
+  // sub_title: "Welcome to CBRS",
+  // title: (
+  //   <>
+  //     Charting the Course of Medical Advancement: The Biobank of Possibilities<br />
+  //   </>
+  // ),
   des: (
     <>
-      We process extensive expertise in the procurement and distribution of biosamples.
-      Our collection of human tissue and biofluids is diverse and comprehensive, offering a wide range of formats to suit all research and development requirements.
+      CBRS functions as a worldwide biobank with access to a wide spectrum of human biospecimens across various disease conditions, catering to the research requirements of scientists CBRS is a CRO with
+      cutting-edge technologies. Our biobank houses more than 500,000 human tissues, including both formalin-fixed paraffin-embedded (FFPE) and cryogenically preserved samples. Additionally, we possess
+      tissue arrays, serum, plasma, whole blood, DNA, RNA samples, Digital Pathology and tissue microarrays (TMA). We embark on a journey of scientific exploration, driven by the invaluable treasure trove of
+      biospecimens in our biobank. With unwavering commitment, we collect, preserve, and distribute a diverse array of human tissues, biofluids, and genetic materials, fostering groundbreaking research
+      and innovative advancements. As a beacon of collaboration and ethical stewardship, we stand at the forefront of medical discovery, empowering researchers and scientists to unlock new horizons in the
+      realm of health and biotechnology.
     </>
   ),
   btn_text1: "Contact Us",
