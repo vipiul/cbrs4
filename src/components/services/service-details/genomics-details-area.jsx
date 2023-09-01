@@ -15,7 +15,7 @@ const GenomicsDetailsArea = () => {
                   Genomics
                 </h4>
                 <p className="mb-20">
-                  Our genomics biobank repository  offers a wide range of services across categories, providing convenient access to high-quality genetic materials for researchers in industries such as pharmaceutical, biotechnology and pharmaceutical research laboratories. Our archive supports these industries as follows. 
+                  Our genomics biobank repository  offers a wide range of services across categories, providing convenient access to high-quality genetic materials for researchers in industries such as pharmaceutical, biotechnology and research laboratories. Our archive supports these industries as follows. 
                 </p>
               </div>
             </div>

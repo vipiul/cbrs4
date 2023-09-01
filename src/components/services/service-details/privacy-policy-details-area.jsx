@@ -175,14 +175,14 @@ const PrivacyPolicyDetailsArea = () => {
                 </li>
                 <li>
                   <p>
-                    <strong>For the performance of a contract:</strong> the development, compliance and undertaking of the purchase contract for the products, items or services You have purchased or of any other contract
+                    <strong>For the performance of a contract:</strong> the development, compliance and undertaking of the purchase contract for the samples, items or services You have purchased or of any other contract
                     with Us through the Service.
                   </p>
                 </li>
                 <li>
                   <p>
                     <strong>To contact You:</strong> To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application&apos;s push notifications regarding updates
-                    or informative communications related to the functionalities, products or contracted services, including the security updates, when necessary or reasonable for their implementation.
+                    or informative communications related to the functionalities, samples or contracted services, including the security updates, when necessary or reasonable for their implementation.
                   </p>
                 </li>
                 <li>
@@ -203,7 +203,7 @@ const PrivacyPolicyDetailsArea = () => {
                 <li>
                   <p>
                     <strong>For other purposes</strong>: We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to
-                    evaluate and improve our Service, products, services, marketing and your experience.
+                    evaluate and improve our Service, samples, services, marketing and your experience.
                   </p>
                 </li>
               </ul>
@@ -218,7 +218,7 @@ const PrivacyPolicyDetailsArea = () => {
                   <strong>With Affiliates:</strong> We may share Your information with Our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any
                   other subsidiaries, joint venture partners or other companies that We control or that are under common control with Us.
                 </li>
-                <li><strong>With business partners:</strong> We may share Your information with Our business partners to offer You certain products, services or promotions.</li>
+                <li><strong>With business partners:</strong> We may share Your information with Our business partners to offer You certain samples, services or promotions.</li>
                 <li>
                   <strong>With other users:</strong> when You share personal information or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed
                   outside.

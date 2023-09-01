@@ -49,7 +49,7 @@ const TermsConditionsDetailsArea = () => {
                 </li>
                 <li>
                   <p>
-                    <strong>Third-party Social Media Service</strong> means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made
+                    <strong>Third-party Social Media Service</strong> means any services or content (including data, information, samples or services) provided by a third-party that may be displayed, included or made
                     available by the Service.
                   </p>
                 </li>
@@ -116,7 +116,7 @@ const TermsConditionsDetailsArea = () => {
               </p>
               <p>
                 Without limiting the foregoing, neither the Company nor any of the company &aposs provider makes any representation or warranty of any kind, express or implied: (i) as to the operation or availability of the Service,
-                or the information, content, and materials or products included thereon; (ii) that the Service will be uninterrupted or error-free; (iii) as to the accuracy, reliability, or currency of any information or content
+                or the information, content, and materials or samples included thereon; (ii) that the Service will be uninterrupted or error-free; (iii) as to the accuracy, reliability, or currency of any information or content
                 provided through the Service; or (iv) that the Service, its servers, the content, or e-mails sent from or on behalf of the Company are free of viruses, scripts, trojan horses, worms, malware, timebombs or other
                 harmful components.
               </p>
