@@ -11,7 +11,7 @@ const BiospecimensDetailsArea = () => {
               <div className="tp-srv-process mb-50">
 
                 <p className="mb-20">
-                  Positioned as India's inaugural independent biobank establishment, the CBRS biobank stands devotedly committed to the acquisition, preservation, and dissemination of human biospecimens and their associated data, to assist propel the advancement of research undertakings. Our all-encompassing collection spans a diverse spectrum of samples, encompassing not only Whole blood, tissues, FFPE Blocks, DNA, and RNA, but also an assortment of various biofluids and more. Within the landscape of medical progress, the CBRS biobank emerges as a pivotal driving force, equipping researchers with avant-garde technologies to explore groundbreaking treatments, fathom the complexities of ailments, and lay the groundwork for bespoke medical interventions.
+                  Positioned as India &apos;s inaugural independent biobank establishment, the CBRS biobank stands devotedly committed to the acquisition, preservation, and dissemination of human biospecimens and their associated data, to assist propel the advancement of research undertakings. Our all-encompassing collection spans a diverse spectrum of samples, encompassing not only Whole blood, tissues, FFPE Blocks, DNA, and RNA, but also an assortment of various biofluids and more. Within the landscape of medical progress, the CBRS biobank emerges as a pivotal driving force, equipping researchers with avant-garde technologies to explore groundbreaking treatments, fathom the complexities of ailments, and lay the groundwork for bespoke medical interventions.
                 </p>
 
                 {/* table list 01 */}
@@ -119,7 +119,7 @@ const BiospecimensDetailsArea = () => {
                       <div className="col-12 col-md-3">
                         <h6>MUSCULO SKELETAL</h6>
                         <ul className="lsitof-data">
-                          <li>• Ewing's Sarcoma</li>
+                          <li>• Ewing &apos;s Sarcoma</li>
                           <li>• Angiofibroma</li>
                           <li>• Liposarcoma</li>
                           <li>• Rectal Adenocarcinoma</li>
@@ -143,8 +143,8 @@ const BiospecimensDetailsArea = () => {
                       <div className="col-12 col-md-3">
                         <h6>LYMPHATIC</h6>
                         <ul className="lsitof-data">
-                          <li>• Non-Hodgkin's Lymphoma</li>
-                          <li>• Hodgkin's Lymphoma</li>
+                          <li>• Non-Hodgkin &apos;s Lymphoma</li>
+                          <li>• Hodgkin &apos;s Lymphoma</li>
                           <li>• DLBCL</li>
                           <li>• Anaplastic Large Cell Lymphoma</li>
                           <li>• Follicular Lymphoma</li>

@@ -14,7 +14,7 @@ const PrivacyPolicyDetailsArea = () => {
               </p>
               <p>
                 We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created
-                with the help of the <a href="https://www.freeprivacypolicy.com/free-privacy-policy-generator/" target="_blank">Free Privacy Policy Generator</a>.
+                with the help of the <a href="https://www.freeprivacypolicy.com/free-privacy-policy-generator/" rel="noreferrer">Free Privacy Policy Generator</a>.
               </p>
               <h3>Interpretation and Definitions</h3>
               <h2>Interpretation</h2>
@@ -70,7 +70,7 @@ const PrivacyPolicyDetailsArea = () => {
                 <li>
                   <p>
                     <strong>Website</strong> refers to Clinical Bio-Samples and Research Services (CBRS), accessible from
-                    <a href="https://www.clinicalbiosamples.com/" rel="external nofollow noopener" target="_blank">https://www.clinicalbiosamples.com/</a>
+                    <a href="https://www.clinicalbiosamples.com/" rel="external nofollow noopener">https://www.clinicalbiosamples.com/</a>
                   </p>
                 </li>
                 <li>
@@ -104,7 +104,7 @@ const PrivacyPolicyDetailsArea = () => {
               <h3>Usage Data</h3>
               <p>Usage Data is collected automatically when using the Service.</p>
               <p>
-                Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the
+                Usage Data may include information such as Your Device&apos;s Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the
                 time spent on those pages, unique device identifiers and other diagnostic data.
               </p>
               <p>
@@ -131,7 +131,7 @@ const PrivacyPolicyDetailsArea = () => {
               <p>
                 Cookies can be &quot;Persistent&quot; or &quot;Session&quot; Cookies. Persistent Cookies remain on Your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You
                 close Your web browser. Learn more about cookies on the
-                <a href="https://www.freeprivacypolicy.com/blog/sample-privacy-policy-template/#Use_Of_Cookies_And_Tracking" target="_blank">Free Privacy Policy website</a> article.
+                <a href="https://www.freeprivacypolicy.com/blog/sample-privacy-policy-template/#Use_Of_Cookies_And_Tracking" rel="noreferrer">Free Privacy Policy website</a> article.
               </p>
               <p>We use both Session and Persistent Cookies for the purposes set out below:</p>
               <ul>
@@ -181,7 +181,7 @@ const PrivacyPolicyDetailsArea = () => {
                 </li>
                 <li>
                   <p>
-                    <strong>To contact You:</strong> To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's push notifications regarding updates
+                    <strong>To contact You:</strong> To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application&apos;s push notifications regarding updates
                     or informative communications related to the functionalities, products or contracted services, including the security updates, when necessary or reasonable for their implementation.
                   </p>
                 </li>
@@ -236,7 +236,7 @@ const PrivacyPolicyDetailsArea = () => {
               </p>
               <h2>Transfer of Your Personal Data</h2>
               <p>
-                Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be
+                Your information, including Personal Data, is processed at the Company&apos;s operating offices and in any other places where the parties involved in the processing are located. It means that this information may be
                 transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.
               </p>
               <p>Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer.</p>
@@ -274,16 +274,16 @@ const PrivacyPolicyDetailsArea = () => {
                 The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable
                 means to protect Your Personal Data, We cannot guarantee its absolute security.
               </p>
-              <h3>Children's Privacy</h3>
+              <h3>Children&apos;s Privacy</h3>
               <p>
                 Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that
                 Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to
                 remove that information from Our servers.
               </p>
-              <p>If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent before We collect and use that information.</p>
+              <p>If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent&apos;s consent before We collect and use that information.</p>
               <h3>Links to Other Websites</h3>
               <p>
-                Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy
+                Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party&apos;s site. We strongly advise You to review the Privacy
                 Policy of every site You visit.
               </p>
               <p>We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
@@ -298,7 +298,7 @@ const PrivacyPolicyDetailsArea = () => {
                   <p>By email: <a href="#" class="__cf_email__">sales@clinicalbiosamples.com</a></p>
                 </li>
                 <li>
-                  <p>By visiting this page on our website: <a href="https://www.clinicalbiosamples.com/contact-us" rel="external nofollow noopener" target="_blank">https://www.clinicalbiosamples.com/contact-us</a></p>
+                  <p>By visiting this page on our website: <a href="https://www.clinicalbiosamples.com/contact-us" rel="noreferrer">https://www.clinicalbiosamples.com/contact-us</a></p>
                 </li>
                 <li>
                   <p>By phone number: 83838 64051</p>
