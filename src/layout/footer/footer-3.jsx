@@ -48,7 +48,7 @@ const FooterThree = () => {
                     <div className="footercontact__content">
                       <span className="footercontact__title">
                         <Link href="/contact">
-                          Ta-134/A, Gulshan Badda Link Rd, <br /> Nya 10982 USA
+                          C-25, C Block, Sector 8, Noida, Uttar Pradesh 201301 Rd, <br /> Nya 10982 USA
                         </Link>
                       </span>
                     </div>

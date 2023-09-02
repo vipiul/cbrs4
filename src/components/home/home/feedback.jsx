@@ -49,7 +49,7 @@ const fetchFeedback = async () => {
 
     axios({
         method: "get",
-        url: "https://sndigitech.in/cbrs/api/feedbacks",
+        url: "https://sndigitech.in/cbrs/api/feedbackfronts",
         headers: {
             'Authorization': `Bearer ${token01}`,
             'Content-Type': `multipart/form-data;`,

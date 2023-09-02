@@ -17,9 +17,9 @@ const FooterTwo = () => {
                     <div className="tp-footer-widget__content mb-95">
                       <i>FEEL FREE TO CONTACT US</i>
                       <h4 className="tp-footer-widget__contact mb-20">
-                        <a href="tel:61383766284">61 383 766 284</a>
+                        <a href="tel:83838 64051">+91 83838 64051</a>
                       </h4>
-                      <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+                      <a href="mailto:sales@clinicalbiosamples.com">sales@clinicalbiosamples.com</a>
                     </div>
                     <div className="tp-footer-widget__sub-sec">
                       <span className="tp-footer-widget__sub-title mb-5">
@@ -134,7 +134,7 @@ const FooterTwo = () => {
                     </span>
                     <div className="tp-footer-widget__links mb-120">
                       <ul>
-                        <li>Ta-134/A, Gulshan Badda Link </li>
+                        <li>C-25, C Block, Sector 8, Noida, Uttar Pradesh 201301 </li>
                         <li>
                           <a href="tel:(+880)15569569365">
                             (+880)155 69569 365

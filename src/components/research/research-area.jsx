@@ -9,14 +9,11 @@ const ResearchArea = () => {
   const [research, setResearch] = useState([])
 
   const fetchFeedback = async () => {
-    const token01 = localStorage.getItem('CONTENT');
+    // const token01 = localStorage.getItem('CONTENT');
 
     axios({
       method: "get",
-      url: "https://sndigitech.in/cbrs/api/researchs",
-      headers: {
-        'Authorization': `Bearer ${token01}`,
-      }
+      url: "https://sndigitech.in/cbrs/api/researchpapers",
     }).then(({ data: { research } }) => {
       setResearch(research);
     }).catch((response) => {

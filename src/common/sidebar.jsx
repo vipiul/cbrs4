@@ -65,13 +65,13 @@ const Sidebar = ({ isActive, setIsActive }) => {
           </p>
           <span>Contact Us</span>
           <a href="#">
-            <i className="fa-solid fa-star"></i>Ta-134/A, Gulshan Badda Link
+            <i className="fa-solid fa-star"></i>C-25, C Block, Sector 8, Noida, Uttar Pradesh 201301
           </a>
-          <a href="tel:61383766284">
-            <i className="fa-solid fa-star"></i>61 383 766 284
+          <a href="tel:83838 64051">
+            <i className="fa-solid fa-star"></i>+91 83838 64051
           </a>
-          <a href="mailto:noreply@envato.com">
-            <i className="fa-solid fa-star"></i>noreply@envato.com
+          <a href="mailto:sales@clinicalbiosamples.com">
+            <i className="fa-solid fa-star"></i>sales@clinicalbiosamples.com
           </a>
         </div>
         <div className="tpsideinfo__content-inputarea mb-60 d-none d-xl-block">
