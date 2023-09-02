@@ -1,6 +1,17 @@
 import React from "react";
+import Box from '@mui/material/Box';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+import countries from "@/common/countriesData";
 
 const AppointForm = () => {
+  const [countrie, setCountries] = React.useState('');
+
+  const handleChange = (event) => {
+    setCountries(event.target.value);
+  };
   return (
     <form onSubmit={e => e.preventDefault()}>
       <div className="row">
@@ -26,7 +37,26 @@ const AppointForm = () => {
         </div>
         <div className="col-lg-6">
           <div className="visitor-form__input">
-            <input type="text" placeholder="Country : (Scroll down with names of all the countries)" />
+            <Box sx={{ minWidth: 120 }}>
+              <FormControl fullWidth>
+                <InputLabel id="demo-simple-select-label">Countries</InputLabel>
+                <Select
+                  labelId="demo-simple-select-label"
+                  id="demo-simple-select"
+                  value={countrie}
+                  label="Countries"
+                  onChange={handleChange}
+                >
+                  {
+                    countries.map((items, index) => (
+                      <MenuItem key={index} value={items.name}>{items.name}</MenuItem>
+                    ))
+                  }
+                  {/* <MenuItem value={20}>Twenty</MenuItem>
+                    <MenuItem value={30}>Thirty</MenuItem> */}
+                </Select>
+              </FormControl>
+            </Box>
           </div>
         </div>
         <div className="col-lg-6">
@@ -45,7 +75,7 @@ const AppointForm = () => {
             <input type="text" placeholder="Purpose to connect" />
           </div>
         </div>
-     
+
         {/* <div className="col-lg-12">
           <div className="visitor-form__input">
             <textarea placeholder="Type your message" name="message"></textarea>

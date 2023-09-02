@@ -58,7 +58,7 @@ const AboutArea = () => {
                 <li><p>-	To ensure uninterrupted operations, our critical equipment and mechanical systems are backed up by emergency power systems.</p></li>
                 <li><p>-	A separate unit dedicated to backup facilities, to store cryopreserved specimens equipped with multi-tiered alarm systems that monitor various factors, including ambient oxygen levels and door entry activity. This comprehensive approach ensures the safety and integrity of the stored specimens.</p></li>
               </ul>
-              <h4 className="tp-srv-stap__title mt-25">Ethical committee</h4>
+              <h4 className="tp-srv-stap__title mt-25">Ethical Committee</h4>
               <p>CBRS, as a responsible and reputable organization, places great emphasis on adhering to ethical and legal guidelines. To ensure compliance, we have established our own Independent Ethics Committee and have obtained certifications from various recognized authorities.</p>
               <p>CBRS is proud to be MSME certified and registered under the Department of Health and Research (DHR) of the Ministry of Health and Family Welfare, Government of India. Additionally, we are also registered with The Indian Council of Medical Research (ICMR), another prestigious regulatory body in India. These certifications and registrations serve as a testament to our commitment to following all necessary legal and ethical procedures.</p>
               <p>In handling human biological samples, CBRS strictly adheres to two major guidelines. Firstly, we adhere to the guidelines set forth by the Health Insurance Portability and Accountability Act (HIPAA). This ensures the protection of individual health information and promotes the privacy and security of patient data.</p>

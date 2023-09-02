@@ -93,10 +93,10 @@ const ContactForm = () => {
             <div className="col-lg-12 col-md-12 col-12">
               <div className="contactform wow fadeInRight" data-wow-delay=".4s">
                 <h4 className="contactform__title text-center">
-                  Send us a Message :
+                  Reach Us Message
                 </h4><br />
 
-                <Appointment />
+                <ContactUs />
 
                 <div className="row mt-30">
                   <div className="col-lg-12">

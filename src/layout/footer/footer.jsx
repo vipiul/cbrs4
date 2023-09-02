@@ -9,10 +9,10 @@ const footer_content = {
       title: "Explore",
       cls: "footer-col-2",
       links: [
-        { name: "Search Services", link: "/storage" },
-        { name: "Search Biospecimens", link: "/bio-fluids" },
+        // { name: "Search Services", link: "/storage" },
+        // { name: "Search Biospecimens", link: "/bio-fluids" },
         { name: "Biospecimens", link: "#" },
-        { name: "Service", link: "#" },
+        { name: "Services", link: "service" },
         { name: "Research papers", link: "/research" },
         { name: "Digital Pathology", link: "/digital-pathology" },
         { name: "TMA", link: "#" },

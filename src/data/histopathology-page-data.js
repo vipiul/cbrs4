@@ -117,7 +117,7 @@ const ServicesPageData = {
       id: 4,
       ServicesTitle: '4.	Proteomics and Metabolomics Analysis',
       boxHeight : 'MinBoxHeigh',
-      ServicesDescription : ': Our bioinformatics capabilities extend to proteomics and metabolomics analysis, enabling mass spectrometric data interpretation, protein identification, quantification, and pathway analysis. These services facilitate the understanding of protein-protein interactions, post-translational modifications, and metabolic pathways.'
+      ServicesDescription : 'Our bioinformatics capabilities extend to proteomics and metabolomics analysis, enabling mass spectrometric data interpretation, protein identification, quantification, and pathway analysis. These services facilitate the understanding of protein-protein interactions, post-translational modifications, and metabolic pathways.'
     },
     {
       id: 5,
