@@ -19,6 +19,11 @@ const LaboratoryAndBiobankDetailsArea = () => {
                 </p>
               </div>
             </div>
+            <div className="col-12">
+              <div className="imagecontent mb-30 histropathology">
+                <img src="/assets/img/services/histopathology.jpg" alt="histopathology-02" style={{width: '100%'}} />
+              </div>
+            </div>
           </div>
           <div className="row">
             {
