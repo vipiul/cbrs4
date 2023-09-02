@@ -25,7 +25,7 @@ const footer_content = {
       links: [
         { name: "Connect to collaborate", link: "/contact" },
         { name: "Connect to enquire", link: "/contact" },
-        { name: "Collaboration query (Make a separate form)", link: "/contact" },
+        { name: "Collaboration query", link: "collaboration-query" },
         { name: "Enquiry on inventory", link: "/contact" },
         { name: "Connect to experts", link: "/contact" },
         { name: "Customization of services", link: "#" },
