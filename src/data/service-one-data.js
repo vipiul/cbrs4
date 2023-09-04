@@ -3,12 +3,20 @@ const ServiceOneData = [
     id: 1,
     color: "",
     icon: "flaticon-hemoglobin-test-meter",
+    pageUrl : '/biospecimens',
+    title: "Biospecimen",
+    des: "Biospecimens are essential in a wide range of scientific fields, including pathology, drug development, genomics, proteomics, and personalized medicine.",
+  },
+  {
+    id: 2,
+    color: "",
+    icon: "flaticon-hemoglobin-test-meter",
     title: "Digital Pathology",
     pageUrl : '/digital-pathology',
     des: "The imaging study conducted by CBRS Biobank represents an unprecedented endeavour to capture detailed images of the body&apos;s internal structures.",
   },
   {
-    id: 2,
+    id: 3,
     color: "pink-icon",
     btn_color: "pink-hexa",
     icon: "flaticon-blood-test",
@@ -17,7 +25,7 @@ const ServiceOneData = [
     des: "Our biobank&apos;s histopathology services offer a comprehensive range of support to researchers, ensuring they have access to essential.",
   },
   {
-    id: 3,
+    id: 4,
     color: "green-icon",
     btn_color: "green-hexa",
     icon: "flaticon-biochemistry",
@@ -26,7 +34,7 @@ const ServiceOneData = [
     des: "Our biobank repository of genomics offers a comprehensive range of services catering to various categories, ensuring researchers in industries such as Pharmaceuticals,",
   },
   {
-    id: 4,
+    id: 5,
     color: "sky-icon",
     btn_color: "sky-hexa",
     icon: "flaticon-dna-1",
@@ -35,7 +43,7 @@ const ServiceOneData = [
     des: "Our biobank repository of proteomics offers a diverse collection of services catered to different categories, providing researchers with valuable. ",
   },
   {
-    id: 5,
+    id: 6,
     color: "",
     btn_color: "",
     icon: "flaticon-bacteria",
@@ -44,7 +52,7 @@ const ServiceOneData = [
     des: "CBRS offers a comprehensive suite of bioinformatics services that are instrumental in extracting meaningful insights from complex biological data.",
   },
   {
-    id: 6,
+    id: 7,
     color: "pink-icon",
     btn_color: "pink-hexa",
     icon: "flaticon-dna",
