@@ -45,10 +45,30 @@ const DigitalPathologyDetailsArea = () => {
                   Researchers can efficiently organize and analyze vast amounts of pathological data, enabling the identification of new biomarkers, the evaluation of treatment responses, and the discovery of potential therapeutic targets. Our custom digital pathology solutions aim to optimize the research process, improve reproducibility, and advance discoveries in the medical world. Combining the expertise of our team with cutting-edge technology, we are committed to supporting researchers in their efforts to improve patient outcomes, advance medical knowledge and shape the future of healthcare.
                 </p>
 
+                <p className="mb-20">
+                  We offer high-quality scientific support to academic institutions and the biopharmaceutical research community, addressing their needs in standards histology, histopathology, biomarker R&D, HD tissue slides scanning, and digital image analysis for their translational science and precision medicine programmers. CBRS provides a comprehensive range of Digital Pathology Services across the country.
+                </p>
+
+                <ul className="this-digital-pathlo">
+                  <li>• High-definition scanning with 3DHISTECH Panoramic MIDI II slide scanner</li>
+                  <li>• Brightfield or Fluorescence scanning (CBP or customer slides)</li>
+                  <ul className="sub-heading-cs" style={{paddingLeft: '40px'}}>
+                    <li>• Scan at 20X or 40X Objective</li>
+                    <li>• Up to 4 fluorescence channels</li>
+                    <li>• Whole slide or partial section capture</li>
+                  </ul>
+                  <li>• Unlimited number of downloads for 30 days after completion of a project (cloud
+                    storage); extended storage for a small fee</li>
+                  <li>• Image transfer to a customer’s physical external storage device</li>
+                  <li>• Image file format conversion (.MRXS files to .TIFF and/or .SVS files)</li>
+                  <li>• Tissue composition and biomarker expression analysis using standard industry
+                    software</li>
+                </ul>
+
               </div>
             </div>
           </div>
-          
+
         </div>
       </section>
     </>

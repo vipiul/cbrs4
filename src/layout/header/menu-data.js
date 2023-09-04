@@ -44,7 +44,7 @@ const menu_data = [
         { link: "/proteomics", title: "Proteomics" },
         { link: "/bioinformatics", title: "Bioinformatics" },
         { link: "/generation-sequencing-ngs", title: "Generation Sequencing (NGS)" },
-        { link: "/tissue-microarrays", title: "Tissue Microarrays" },
+        { link: "/tissue-microarrays", title: "Tissue Microarrays (TMA)" },
         // { 
         //   id: 2,
         //   link: "#",

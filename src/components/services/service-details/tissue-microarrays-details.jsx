@@ -12,9 +12,9 @@ const TissueMicroarrayDetails = () => {
   return (
     <>
       <HeaderTwo />
-      <Banner pageTitle={'Tissue Microarray'} pageImage={'/assets/img/banner/tissue-microarray.jpg'} />
+      <Banner pageTitle={'Tissue Microarray (TMA)'} pageImage={'/assets/img/banner/tissue-microarray.jpg'} />
       <TissueMicroarrayDetailsArea />
-      <Cta_Area serviceTitle="Tissue Microarray" />
+      <Cta_Area serviceTitle="Tissue Microarray (TMA)" />
       <DirectContactUs />
       <Footer />
     </>

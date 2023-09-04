@@ -15,10 +15,14 @@ const GenomicsDetailsArea = () => {
                   Genomics
                 </h4>
                 <p className="mb-20">
-                  Our genomics biobank repository  offers a wide range of services across categories, providing convenient access to high-quality genetic materials for researchers in industries such as pharmaceutical, biotechnology and research laboratories. 
+                  Our genomics biobank repository  offers a wide range of services across categories, providing convenient access to high-quality genetic materials for researchers in industries such as pharmaceutical, biotechnology and research laboratories.
                 </p>
+
               </div>
             </div>
+          </div>
+          <div className="tma-image-banner-sd mb-30">
+            <img src="assets/img/services/geo04.png" alt="tma" />
           </div>
           <div className="row">
             {
@@ -34,6 +38,9 @@ const GenomicsDetailsArea = () => {
               ))
             }
 
+          </div>
+          <div className="tma-image-banner-sd mb-30">
+            <img src="assets/img/services/geo03.png" alt="tma" />
           </div>
           <div className="row">
             <div className="col-12">
