@@ -93,7 +93,7 @@ const ContactForm = () => {
             <div className="col-lg-12 col-md-12 col-12">
               <div className="contactform wow fadeInRight" data-wow-delay=".4s">
                 <h4 className="contactform__title text-center">
-                  Reach Us Message
+                  Reach Us
                 </h4><br />
 
                 <ContactUs />

@@ -1,28 +1,29 @@
 const social_links = [
+  // {
+  //   link: "https://www.youtube.com/",
+  //   target: "_blank",
+  //   icon: "fab fa-youtube",
+  //   color: "tp-f-youtube",
+  // },
   {
-    link: "https://www.youtube.com/",
-    target: "_blank",
-    icon: "fab fa-youtube",
-    color: "tp-f-youtube",
-  },
-  {
-    link: "http://twitter.com",
+    link: "https://twitter.com/Sutapa087",
     target: "_blank",
     icon: "fab fa-twitter",
     color: "tp-f-twitter",
   },
   {
-    link: "http://facebook.com",
+    link: "https://www.linkedin.com/in/clinical-biosamples-and-research-services/",
     target: "_blank",
-    icon: "fab fa-facebook-f",
+    icon: "fab fa-linkedin-in",
+    // <i class="fab fa-linkedin-in"></i>
     color: "tp-f-fb",
   },
-  {
-    link: "https://www.skype.com/en/",
-    target: "_blank",
-    icon: "fab fa-skype",
-    color: "tp-f-skype",
-  },
+  // {
+  //   link: "https://www.skype.com/en/",
+  //   target: "_blank",
+  //   icon: "fab fa-skype",
+  //   color: "tp-f-skype",
+  // },
 ];
 
 const SocialLinks = () => {

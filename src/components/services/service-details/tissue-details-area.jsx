@@ -32,16 +32,7 @@ const TissueDetailsArea = () => {
 
                                 <p>
                                     <b>Formalin-Fixed Paraffin-Embedded (FFPE) Tissue :</b>
-                                    Access a global repository of FFPE human tissues from Diseased and healthy patients.
-                                    Large, diverse repository of FFPE tissue samples our extensive provider network gives you access to high-quality FFPE tissue blocks from hundreds of repositories around the world, reflecting the sample and patient diversity that modern medical research requires.
-
-                                    Throughout our network, FFPE tissue samples are collected under IRB-approved protocols, using processes to ensure consistency and quality. All samples are collected in full compliance with regulatory standards and best practice guidelines.
-                                    Explore our inventory of archived FFPE blocks released for research through consent waiver. These tissue samples are highly versatile and support research in areas such as oncology, hematology, and immunology— - especially for replication, validation, and immunohisto chemical (IHC) testing. Whether you are conducting academic research, drug discovery, or diagnostic development, we can provide you with the appropriate FFPE blocks.
-                                </p>
-
-                                <p>
-                                    <b>Tissue Microarrays :</b>
-                                    Large, diverse inventory of microarray tissue samples access a global repository of TMA samples from Diseased and healthy patients. CBRS&apos;s extensive global network provides access to high-quality TMAs from hundreds of providers and repositories around the world, reflecting the diversity of samples and patients needed in today’s cancer research. Across our network, TMA samples are collected under IRB-approved protocols with processes that ensure consistency and quality. All samples are collected in full compliance with regulatory standards and best practice guidelines.
+                                    The access to a global repository of FFPE tissue from diseased and healthy patients. (Donor) A large, diversified repository of FFPE tissue samples from our extensive provider network gives you access to high-quality FFPE tissue blocks from hundreds of repositories worldwide, reflecting the sample and patient diversity that modern medical research requires. Throughout our network, FFPE tissue samples are collected under IRB-approved protocols, using processes to ensure consistency and quality. All samples are collected in full compliance with regulatory standards and best practice guidelines. Check out our inventory of archived FFPE blocks that have been released for research with a consent form These tissue samples are highly versatile and support research in areas such as oncology, hematology, and immunology— - especially for replication, validation, and immune histochemical (IHC) testing.
                                 </p>
 
                             </div>

@@ -20,7 +20,7 @@ const Appointment = () => {
             <div className="col-xl-8 col-lg-12 col-md-12">
               <div className="visitor-info visitor-info-bg">
                 <h4 className="appoinment-title mb-25">
-                  <i className="fa-light fa-file-signature"></i>Book your visit
+                  <i className="fa-light fa-file-signature"></i>Contact us
                 </h4>
                 <div className="visitor-form">
                   <form action="#">

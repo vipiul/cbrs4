@@ -17,12 +17,12 @@ const AppointForm = () => {
       <div className="row">
         <div className="col-lg-6">
           <div className="visitor-form__input">
-            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="First Name" />
           </div>
         </div>
         <div className="col-lg-6">
           <div className="visitor-form__input">
-            <input type="text" placeholder="Surname" />
+            <input type="text" placeholder="Last Name" />
           </div>
         </div>
         <div className="col-lg-6">

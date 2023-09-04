@@ -23,12 +23,12 @@ const footer_content = {
       title: "Enquiry",
       cls: "footer-col-3",
       links: [
-        { name: "Connect to collaborate", link: "/contact" },
-        { name: "Connect to enquire", link: "/contact" },
+        // { name: "Connect to collaborate", link: "/contact" },
+        // { name: "Connect to enquire", link: "/contact" },
         { name: "Collaboration query", link: "collaboration-query" },
         { name: "Enquiry on inventory", link: "/contact" },
         { name: "Connect to experts", link: "/contact" },
-        { name: "Customization of services", link: "#" },
+        { name: "Customization of services", link: "/contact" },
 
       ],
     },
@@ -39,7 +39,7 @@ const footer_content = {
       links: [
         { name: "About Us", link: "/about" },
         { name: "Contact us", link: "/contact" },
-        { name: "Email us", link: "#" },
+        { name: "Email us", link: "mailto:sales@clinicalbiosamples.com" },
 
       ],
     },

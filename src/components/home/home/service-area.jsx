@@ -35,11 +35,12 @@ const setting = {
 const slider_content = [
   {
     id: 1,
-    color: "",
-    link: "biospecimens",
-    icon: "flaticon-hemoglobin-test-meter",
-    title: "Biospecimen",
-    des: "Biospecimens are essential in a wide range of scientific fields, including pathology, drug development, genomics, proteomics, and personalized medicine.",
+    color: "green-icon",
+    link: "genomics",
+    btn_color: "green-hexa",
+    icon: "flaticon-biochemistry",
+    title: "Genomics",
+    des: "The study of genomics is the study of whole genomes of organisms and incorporates elements from genetics. Genomics uses recombinant DNA, DNA sequencing methods.",
   },
   {
     id: 2,
@@ -60,13 +61,13 @@ const slider_content = [
   },
   {
     id: 4,
-    color: "green-icon",
-    link: "genomics",
-    btn_color: "green-hexa",
-    icon: "flaticon-biochemistry",
-    title: "Genomics",
-    des: "The study of genomics is the study of whole genomes of organisms and incorporates elements from genetics. Genomics uses recombinant DNA, DNA sequencing methods.",
+    color: "",
+    link: "biospecimens",
+    icon: "flaticon-hemoglobin-test-meter",
+    title: "Biospecimen",
+    des: "Biospecimens are essential in a wide range of scientific fields, including pathology, drug development, genomics, proteomics, and personalized medicine.",
   },
+  
   {
     id: 5,
     color: "sky-icon",
@@ -108,7 +109,7 @@ const ServiceArea = () => {
         style={{ backgroundImage: `url(/assets/img/shape/shape-bg-01.png)` }}
       >
         <div className="container">
-          <div className="row mb-95">
+          {/* <div className="row mb-95">
             <div className="col-lg-12">
               <div className="search-form">
                 <form action="#">
@@ -120,7 +121,7 @@ const ServiceArea = () => {
                 </form>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="row align-items-center">
             <div className="col-lg-8 col-md-8 col-12">
               <div className="tp-section">

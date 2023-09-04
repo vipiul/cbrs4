@@ -27,19 +27,17 @@ const BiofluidsDetailsArea = () => {
                 <p>
                   <b>2.Serum and Plasma </b>
                   Discover a vast repository of valuable biological resources at our state-of-the-art biobank, where a comprehensive collection of serum and plasma biosamples awaits researchers and scientists. Our biobank houses an extensive range of meticulously catalogued serum and plasma samples, sourced ethically and maintained under stringent quality controls.
-
-                  Researchers from various fields can access this treasure trove of biosamples, each representing a snapshot of human health and physiology. From healthy individuals to diverse disease conditions, our biobank &apos;s serum and plasma samples offer insights into biomarker discovery, disease progression, and therapeutic intervention.
-
-                  Our commitment to scientific advancement is evident in the careful curation of biosamples, ensuring accurate annotation of relevant clinical data. Whether investigating cardiovascular disorders, infectious diseases, oncology, or beyond, our biobank serves as a reliable resource for cutting-edge research endeavours. Accelerate your research with confidence, as our biobank stands ready to empower breakthroughs through the availability of high-quality serum and plasma biosamples.
-
                 </p>
-
+                <p>Researchers from various fields can access this treasure trove of biosamples, each representing a snapshot of human health and physiology. From healthy individuals to diverse disease conditions, our biobank &apos;s serum and plasma samples offer insights into biomarker discovery, disease progression, and therapeutic intervention.</p>
+                <p>Our commitment to scientific advancement is evident in the careful curation of biosamples, ensuring accurate annotation of relevant clinical data. Whether investigating cardiovascular disorders, infectious diseases, oncology, or beyond, our biobank serves as a reliable resource for cutting-edge research endeavours. Accelerate your research with confidence, as our biobank stands ready to empower breakthroughs through the availability of high-quality serum and plasma biosamples.</p>
+                
                 <div className="image-Contetn mb-30">
                   <img src="/assets/img/banner/bio-fluids-02.jpg" style={{ width: '100%' }} alt="bio banner" />
                 </div>
 
                 <p>
-                  <b>3.Buffy Coat Samples </b> Obtain human buffy Buffy Coat Samples for research from Diseased and healthy patients.
+                  <b>3.Buffy Coat Samples </b> 
+                  Obtain human buffy Buffy Coat Samples for research from Diseased and healthy patients.
                   Easy, streamlined procurement of depot and prospectively collected buffy coats
                   Through CBRS researchers have access to a global network of providers and patients for stored and prospectively collected buffy coats, with and without matched sets. Our extensive provider network provides access to a large inventory of criterion-specific buffy coats from both Diseased and healthy patients.
                   Our network also enables large-scale, prospective collections of high-quality matched sample sets including buffy coats. Each matched specimen set is supplied with the patient&apos;s baseline clinical data and de-identified pathology information.
@@ -47,12 +45,11 @@ const BiofluidsDetailsArea = () => {
 
                 <p>
                   <b>4.Swab Samples </b>
-                  Embark on groundbreaking research with unparalleled access to a diverse array of swab biosamples, meticulously preserved and readily available within our advanced biobank. These swab biosamples, carefully collected and stored under optimal conditions, provide an invaluable resource for researchers and scientists delving into a multitude of fields.
-                  CBRS houses an expansive collection of swab samples, ranging from nasopharyngeal and oral swabs to skin and microbial samples. Each swab specimen is a potential window into the intricate world of human health, genetics, and microbiota. With a commitment to ethical sourcing and rigorous quality control, our swab biosamples maintain their integrity and scientific value.
-                  Researchers investigating infectious diseases, microbiome dynamics, genetic variations, and more can confidently explore our biobank&apos;s swab samples. These specimens are accompanied by comprehensive clinical data, enhancing the depth and relevance of your research findings.
-                  Accelerate your discoveries with the assurance of accessing a comprehensive repository of swab biosamples at CBRS biobank. Uncover insights that could redefine healthcare, genetics, and beyond, as you leverage our collection to pave the way for transformative scientific breakthroughs.
-
+                  <p>Embark on groundbreaking research with unparalleled access to a diverse array of swab biosamples, meticulously preserved and readily available within our advanced biobank. These swab biosamples, carefully collected and stored under optimal conditions, provide an invaluable resource for researchers and scientists delving into a multitude of fields.</p>
                 </p>
+                <p>CBRS houses an expansive collection of swab samples, ranging from nasopharyngeal and oral swabs to skin and microbial samples. Each swab specimen is a potential window into the intricate world of human health, genetics, and microbiota. With a commitment to ethical sourcing and rigorous quality control, our swab biosamples maintain their integrity and scientific value.</p>
+                <p>Researchers investigating infectious diseases, microbiome dynamics, genetic variations, and more can confidently explore our biobank&apos;s swab samples. These specimens are accompanied by comprehensive clinical data, enhancing the depth and relevance of your research findings.</p>
+                <p>Accelerate your discoveries with the assurance of accessing a comprehensive repository of swab biosamples at CBRS biobank. Uncover insights that could redefine healthcare, genetics, and beyond, as you leverage our collection to pave the way for transformative scientific breakthroughs.</p>
 
                 <p>
                   <b>5.Urine sample </b> We Access fresh and stored human urine samples and data from a diverse, Countrywide patient and provider population.

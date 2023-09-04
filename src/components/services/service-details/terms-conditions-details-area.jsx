@@ -7,10 +7,6 @@ const TermsConditionsDetailsArea = () => {
         <div class="translations-content-container">
           <div class="container">
             <div class="tab-content translations-content-item en visible" id="en">
-              <h3>Terms and Conditions</h3>
-              <p>Last updated: August 30, 2023</p>
-              <p>Please read these terms and conditions carefully before using Our Service.</p>
-              <h3>Interpretation and Definitions</h3>
               <h2>Interpretation</h2>
               <p>
                 The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in
@@ -42,21 +38,13 @@ const TermsConditionsDetailsArea = () => {
                 </li>
                 <li>
                   <p>
-                    <strong>Terms and Conditions</strong> (also referred as &quot;Terms&quot;) mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This
-                    Terms and Conditions agreement has been created with the help of the
-                    <a href="https://www.freeprivacypolicy.com/free-terms-and-conditions-generator/" rel="noreferrer">Free Terms and Conditions Generator</a>.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Third-party Social Media Service</strong> means any services or content (including data, information, samples or services) provided by a third-party that may be displayed, included or made
-                    available by the Service.
+                    <strong>Terms and Conditions</strong> (also referred as &quot;Terms&quot;) mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service.
                   </p>
                 </li>
                 <li>
                   <p>
                     <strong>Website</strong> refers to Clinical Bio-Samples and Research Services (CBRS), accessible from
-                    <a href="https://www.clinicalbiosamples.com/" rel="external nofollow noopener">https://www.clinicalbiosamples.com/</a>
+                    <a href="https://www.clinicalbiosamples.com/" rel="external nofollow noopener"> https://www.clinicalbiosamples.com/</a>
                   </p>
                 </li>
                 <li>

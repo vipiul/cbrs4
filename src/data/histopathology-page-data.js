@@ -56,11 +56,6 @@ const ServicesPageData = {
       ServicesTitle: '6. Microscopy and Image Analysis',
       ServicesDescription : 'Our histopathology services include advanced microscopy capabilities coupled with image analysis tools. This combination allows for detailed examination, quantification, and interpretation of tissue features and markers.'
     },
-    {
-      id: 7,
-      ServicesTitle: '7. Microscopy and Image Analysis',
-      ServicesDescription : 'Our histopathology services include advanced microscopy capabilities coupled with image analysis tools. This combination allows for detailed examination, quantification, and interpretation of tissue features and markers.'
-    }
   ],
   proteomics : [
     {
