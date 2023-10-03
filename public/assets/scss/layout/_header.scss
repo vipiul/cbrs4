@@ -1023,6 +1023,14 @@ a.rotateIcon {
   width: 202px;
   font-size: 12px;
 }
+.customer-feedback-cls {
+  max-width: 800px;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto;
+
+}
 @media (min-width: 1199px) { 
   .main-menu {
     margin: 0 !important;

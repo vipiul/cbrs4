@@ -17,7 +17,7 @@ const CustomerFeedbackContent = () => {
             headers: {
                 'Authorization': `Bearer ${token01}`,
             }
-        }).then(({data : {feedbacks}}) => {
+        }).then(({ data: { feedbacks } }) => {
             setFeedbackdata(feedbacks);
         }).catch((response) => {
             console.log(response);
@@ -39,14 +39,14 @@ const CustomerFeedbackContent = () => {
             }
         }).then((response) => {
             console.log(response);
-            const { message, status} = response?.data;
+            const { message, status } = response?.data;
             if (status) {
                 toast.success(message)
                 fetchFeedback()
             }
-            
+
         }).catch((response) => {
-            const { message, status} = response?.data;
+            const { message, status } = response?.data;
             console.log(response);
             if (status) {
                 toast.error(message)
@@ -58,8 +58,8 @@ const CustomerFeedbackContent = () => {
         <div className="layout-page">
             <Navbar />
             <div className="w-full flex justify-center mx-auto" style={{ marginTop: '100px' }}>
-                <div className="flex flex-col">
-                <div className='row' style={{marginBottom: '20px'}}>
+                <div className="flex flex-col customer-feedback-cls">
+                    <div className='row' style={{ marginBottom: '20px' }}>
                         <div className='col-6'>
                             <div className='research-paper'>
                                 <h3 className='text-gray-500'>Customer Feedback</h3>

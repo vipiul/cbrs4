@@ -17,8 +17,8 @@ const Customerfeedback = () => {
 
     return (
         <div className="layout-wrapper layout-content-navbar  ">
+            <SEO pageTitle="Customer Feedback" />
             <div className="layout-container">
-                <SEO pageTitle="Customer Feedback" />
                 <Sidebar />
                 <CustomerFeedbackContent />
             </div>
