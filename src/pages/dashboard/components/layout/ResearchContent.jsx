@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from '../navbar/Navbar';
 import axios from "axios";
 import { useRouter } from 'next/router';
+import { toast } from 'react-toastify';
 
 const FeedbackContent = () => {
 
@@ -26,6 +27,8 @@ const FeedbackContent = () => {
         // I am getting form th localstorage
         let token = localStorage.getItem('token');
 
+        console.log(token, "token ================")
+
         var formData = new FormData();
         formData.append('title', title);
         formData.append('description', description);
@@ -39,11 +42,11 @@ const FeedbackContent = () => {
                 'Content-Type': `multipart/form-data;`,
                 'Authorization': `Bearer ${token}`,
             }
-        }).then(({data : {status}}) => {
+        }).then(({data : {status, message}}) => {
             if(status === false) {
-                alert("Research feild data is not set in the table.")
+                toast.error(message.thumbnail[0])
             }else {
-                alert("Research add successfully.");
+                toast.success("Research add successfully.");
                 push("/dashboard/research-paper")
             }
             console.log(status);
@@ -70,7 +73,7 @@ const FeedbackContent = () => {
                     <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
                         <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
                             <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
-                                Add Research
+                                Add Research Paper
                             </h1>
                             <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit} method='POST'>
                                 <div>
@@ -97,7 +100,7 @@ const FeedbackContent = () => {
                                 <div>
                                     <label htmlFor="file" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Only Pdf formate allow.</label>
                                     <input 
-                                        type="file" accept="application/pdf"
+                                        type="file" accept="application/pdf,application/vnd.ms-excel"
                                         onChange={handleFileChange}
                                         className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" />
                                 </div>

@@ -3,6 +3,7 @@ import Navbar from '../navbar/Navbar';
 import axios from "axios";
 import { useRouter } from 'next/router';
 import { data } from 'autoprefixer';
+import { toast } from 'react-toastify';
 
 const EditFeedbackContent = () => {
 
@@ -79,10 +80,10 @@ const EditFeedbackContent = () => {
             }
         }).then(({data : {status, message}}) => {
             if(status) {
-                alert(message);
+                toast.success(message);
                 push("/dashboard/customer-feedback")
             }else {
-                alert("Please enter all feild is requird. update time !")
+                toast.error(message)
             }
             console.log(response);
         }).catch((response) => {
@@ -99,7 +100,7 @@ const EditFeedbackContent = () => {
                         <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
                             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
                                 <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
-                                    Add Customer Feedback
+                                    Edit Customer Feedback
                                 </h1>
                                 <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit} method='POST'>
                                     <div>

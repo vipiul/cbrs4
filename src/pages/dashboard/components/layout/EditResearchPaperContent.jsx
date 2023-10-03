@@ -3,6 +3,7 @@ import Navbar from '../navbar/Navbar';
 import axios from "axios";
 import { useRouter } from 'next/router';
 import { data } from 'autoprefixer';
+import { toast } from 'react-toastify';
 
 const EditResearchPaperContent = () => {
     // page redirect route;
@@ -70,10 +71,10 @@ const EditResearchPaperContent = () => {
             }
         }).then(({data : {status, message}}) => {
             if(status) {
-                alert(message);
+                toast.success(message);
                 push("/dashboard/research-paper")
             }else {
-                alert("Please enter all feild is requird. update time !")
+                toast.error("Please enter all feild is requird. update time !")
             }
         }).catch((response) => {
             console.log(response);

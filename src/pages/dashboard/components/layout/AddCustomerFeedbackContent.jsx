@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from '../navbar/Navbar';
 import axios from "axios";
 import { useRouter } from 'next/router';
+import { toast } from 'react-toastify';
 
 const AddCustomerFeedback = () => {
 
@@ -44,11 +45,13 @@ const AddCustomerFeedback = () => {
                 'Content-Type': `multipart/form-data;`,
                 'Authorization': `Bearer ${token}`,
             }
-        }).then(({data : {status}}) => {
+        }).then(({data : {status, message}}) => {
+            console.log(message, "message.title[0]")
             if(status === false) {
-                alert("Feed add successfully.")
-            }else {
-                alert("Feed add successfully.");
+               toast.error(message)
+            }
+            else {
+                toast.success(message);
                 push("/dashboard/customer-feedback")
             }
             console.log(status);
@@ -80,13 +83,14 @@ const AddCustomerFeedback = () => {
                             </h1>
                             <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit} method='POST'>
                                 <div>
-                                    <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter Name</label>
+                                    <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white" >Enter Name</label>
                                     <input type="text" 
                                         name='name'
                                         value={name}
                                         onChange={handleNameChange}
                                         id="name" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
                                         placeholder="Your name" 
+                                        required
                                     />
                                 </div>
                                 <div>
@@ -97,6 +101,7 @@ const AddCustomerFeedback = () => {
                                         onChange={handleTitleChange}
                                         id="title" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
                                         placeholder="Your title" 
+                                        required
                                     />
                                 </div>
                                 <div>
@@ -108,12 +113,14 @@ const AddCustomerFeedback = () => {
                                         id="description" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
                                         rows="3"
                                         placeholder="Your Description" 
+                                        required
                                     />
                                 </div>
                                 <div>
                                     <label htmlFor="file" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter Description</label>
                                     <input 
                                         type="file" accept="image/*" 
+                                        required
                                         onChange={handleFileChange}
                                         className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" />
                                 </div>

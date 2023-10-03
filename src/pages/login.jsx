@@ -1,9 +1,11 @@
+"use client"
 import Link from 'next/link'
 import React, { use, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import axios from "axios";
 import { useFormik } from "formik";
 import * as Yup from 'yup';
+import { toast } from 'react-toastify';
 
 // initialvalue of the input feild
 const initialValues = {
@@ -31,17 +33,17 @@ const Login = () => {
             url: "https://sndigitech.in/cbrs/api/login",
             data: formData,
             headers: {
-                'Content-Type': `multipart/form-data;`,
+                'Content-Type': `multipart/form-data`,
             }
         }).then((response) => {
             if(response.data.status === false){
-                alert(response.data.message)
+                toast.error(response.data.message)
             }else {
                 let token = response.data.token;
                 localStorage.setItem('token', token);
                 localStorage.setItem('CONTENT', token);
-                alert(response.data.message)
-                push("/dashboard/dashboard")
+                toast.success(response.data.message)
+                push("/dashboard/research-paper")
             }
             
         }).catch((response) => {
@@ -60,6 +62,7 @@ const Login = () => {
         })
     })
 
+
     return (
         <div>
             <section className="bg-gray-50 dark:bg-gray-900">
@@ -67,7 +70,7 @@ const Login = () => {
                     <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
                         <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
                             <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
-                                Sign in to your account
+                                <img src="/assets/img/logo/logo.png" alt="logo" className='login-Image' />
                             </h1>
                             <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit} method='POST'>
                                 <div>
@@ -99,12 +102,8 @@ const Login = () => {
                                             <label htmlFor="remember" className="text-gray-500 dark:text-gray-300">Remember me</label>
                                         </div>
                                     </div>
-                                    <Link href="/forget-password" className="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">Forgot password?</Link>
                                 </div>
                                 <button type="submit" className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign in</button>
-                                <p className="text-sm font-light text-gray-500 dark:text-gray-400">
-                                    Don’t have an account yet? <Link href="/sign-up" className="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign up</Link>
-                                </p>
                             </form>
                         </div>
                     </div>

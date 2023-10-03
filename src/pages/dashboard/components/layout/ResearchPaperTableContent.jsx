@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Navbar from '../navbar/Navbar';
 import axios from "axios";
 import Link from 'next/link';
+import { toast } from 'react-toastify';
 
 const ResearchPaperTableContent = () => {
 
@@ -37,8 +38,15 @@ const ResearchPaperTableContent = () => {
                 'Authorization': `Bearer ${token02}`,
             }
         }).then((response) => {
-            console.log(response);
-            fetchFeedback()
+            // console.log(response.data);
+            const {message, status} = response?.data
+            if (status) {
+                toast.success(message)
+                fetchFeedback();
+            }else {
+                toast.error(message)
+            }
+            // fetchFeedback()
         }).catch((response) => {
             console.log(response);
         })
@@ -81,9 +89,6 @@ const ResearchPaperTableContent = () => {
                                             Title
                                         </th>
                                         <th className="px-6 py-2 text-center text-xs text-gray-500">
-                                            Name
-                                        </th>
-                                        <th className="px-6 py-2 text-center text-xs text-gray-500">
                                             Edit
                                         </th>
                                         <th className="px-6 py-2 text-center text-xs text-gray-500">
@@ -111,9 +116,6 @@ const ResearchPaperTableContent = () => {
                                                 </td>
                                                 <td className="px-6 py-4 text-sm text-gray-500 research-paper description-limit">
                                                     {items.title}
-                                                </td>
-                                                <td className="px-6 py-4 text-sm text-gray-500">
-                                                    {items.name}
                                                 </td>
                                                 <td className="px-6 py-4">
                                                     <Link href={`/dashboard/edit-research-paper/${items.id}`} className="px-4 py-1 text-sm text-blue-600 bg-blue-200 rounded-full">Edit</Link>
