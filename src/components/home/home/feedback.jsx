@@ -49,7 +49,7 @@ const fetchFeedback = async () => {
 
     axios({
         method: "get",
-        url: "https://cbrsweb.onrender.com/api/feedback/getAll",
+        url: "http://103.25.130.106:3000/api/feedback/getAll",
         headers: {
             'Authorization': `Bearer ${token01}`,
             'Content-Type': `multipart/form-data;`,

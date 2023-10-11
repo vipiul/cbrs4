@@ -32,7 +32,7 @@ const Register = () => {
 
         axios({
             method: "post",
-            url: "https://cbrsweb.onrender.com/api/register",
+            url: "http://103.25.130.106:3000/api/register",
             data: formData,
             headers: {
                 'Content-Type': `multipart/form-data;`,

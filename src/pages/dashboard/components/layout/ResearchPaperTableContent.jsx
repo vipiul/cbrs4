@@ -14,7 +14,7 @@ const ResearchPaperTableContent = () => {
         setisLoading(true)
         axios({
             method: "get",
-            url: "https://cbrsweb.onrender.com/api/research/paper/getAll",
+            url: "http://103.25.130.106:3000/api/research/paper/getAll",
             headers: {
                 'Authorization': `Bearer ${token01}`,
                 token: token01
@@ -37,7 +37,7 @@ const ResearchPaperTableContent = () => {
         setisLoading(true)
         axios({
             method: "delete",
-            url: `https://cbrsweb.onrender.com/api/research/paper/delete/${id}`,
+            url: `http://103.25.130.106:3000/api/research/paper/delete/${id}`,
             headers: {
                 'Authorization': `Bearer ${token02}`,
                 token:token02

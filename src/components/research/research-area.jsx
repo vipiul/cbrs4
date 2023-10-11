@@ -13,7 +13,7 @@ const ResearchArea = () => {
 
     axios({
       method: "get",
-      url: "https://cbrsweb.onrender.com/api/research/paper/getAll",
+      url: "http://103.25.130.106:3000/api/research/paper/getAll",
     }).then((res) => {
       setResearch(res?.data?.data);
     }).catch((response) => {

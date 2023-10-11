@@ -39,7 +39,7 @@ const FeedbackContent = () => {
 
         axios({
             method: "post",
-            url: "https://cbrsweb.onrender.com/api/feedback",
+            url: "http://103.25.130.106:3000/api/feedback",
             data: formData,
             headers: {
                 'Content-Type': `multipart/form-data;`,

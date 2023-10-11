@@ -25,7 +25,7 @@ const EditFeedbackContent = () => {
         setisLoading(true)
         axios({
             method: "get",
-            url: `https://cbrsweb.onrender.com/api/feedback/getById/${id}`,
+            url: `http://103.25.130.106:3000/api/feedback/getById/${id}`,
             headers: {
                 'Authorization': `Bearer ${token}`,
                 token:token
@@ -80,7 +80,7 @@ const EditFeedbackContent = () => {
 
         axios({
             method: "post",
-            url: `https://cbrsweb.onrender.com/api/feedback/update`,
+            url: `http://103.25.130.106:3000/api/feedback/update`,
             data: formData,
             headers: {
                 'Content-Type': `multipart/form-data`,

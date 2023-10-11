@@ -37,7 +37,7 @@ const FeedbackContent = () => {
         setisLoading(true)
         axios({
             method: "post",
-            url: "https://cbrsweb.onrender.com/api/research/paper/add",
+            url: "http://103.25.130.106:3000/api/research/paper/add",
             data: formData,
             headers: {
                 'Content-Type': `multipart/form-data;`,
