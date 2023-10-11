@@ -4,6 +4,7 @@ import React from "react";
 import Banner from "./banner";
 import ResearchArea from "./research-area";
 import DirectContactUs from "../forms/direct-contact-us";
+import Blog from "../blog";
 
 const Research = () => {
   return (

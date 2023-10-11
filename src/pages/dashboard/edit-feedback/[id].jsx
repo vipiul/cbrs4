@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import Sidebar from '../components/sidebar/Sidebar';
 import EditFeedbackContent from '../components/layout/EditFeedbackContent';
 import { useRouter } from 'next/navigation';
+import SEO from '@/components/seo';
 
 const Customerfeedback = () => {
     const { push } = useRouter();
@@ -15,6 +16,7 @@ const Customerfeedback = () => {
     return (
         <div className="layout-wrapper layout-content-navbar  ">
             <div className="layout-container">
+            <SEO pageTitle="Edit Customer Feedback" />
                 <Sidebar />
                 <EditFeedbackContent />
             </div>

@@ -8,23 +8,24 @@ const SidebarMenu = () => {
 
     const sidebarmenu = [
         {
-            id: 0,
-            title: "Dashboard",
-            link: "/dashboard/dashboard",
-            icon: "tf-icons"
+            id: 2,
+            title: "Research Paper",
+            link: "/dashboard/research-paper",
+            icon: "tf-icons",
         },
+        // {
+        //     id: 0,
+        //     title: "Dashboard",
+        //     link: "/dashboard/dashboard",
+        //     icon: "tf-icons"
+        // },
         {
             id: 1,
             title: "Customer Feedback",
             link: "/dashboard/customer-feedback",
             icon: "tf-icons",
         },
-        {
-            id: 2,
-            title: "Research Paper",
-            link: "/dashboard/research-paper",
-            icon: "tf-icons",
-        }
+        
     ]
 
     // console.log(sidebarmenu)

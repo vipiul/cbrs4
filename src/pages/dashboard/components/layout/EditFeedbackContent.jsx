@@ -94,7 +94,7 @@ const EditFeedbackContent = () => {
                 alert(res?.data?.message);
                 push("/dashboard/customer-feedback")
             }else {
-                alert("Please enter all feild is requird. update time !")
+                toast.error(message)
             }
         }).catch((response) => {
             setisLoading(false)

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from '../navbar/Navbar';
 import axios from "axios";
 import { useRouter } from 'next/router';
+import { toast } from 'react-toastify';
 
 const FeedbackContent = () => {
 
@@ -44,11 +45,11 @@ const FeedbackContent = () => {
                 'Content-Type': `multipart/form-data;`,
                 'Authorization': `Bearer ${token}`,
             }
-        }).then(({data : {status}}) => {
+        }).then(({data : {status, message}}) => {
             if(status === false) {
-                alert("Feed add successfully.")
+                toast.error(message)
             }else {
-                alert("Feed add successfully.");
+                toast.success(message);
                 push("/dashboard/customer-feedback")
             }
             console.log(status);

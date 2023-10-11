@@ -28,6 +28,8 @@ const FeedbackContent = () => {
         // I am getting form th localstorage
         let token = localStorage.getItem('token');
 
+        console.log(token, "token ================")
+
         var formData = new FormData();
         formData.append('title', title);
         formData.append('description', description);

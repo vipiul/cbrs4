@@ -50,7 +50,7 @@ const fetchFeedback = async () => {
         method: "get",
         url: "https://cbrsweb.onrender.com/api/researchs",
         headers: {
-            'Authorization': `Bearer ${token01}`,
+            'Authorization': `Bearer ${ token01 ? token01 : ''}`,
         }
     }).then(({data : {research}}) => {
       setBlogdata(research);

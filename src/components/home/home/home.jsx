@@ -25,7 +25,7 @@ const HomeOne = () => {
       <Feedback />
       <Brands />
       {/* <Cta_Area /> */}
-      {/* <Blog /> */}
+      <Blog />
     </>
   );
 };

@@ -1,7 +1,8 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import Sidebar from './components/sidebar/Sidebar';
 import CustomerFeedbackContent from './components/layout/CustomerFeedbackContent';
 import { useRouter } from 'next/navigation';
+import SEO from '@/components/seo';
 
 const Customerfeedback = () => {
 
@@ -16,6 +17,7 @@ const Customerfeedback = () => {
 
     return (
         <div className="layout-wrapper layout-content-navbar  ">
+            <SEO pageTitle="Customer Feedback" />
             <div className="layout-container">
                 <Sidebar />
                 <CustomerFeedbackContent />

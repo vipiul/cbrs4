@@ -88,7 +88,6 @@ const ResearchPaperTableContent = () => {
                                         <th className="px-6 py-2 text-center text-xs text-gray-500">
                                             Title
                                         </th>
-
                                         <th className="px-6 py-2 text-center text-xs text-gray-500">
                                             Edit
                                         </th>

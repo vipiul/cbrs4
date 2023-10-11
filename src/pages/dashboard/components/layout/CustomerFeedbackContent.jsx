@@ -46,10 +46,18 @@ const CustomerFeedbackContent = () => {
         }).then((response) => {
             setisLoading(false)
             console.log(response);
-            fetchFeedback()
+            const { message, status } = response?.data;
+            if (status) {
+                toast.success(message)
+                fetchFeedback()
+            }
+
         }).catch((response) => {
             setisLoading(false)
             console.log(response);
+            if (status) {
+                toast.error(message)
+            }
         })
     }
 
@@ -61,7 +69,7 @@ const CustomerFeedbackContent = () => {
                     <div className='row' style={{ marginBottom: '20px' }}>
                         <div className='col-6'>
                             <div className='research-paper'>
-                                <h3 className='text-gray-500'>Research Paper</h3>
+                                <h3 className='text-gray-500'>Customer Feedback</h3>
                             </div>
                         </div>
                         <div className='col-6'>
