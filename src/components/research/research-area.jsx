@@ -13,9 +13,9 @@ const ResearchArea = () => {
 
     axios({
       method: "get",
-      url: "https://sndigitech.in/cbrs/api/researchpapers",
-    }).then(({ data: { research } }) => {
-      setResearch(research);
+      url: "https://cbrsweb.onrender.com/api/research/paper/getAll",
+    }).then((res) => {
+      setResearch(res?.data?.data);
     }).catch((response) => {
       console.log(response);
     })

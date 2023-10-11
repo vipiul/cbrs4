@@ -49,13 +49,14 @@ const fetchFeedback = async () => {
 
     axios({
         method: "get",
-        url: "https://sndigitech.in/cbrs/api/feedbackfronts",
+        url: "https://cbrsweb.onrender.com/api/feedback/getAll",
         headers: {
             'Authorization': `Bearer ${token01}`,
             'Content-Type': `multipart/form-data;`,
+            token:token01
         }
-    }).then(({data : {feedbacks}}) => {
-        setFeedbackdata(feedbacks);
+    }).then((res) => {
+        setFeedbackdata(res?.data?.data);
     }).catch((response) => {
         console.log(response);
     })

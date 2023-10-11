@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from '../navbar/Navbar';
 import axios from "axios";
 import { useRouter } from 'next/router';
+import Loader from '@/common/Loader';
 
 const AddCustomerFeedback = () => {
 
@@ -11,6 +12,8 @@ const AddCustomerFeedback = () => {
     const [name, setName] = useState('');
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
+    const [isLoading, setisLoading] = useState(false)
+
 
     const handleNameChange = (e) => {
         setName(e.target.value)
@@ -35,16 +38,18 @@ const AddCustomerFeedback = () => {
         formData.append('title', title);
         formData.append('description', description);
         formData.append('thumbnail', file);
-
+        setisLoading(true)
         axios({
             method: "post",
-            url: "https://sndigitech.in/cbrs/api/feedback",
+            url: "https://cbrsweb.onrender.com/api/feedback/add",
             data: formData,
             headers: {
                 'Content-Type': `multipart/form-data;`,
                 'Authorization': `Bearer ${token}`,
+                token:token
             }
         }).then(({data : {status}}) => {
+            setisLoading(false)
             if(status === false) {
                 alert("Feed add successfully.")
             }else {
@@ -53,6 +58,7 @@ const AddCustomerFeedback = () => {
             }
             console.log(status);
         }).catch((response) => {
+            setisLoading(false)
             console.log(response);
         })
 
@@ -124,7 +130,7 @@ const AddCustomerFeedback = () => {
                 </div>
             </section>
             </div>
-
+            <Loader isLoading={isLoading} />
         </div>
     )
 }

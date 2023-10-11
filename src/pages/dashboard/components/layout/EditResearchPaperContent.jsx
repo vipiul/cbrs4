@@ -3,6 +3,7 @@ import Navbar from '../navbar/Navbar';
 import axios from "axios";
 import { useRouter } from 'next/router';
 import { data } from 'autoprefixer';
+import Loader from '@/common/Loader';
 
 const EditResearchPaperContent = () => {
     // page redirect route;
@@ -15,19 +16,25 @@ const EditResearchPaperContent = () => {
     const [file, setFile] = useState(null);
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
+    const [isLoading, setisLoading] = useState(false)
 
     const fetchFeedback = async () => {
         let token = localStorage.getItem('token');
+        setisLoading(true)
         axios({
             method: "get",
-            url: `https://sndigitech.in/cbrs/api/research/${id}`,
+            url: `https://cbrsweb.onrender.com/api/research/paper/getById/${id}`,
             headers: {
                 'Authorization': `Bearer ${token}`,
+                token: token
             }
-        }).then(({ data: { research } }) => {
+        }).then((res) => {
+            const research = res?.data?.data
             setTitle(research.title)
             setDescription(research.description)
+            setisLoading(false)
         }).catch((response) => {
+            setisLoading(false)
             console.log(response);
         })
     }
@@ -56,26 +63,30 @@ const EditResearchPaperContent = () => {
         var formData = new FormData();
         formData.append('title', title);
         formData.append('description', description);
-        if(file) {
+        formData.append('id', id);
+        if (file) {
             formData.append('thumbnail', file);
         }
-
+        setisLoading(true)
         axios({
             method: "post",
-            url: `https://sndigitech.in/cbrs/api/research/${id}`,
+            url: `https://cbrsweb.onrender.com/api/research/paper/update`,
             data: formData,
             headers: {
                 'Content-Type': `multipart/form-data;`,
                 'Authorization': `Bearer ${token}`,
+                token: token
             }
-        }).then(({data : {status, message}}) => {
-            if(status) {
-                alert(message);
+        }).then((res) => {
+            setisLoading(false)
+            if (!res?.data?.error) {
+                alert(res?.data?.message);
                 push("/dashboard/research-paper")
-            }else {
+            } else {
                 alert("Please enter all feild is requird. update time !")
             }
         }).catch((response) => {
+            setisLoading(false)
             console.log(response);
         })
 
@@ -141,7 +152,7 @@ const EditResearchPaperContent = () => {
                     </div>
                 </section>
             </div>
-
+            <Loader isLoading={isLoading} />
         </div>
     )
 }

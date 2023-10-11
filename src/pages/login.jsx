@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import axios from "axios";
 import { useFormik } from "formik";
 import * as Yup from 'yup';
+import Loader from '@/common/Loader';
 
 // initialvalue of the input feild
 const initialValues = {
@@ -19,32 +20,36 @@ const SignupSchema = Yup.object().shape({
 
 const Login = () => {
     const { push } = useRouter();
+    const [isLoading, setisLoading] = useState(false)
 
     // I am calling api form the server
     const register = async (value) => {
         var formData = new FormData();
         formData.append('email', value.email);
         formData.append('password', value.password);
+        setisLoading(true)
 
         axios({
             method: "post",
-            url: "https://sndigitech.in/cbrs/api/login",
+            url: "https://cbrsweb.onrender.com/api/user/login",
             data: formData,
             headers: {
                 'Content-Type': `multipart/form-data;`,
             }
         }).then((response) => {
-            if(response.data.status === false){
+            setisLoading(false)
+            if (response.data.status === false) {
                 alert(response.data.message)
-            }else {
+            } else {
                 let token = response.data.token;
                 localStorage.setItem('token', token);
                 localStorage.setItem('CONTENT', token);
                 alert(response.data.message)
                 push("/dashboard/dashboard")
             }
-            
+
         }).catch((response) => {
+            setisLoading(false)
             console.log(response);
         })
 
@@ -72,22 +77,22 @@ const Login = () => {
                             <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit} method='POST'>
                                 <div>
                                     <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
-                                    <input type="email" 
+                                    <input type="email"
                                         name='email'
                                         value={values.email}
                                         onChange={handleChange}
                                         onBlur={handleBlur}
-                                    id="email" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" />
+                                        id="email" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" />
                                     {errors.email && touched.email ? <p className='text-danger'>{errors.email}</p> : null}
                                 </div>
                                 <div>
                                     <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-                                    <input type="password" 
-                                    name='password'
-                                    value={values.password}
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    id="password" placeholder="••••••••" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                                    <input type="password"
+                                        name='password'
+                                        value={values.password}
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        id="password" placeholder="••••••••" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
                                     {errors.password && touched.password ? <p className='text-danger'>{errors.password}</p> : null}
                                 </div>
                                 <div className="flex items-center justify-between">
@@ -110,7 +115,7 @@ const Login = () => {
                     </div>
                 </div>
             </section>
-
+            <Loader isLoading={isLoading} />
         </div>
     )
 }

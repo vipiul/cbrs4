@@ -3,6 +3,7 @@ import Navbar from '../navbar/Navbar';
 import axios from "axios";
 import { useRouter } from 'next/router';
 import { data } from 'autoprefixer';
+import Loader from '@/common/Loader';
 
 const EditFeedbackContent = () => {
 
@@ -17,22 +18,27 @@ const EditFeedbackContent = () => {
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
     const [imgUrl, setImgUrl] = useState('');
+    const [isLoading, setisLoading] = useState(false)
 
     const fetchFeedback = async () => {
         let token = localStorage.getItem('token');
+        setisLoading(true)
         axios({
             method: "get",
-            url: `https://sndigitech.in/cbrs/api/feedback/${id}`,
+            url: `https://cbrsweb.onrender.com/api/feedback/getById/${id}`,
             headers: {
                 'Authorization': `Bearer ${token}`,
+                token:token
             }
-        }).then(({ data: { post } }) => {
+        }).then((res) => {
+            setisLoading(false)
+            const post = res?.data?.data
             setName(post.name)
             setTitle(post.title)
             setImgUrl(post.thumbnail)
             setDescription(post.description)
-            console.log("post", post)
         }).catch((response) => {
+            setisLoading(false)
             console.log(response);
         })
     }
@@ -63,29 +69,35 @@ const EditFeedbackContent = () => {
         // I am getting form th localstorage
         var formData = new FormData();
         formData.append('name', name);
+        formData.append('id', id);
         formData.append('title', title);
         formData.append('description', description);
         if(file) {
             formData.append('thumbnail', file);
         }
 
+        setisLoading(true)
+
         axios({
             method: "post",
-            url: `https://sndigitech.in/cbrs/api/feedback/${id}`,
+            url: `https://cbrsweb.onrender.com/api/feedback/update`,
             data: formData,
             headers: {
                 'Content-Type': `multipart/form-data`,
                 'Authorization': `Bearer ${token}`,
+                token:token
             }
-        }).then(({data : {status, message}}) => {
-            if(status) {
-                alert(message);
+        }).then((res) => {
+            setisLoading(false)
+            console.log(res?.data?.error, '1234567ui');
+            if(!res?.data?.error) {
+                alert(res?.data?.message);
                 push("/dashboard/customer-feedback")
             }else {
                 alert("Please enter all feild is requird. update time !")
             }
-            console.log(response);
         }).catch((response) => {
+            setisLoading(false)
             console.log(response);
         })
     }
@@ -99,7 +111,7 @@ const EditFeedbackContent = () => {
                         <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
                             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
                                 <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
-                                    Add Customer Feedback
+                                    Add Customer Feedback 666
                                 </h1>
                                 <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit} method='POST'>
                                     <div>
@@ -152,7 +164,7 @@ const EditFeedbackContent = () => {
                     </div>
                 </section>
             </div>
-
+            <Loader isLoading={isLoading} />
         </div>
     )
 }

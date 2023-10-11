@@ -32,7 +32,7 @@ const Register = () => {
 
         axios({
             method: "post",
-            url: "https://sndigitech.in/cbrs/api/register",
+            url: "https://cbrsweb.onrender.com/api/register",
             data: formData,
             headers: {
                 'Content-Type': `multipart/form-data;`,

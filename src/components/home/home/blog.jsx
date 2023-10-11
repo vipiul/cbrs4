@@ -48,7 +48,7 @@ const fetchFeedback = async () => {
 
     axios({
         method: "get",
-        url: "https://sndigitech.in/cbrs/api/researchs",
+        url: "https://cbrsweb.onrender.com/api/researchs",
         headers: {
             'Authorization': `Bearer ${token01}`,
         }
