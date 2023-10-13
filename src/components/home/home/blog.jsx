@@ -48,12 +48,12 @@ const fetchFeedback = async () => {
 
     axios({
         method: "get",
-        url: "http://103.25.130.106:3000/api/researchs",
+        url: "http://103.25.130.106:3000/api/research/paper/getAll",
         headers: {
             'Authorization': `Bearer ${ token01 ? token01 : ''}`,
         }
-    }).then(({data : {research}}) => {
-      setBlogdata(research);
+    }).then((res) => {
+      setBlogdata(res?.data?.data);
     }).catch((response) => {
         console.log(response);
     })
