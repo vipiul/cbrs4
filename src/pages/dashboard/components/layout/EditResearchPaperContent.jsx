@@ -23,7 +23,7 @@ const EditResearchPaperContent = () => {
         setisLoading(true)
         axios({
             method: "get",
-            url: `http://103.25.130.106:3000/api/research/paper/getById/${id}`,
+            url: `http://api.clinicalbiosamples.com/api/research/paper/getById/${id}`,
             headers: {
                 'Authorization': `Bearer ${token}`,
                 token: token
@@ -70,7 +70,7 @@ const EditResearchPaperContent = () => {
         setisLoading(true)
         axios({
             method: "post",
-            url: `http://103.25.130.106:3000/api/research/paper/update`,
+            url: `http://api.clinicalbiosamples.com/api/research/paper/update`,
             data: formData,
             headers: {
                 'Content-Type': `multipart/form-data;`,

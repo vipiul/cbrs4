@@ -49,7 +49,7 @@ const fetchFeedback = async () => {
 
     axios({
         method: "get",
-        url: "http://103.25.130.106:3000/api/feedback/getAll",
+        url: "http://api.clinicalbiosamples.com/api/feedback/getAll",
         headers: {
             'Authorization': `Bearer ${token01}`,
             'Content-Type': `multipart/form-data;`,

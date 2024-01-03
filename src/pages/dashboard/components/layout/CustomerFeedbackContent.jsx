@@ -14,7 +14,7 @@ const CustomerFeedbackContent = () => {
         setisLoading(true)
         axios({
             method: "get",
-            url: "http://103.25.130.106:3000/api/feedback/getAll",
+            url: "http://api.clinicalbiosamples.com/api/feedback/getAll",
             headers: {
                 'Authorization': `Bearer ${token01}`,
                 token: token01
@@ -38,7 +38,7 @@ const CustomerFeedbackContent = () => {
         const token02 = localStorage.getItem('token');
         axios({
             method: "delete",
-            url: `http://103.25.130.106:3000/api/feedback/delete/${id}`,
+            url: `http://api.clinicalbiosamples.com/api/feedback/delete/${id}`,
             headers: {
                 'Authorization': `Bearer ${token02}`,
                 token:token02

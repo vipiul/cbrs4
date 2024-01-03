@@ -32,7 +32,7 @@ const Login = () => {
 
         axios({
             method: "post",
-            url: "http://103.25.130.106:3000/api/user/login",
+            url: "http://api.clinicalbiosamples.com/api/user/login",
             data: formData,
             headers: {
                 'Content-Type': `multipart/form-data`,

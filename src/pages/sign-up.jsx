@@ -32,7 +32,7 @@ const Register = () => {
 
         axios({
             method: "post",
-            url: "http://103.25.130.106:3000/api/register",
+            url: "http://api.clinicalbiosamples.com/api/register",
             data: formData,
             headers: {
                 'Content-Type': `multipart/form-data;`,

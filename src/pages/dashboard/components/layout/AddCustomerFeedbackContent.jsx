@@ -41,7 +41,7 @@ const AddCustomerFeedback = () => {
         setisLoading(true)
         axios({
             method: "post",
-            url: "http://103.25.130.106:3000/api/feedback/add",
+            url: "http://api.clinicalbiosamples.com/api/feedback/add",
             data: formData,
             headers: {
                 'Content-Type': `multipart/form-data;`,

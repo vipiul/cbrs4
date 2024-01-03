@@ -39,7 +39,7 @@ const FeedbackContent = () => {
 
         axios({
             method: "post",
-            url: "http://103.25.130.106:3000/api/feedback",
+            url: "http://api.clinicalbiosamples.com/api/feedback",
             data: formData,
             headers: {
                 'Content-Type': `multipart/form-data;`,
